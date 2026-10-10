@@ -1,0 +1,42 @@
+{
+	"name": "E-Waste Escape",
+	"short_name": "E-Waste Escape",
+	"description": "",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "https://www.ecodroids.xyz/images/favicon.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "https://www.ecodroids.xyz/images/favicon.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "https://www.ecodroids.xyz/images/favicon.png",
+			"sizes": "64x64",
+			"type": "image/png"
+		},
+		{
+			"src": "https://www.ecodroids.xyz/images/favicon.png",
+			"sizes": "128x128",
+			"type": "image/png"
+		},
+		{
+			"src": "https://www.ecodroids.xyz/images/favicon.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		},
+		{
+			"src": "https://www.ecodroids.xyz/images/favicon.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"screenshots": []
+}

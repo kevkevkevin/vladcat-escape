@@ -1,0 +1,11 @@
+{
+  "checks": [
+    "Marquee spans 100vw, scrolls and supports explicit pause/resume",
+    "Chibi guide opens, answers local game help and returns keyboard focus on Escape",
+    "Mobile guide fits the screen, marquee has no horizontal overflow and respects reduced motion",
+    "Guide persists across pages, its navigation works and no browser errors occur",
+    "Actual guide API provides guest help and rejects cross-origin or oversized questions",
+    "Mock live chat displays the transfer notice, sends bounded history and recovers to local help"
+  ],
+  "browserErrors": []
+}

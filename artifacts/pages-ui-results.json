@@ -1,0 +1,10 @@
+{
+  "checks": [
+    "Home loads no game; Play navigation shows the wider canvas without hero or ranking tables",
+    "Dedicated leaderboard page contains rankings and shames and no game iframe",
+    "Mobile profile and instructions toggle; challenge opens login; portrait rotation tip is visible",
+    "Landscape hides the rotation tip and keeps the play layout within the viewport",
+    "Landing, leaderboard and editor routes work on mobile with no browser errors"
+  ],
+  "browserErrors": []
+}

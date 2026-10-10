@@ -1,0 +1,6840 @@
+[
+  {
+    "name": "Tilemap",
+    "plugin": "C3.Plugins.Tilemap",
+    "variables": [],
+    "behaviors": [
+      {
+        "name": "Solid",
+        "engine": [
+          "Solid",
+          1,
+          528890632853797,
+          0
+        ]
+      }
+    ],
+    "texture": {
+      "asset": "images/shared-0-sheet3.webp",
+      "x": 1,
+      "y": 1,
+      "width": 240,
+      "height": 288,
+      "engine": [
+        "images/shared-0-sheet3.webp",
+        16166,
+        1,
+        1,
+        240,
+        288,
+        false
+      ]
+    },
+    "animations": null,
+    "engine": [
+      "Tilemap",
+      0,
+      false,
+      null,
+      1,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      231642971746105,
+      [],
+      [
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          [
+            [
+              1,
+              0.625,
+              1,
+              1,
+              0.625,
+              1
+            ],
+            1
+          ],
+          [
+            [
+              0.625,
+              0,
+              1,
+              0,
+              1,
+              1,
+              0,
+              1,
+              0,
+              0.625
+            ],
+            1
+          ],
+          [
+            [
+              0,
+              0,
+              0.375,
+              0,
+              1,
+              0.625,
+              1,
+              1,
+              0,
+              1
+            ],
+            1
+          ],
+          [
+            [
+              0,
+              0.625,
+              0.375,
+              1,
+              0,
+              1
+            ],
+            1
+          ],
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          null,
+          null,
+          null,
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          null,
+          null,
+          null,
+          null,
+          [
+            null,
+            0
+          ],
+          null,
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          null,
+          null,
+          null,
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ],
+          [
+            null,
+            0
+          ]
+        ],
+        269,
+        [
+          [
+            "Brush 0",
+            0,
+            [
+              [
+                [
+                  0
+                ]
+              ],
+              [
+                [
+                  33
+                ]
+              ],
+              [
+                [
+                  3
+                ]
+              ],
+              [
+                [
+                  36
+                ]
+              ],
+              [
+                [
+                  1
+                ]
+              ],
+              [
+                [
+                  34
+                ]
+              ],
+              [
+                [
+                  2
+                ]
+              ],
+              [
+                [
+                  35
+                ]
+              ],
+              [
+                [
+                  11
+                ]
+              ],
+              [
+                [
+                  22
+                ]
+              ],
+              [
+                [
+                  14
+                ]
+              ],
+              [
+                [
+                  25
+                ]
+              ],
+              [
+                [
+                  12
+                ]
+              ],
+              [
+                [
+                  23
+                ]
+              ],
+              [
+                [
+                  13
+                ]
+              ],
+              [
+                [
+                  24
+                ]
+              ]
+            ]
+          ],
+          [
+            "Brush 1",
+            1,
+            [
+              [
+                [
+                  -1
+                ]
+              ],
+              [
+                [
+                  73
+                ]
+              ],
+              [
+                [
+                  39
+                ]
+              ],
+              [
+                [
+                  72
+                ]
+              ],
+              [
+                [
+                  43
+                ]
+              ],
+              [
+                [
+                  37
+                ]
+              ],
+              [
+                [
+                  70
+                ]
+              ],
+              [
+                [
+                  40
+                ]
+              ],
+              [
+                [
+                  38
+                ]
+              ],
+              [
+                [
+                  71
+                ]
+              ],
+              [
+                [
+                  41
+                ]
+              ],
+              [
+                [
+                  42
+                ]
+              ],
+              [
+                [
+                  5
+                ]
+              ],
+              [
+                [
+                  51
+                ]
+              ],
+              [
+                [
+                  62
+                ]
+              ],
+              [
+                [
+                  50
+                ]
+              ],
+              [
+                [
+                  61
+                ]
+              ],
+              [
+                [
+                  21
+                ]
+              ],
+              [
+                [
+                  48
+                ]
+              ],
+              [
+                [
+                  59
+                ]
+              ],
+              [
+                [
+                  18
+                ]
+              ],
+              [
+                [
+                  49
+                ]
+              ],
+              [
+                [
+                  60
+                ]
+              ],
+              [
+                [
+                  19
+                ]
+              ],
+              [
+                [
+                  20
+                ]
+              ],
+              [
+                [
+                  75
+                ]
+              ],
+              [
+                [
+                  10
+                ]
+              ],
+              [
+                [
+                  32
+                ]
+              ],
+              [
+                [
+                  15
+                ]
+              ],
+              [
+                [
+                  8
+                ]
+              ],
+              [
+                [
+                  30
+                ]
+              ],
+              [
+                [
+                  65
+                ]
+              ],
+              [
+                [
+                  54
+                ]
+              ],
+              [
+                [
+                  4
+                ]
+              ],
+              [
+                [
+                  7
+                ]
+              ],
+              [
+                [
+                  29
+                ]
+              ],
+              [
+                [
+                  17
+                ]
+              ],
+              [
+                [
+                  9
+                ]
+              ],
+              [
+                [
+                  31
+                ]
+              ],
+              [
+                [
+                  52
+                ]
+              ],
+              [
+                [
+                  63
+                ]
+              ],
+              [
+                [
+                  6
+                ]
+              ],
+              [
+                [
+                  27
+                ]
+              ],
+              [
+                [
+                  53
+                ]
+              ],
+              [
+                [
+                  26
+                ]
+              ],
+              [
+                [
+                  28
+                ]
+              ],
+              [
+                [
+                  64
+                ]
+              ],
+              [
+                [
+                  16
+                ]
+              ],
+              [
+                [
+                  -1
+                ]
+              ]
+            ]
+          ]
+        ]
+      ],
+      1,
+      null
+    ]
+  },
+  {
+    "name": "spr_player_graphic",
+    "plugin": "C3.Plugins.Sprite",
+    "variables": [],
+    "behaviors": [],
+    "texture": null,
+    "animations": [
+      {
+        "name": "Run",
+        "speed": 10,
+        "loop": true,
+        "frames": [
+          {
+            "asset": "images/vladcat-sprites.png",
+            "x": 0,
+            "y": 32,
+            "width": 32,
+            "height": 32,
+            "engine": [
+              "images/spr_player_graphic-sheet0.webp",
+              1676,
+              69,
+              193,
+              32,
+              32,
+              false,
+              1,
+              0.5,
+              0.75,
+              [],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.75
+          },
+          {
+            "asset": "images/vladcat-sprites.png",
+            "x": 32,
+            "y": 32,
+            "width": 32,
+            "height": 32,
+            "engine": [
+              "images/spr_player_graphic-sheet0.webp",
+              1676,
+              35,
+              193,
+              32,
+              32,
+              false,
+              1,
+              0.5,
+              0.75,
+              [],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.75
+          },
+          {
+            "asset": "images/vladcat-sprites.png",
+            "x": 64,
+            "y": 32,
+            "width": 32,
+            "height": 32,
+            "engine": [
+              "images/spr_player_graphic-sheet0.webp",
+              1676,
+              1,
+              193,
+              32,
+              32,
+              false,
+              1,
+              0.5,
+              0.75,
+              [],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.75
+          },
+          {
+            "asset": "images/vladcat-sprites.png",
+            "x": 96,
+            "y": 32,
+            "width": 32,
+            "height": 32,
+            "engine": [
+              "images/spr_player_graphic-sheet0.webp",
+              1676,
+              69,
+              137,
+              32,
+              32,
+              false,
+              1,
+              0.5,
+              0.75,
+              [],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.75
+          },
+          {
+            "asset": "images/vladcat-sprites.png",
+            "x": 0,
+            "y": 64,
+            "width": 32,
+            "height": 32,
+            "engine": [
+              "images/spr_player_graphic-sheet0.webp",
+              1676,
+              35,
+              137,
+              32,
+              32,
+              false,
+              1,
+              0.5,
+              0.75,
+              [],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.75
+          },
+          {
+            "asset": "images/vladcat-sprites.png",
+            "x": 32,
+            "y": 64,
+            "width": 32,
+            "height": 32,
+            "engine": [
+              "images/spr_player_graphic-sheet0.webp",
+              1676,
+              1,
+              137,
+              32,
+              32,
+              false,
+              1,
+              0.5,
+              0.75,
+              [],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.75
+          },
+          {
+            "asset": "images/vladcat-sprites.png",
+            "x": 64,
+            "y": 64,
+            "width": 32,
+            "height": 32,
+            "engine": [
+              "images/spr_player_graphic-sheet0.webp",
+              1676,
+              69,
+              103,
+              32,
+              32,
+              false,
+              1,
+              0.5,
+              0.75,
+              [],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.75
+          }
+        ],
+        "engine": [
+          "Run",
+          10,
+          true,
+          1,
+          0,
+          false,
+          534174219033334,
+          []
+        ]
+      },
+      {
+        "name": "Idle",
+        "speed": 8,
+        "loop": true,
+        "frames": [
+          {
+            "asset": "images/vladcat-sprites.png",
+            "x": 0,
+            "y": 0,
+            "width": 32,
+            "height": 32,
+            "engine": [
+              "images/spr_player_graphic-sheet0.webp",
+              1676,
+              35,
+              103,
+              32,
+              32,
+              false,
+              1,
+              0.5,
+              0.75,
+              [],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.75
+          },
+          {
+            "asset": "images/vladcat-sprites.png",
+            "x": 32,
+            "y": 0,
+            "width": 32,
+            "height": 32,
+            "engine": [
+              "images/spr_player_graphic-sheet0.webp",
+              1676,
+              1,
+              103,
+              32,
+              32,
+              false,
+              1,
+              0.5,
+              0.75,
+              [],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.75
+          },
+          {
+            "asset": "images/vladcat-sprites.png",
+            "x": 64,
+            "y": 0,
+            "width": 32,
+            "height": 32,
+            "engine": [
+              "images/spr_player_graphic-sheet0.webp",
+              1676,
+              69,
+              69,
+              32,
+              32,
+              false,
+              1,
+              0.5,
+              0.75,
+              [],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.75
+          },
+          {
+            "asset": "images/vladcat-sprites.png",
+            "x": 96,
+            "y": 0,
+            "width": 32,
+            "height": 32,
+            "engine": [
+              "images/spr_player_graphic-sheet0.webp",
+              1676,
+              35,
+              69,
+              32,
+              32,
+              false,
+              1,
+              0.5,
+              0.75,
+              [],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.75
+          },
+          {
+            "asset": "images/vladcat-sprites.png",
+            "x": 64,
+            "y": 0,
+            "width": 32,
+            "height": 32,
+            "engine": [
+              "images/spr_player_graphic-sheet0.webp",
+              1676,
+              1,
+              69,
+              32,
+              32,
+              false,
+              1,
+              0.5,
+              0.75,
+              [],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.75
+          },
+          {
+            "asset": "images/vladcat-sprites.png",
+            "x": 32,
+            "y": 0,
+            "width": 32,
+            "height": 32,
+            "engine": [
+              "images/spr_player_graphic-sheet0.webp",
+              1676,
+              69,
+              35,
+              32,
+              32,
+              false,
+              1,
+              0.5,
+              0.75,
+              [],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.75
+          },
+          {
+            "asset": "images/vladcat-sprites.png",
+            "x": 0,
+            "y": 0,
+            "width": 32,
+            "height": 32,
+            "engine": [
+              "images/spr_player_graphic-sheet0.webp",
+              1676,
+              35,
+              35,
+              32,
+              32,
+              false,
+              1,
+              0.5,
+              0.75,
+              [],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.75
+          }
+        ],
+        "engine": [
+          "Idle",
+          8,
+          true,
+          1,
+          0,
+          false,
+          483701271366116,
+          []
+        ]
+      },
+      {
+        "name": "Jump",
+        "speed": 15,
+        "loop": false,
+        "frames": [
+          {
+            "asset": "images/vladcat-sprites.png",
+            "x": 0,
+            "y": 96,
+            "width": 32,
+            "height": 32,
+            "engine": [
+              "images/spr_player_graphic-sheet0.webp",
+              1676,
+              1,
+              35,
+              32,
+              32,
+              false,
+              1,
+              0.5,
+              0.75,
+              [],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.75
+          },
+          {
+            "asset": "images/vladcat-sprites.png",
+            "x": 32,
+            "y": 96,
+            "width": 32,
+            "height": 32,
+            "engine": [
+              "images/spr_player_graphic-sheet0.webp",
+              1676,
+              69,
+              1,
+              32,
+              32,
+              false,
+              1,
+              0.5,
+              0.75,
+              [],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.75
+          },
+          {
+            "asset": "images/vladcat-sprites.png",
+            "x": 64,
+            "y": 96,
+            "width": 32,
+            "height": 32,
+            "engine": [
+              "images/spr_player_graphic-sheet0.webp",
+              1676,
+              35,
+              1,
+              32,
+              32,
+              false,
+              1,
+              0.5,
+              0.75,
+              [],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.75
+          }
+        ],
+        "engine": [
+          "Jump",
+          15,
+          false,
+          1,
+          0,
+          false,
+          149802695107578,
+          []
+        ]
+      },
+      {
+        "name": "Fall",
+        "speed": 0,
+        "loop": false,
+        "frames": [
+          {
+            "asset": "images/vladcat-sprites.png",
+            "x": 96,
+            "y": 96,
+            "width": 32,
+            "height": 32,
+            "engine": [
+              "images/spr_player_graphic-sheet0.webp",
+              1676,
+              1,
+              1,
+              32,
+              32,
+              false,
+              1,
+              0.5,
+              0.75,
+              [],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.75
+          }
+        ],
+        "engine": [
+          "Fall",
+          0,
+          false,
+          1,
+          0,
+          false,
+          919165270459895,
+          []
+        ]
+      }
+    ],
+    "engine": [
+      "spr_player_graphic",
+      2,
+      false,
+      null,
+      0,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      259617604077704,
+      [],
+      null,
+      2,
+      null
+    ]
+  },
+  {
+    "name": "spr_player_base",
+    "plugin": "C3.Plugins.Sprite",
+    "variables": [
+      {
+        "name": "JumpCount",
+        "engine": [
+          868811651620279,
+          1,
+          "JumpCount",
+          3
+        ]
+      }
+    ],
+    "behaviors": [
+      {
+        "name": "Platform",
+        "engine": [
+          "Platform",
+          3,
+          698693980715901,
+          4
+        ]
+      },
+      {
+        "name": "DragDrop",
+        "engine": [
+          "DragDrop",
+          4,
+          618556514565446,
+          5
+        ]
+      }
+    ],
+    "texture": null,
+    "animations": [
+      {
+        "name": "Animation 1",
+        "speed": 5,
+        "loop": false,
+        "frames": [
+          {
+            "asset": "images/shared-0-sheet5.webp",
+            "x": 68,
+            "y": 71,
+            "width": 16,
+            "height": 16,
+            "engine": [
+              "images/shared-0-sheet5.webp",
+              2392,
+              68,
+              71,
+              16,
+              16,
+              false,
+              1,
+              0.5,
+              1,
+              [
+                [
+                  "spawner_effect",
+                  0.5,
+                  0.5
+                ]
+              ],
+              [
+                -0.5,
+                -1,
+                0.5,
+                -1,
+                0.5,
+                -0.1875,
+                0.3125,
+                -0.0004111842105263275,
+                -0.3125,
+                -0.00164473684210531,
+                -0.5,
+                -0.18873355263157898
+              ],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 1
+          }
+        ],
+        "engine": [
+          "Animation 1",
+          5,
+          false,
+          1,
+          0,
+          false,
+          979468109916550,
+          []
+        ]
+      }
+    ],
+    "engine": [
+      "spr_player_base",
+      2,
+      false,
+      null,
+      2,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      943519932086281,
+      [],
+      null,
+      6,
+      null
+    ]
+  },
+  {
+    "name": "spr_door",
+    "plugin": "C3.Plugins.Sprite",
+    "variables": [
+      {
+        "name": "Timer",
+        "engine": [
+          546222145778706,
+          1,
+          "Timer",
+          7
+        ]
+      }
+    ],
+    "behaviors": [
+      {
+        "name": "Solid",
+        "engine": [
+          "Solid",
+          1,
+          758784042388470,
+          0
+        ]
+      },
+      {
+        "name": "DragDrop",
+        "engine": [
+          "DragDrop",
+          4,
+          672310539366149,
+          5
+        ]
+      }
+    ],
+    "texture": null,
+    "animations": [
+      {
+        "name": "Animation 1",
+        "speed": 0,
+        "loop": false,
+        "frames": [
+          {
+            "asset": "images/shared-0-sheet5.webp",
+            "x": 71,
+            "y": 1,
+            "width": 16,
+            "height": 32,
+            "engine": [
+              "images/shared-0-sheet5.webp",
+              2392,
+              71,
+              1,
+              16,
+              32,
+              false,
+              1,
+              0.5,
+              1,
+              [],
+              [
+                -0.5,
+                -1,
+                0.5,
+                -1,
+                0.5,
+                0,
+                0.375,
+                0,
+                -0.5,
+                0,
+                -0.5,
+                0
+              ],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 1
+          },
+          {
+            "asset": "images/shared-0-sheet5.webp",
+            "x": 89,
+            "y": 1,
+            "width": 16,
+            "height": 32,
+            "engine": [
+              "images/shared-0-sheet5.webp",
+              2392,
+              89,
+              1,
+              16,
+              32,
+              false,
+              1,
+              0.5,
+              1,
+              [],
+              [
+                -0.5,
+                -1,
+                0.5,
+                -1,
+                0.5,
+                0,
+                -0.5,
+                0,
+                -0.5,
+                0,
+                -0.5,
+                0
+              ],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 1
+          }
+        ],
+        "engine": [
+          "Animation 1",
+          0,
+          false,
+          1,
+          0,
+          false,
+          289775953641679,
+          []
+        ]
+      }
+    ],
+    "engine": [
+      "spr_door",
+      2,
+      false,
+      null,
+      2,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      686735914801592,
+      [],
+      null,
+      8,
+      null
+    ]
+  },
+  {
+    "name": "Touch",
+    "plugin": "C3.Plugins.Touch",
+    "variables": [],
+    "behaviors": [],
+    "texture": null,
+    "animations": null,
+    "engine": [
+      "Touch",
+      5,
+      false,
+      null,
+      0,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      903010293652661,
+      [],
+      null,
+      9,
+      null,
+      [
+        false
+      ]
+    ]
+  },
+  {
+    "name": "Keyboard",
+    "plugin": "C3.Plugins.Keyboard",
+    "variables": [],
+    "behaviors": [],
+    "texture": null,
+    "animations": null,
+    "engine": [
+      "Keyboard",
+      6,
+      false,
+      null,
+      0,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      325961988180929,
+      [],
+      null,
+      10,
+      null,
+      []
+    ]
+  },
+  {
+    "name": "Mouse",
+    "plugin": "C3.Plugins.Mouse",
+    "variables": [],
+    "behaviors": [],
+    "texture": null,
+    "animations": null,
+    "engine": [
+      "Mouse",
+      7,
+      false,
+      null,
+      0,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      226815038097558,
+      [],
+      null,
+      11,
+      null,
+      []
+    ]
+  },
+  {
+    "name": "spr_key",
+    "plugin": "C3.Plugins.Sprite",
+    "variables": [
+      {
+        "name": "key_var",
+        "engine": [
+          272300536758391,
+          1,
+          "key_var",
+          12
+        ]
+      },
+      {
+        "name": "key",
+        "engine": [
+          964459376817635,
+          2,
+          "key",
+          13
+        ]
+      }
+    ],
+    "behaviors": [
+      {
+        "name": "DragDrop",
+        "engine": [
+          "DragDrop",
+          4,
+          858549963305314,
+          5
+        ]
+      }
+    ],
+    "texture": null,
+    "animations": [
+      {
+        "name": "Animation 1",
+        "speed": 5,
+        "loop": false,
+        "frames": [
+          {
+            "asset": "images/vladcat-key.png",
+            "x": 0,
+            "y": 0,
+            "width": 16,
+            "height": 16,
+            "engine": [
+              "images/shared-0-sheet5.webp",
+              2392,
+              50,
+              71,
+              16,
+              16,
+              false,
+              1,
+              0.5,
+              0.5,
+              [],
+              [
+                -0.5,
+                0,
+                0.5,
+                0,
+                0.5,
+                0.5,
+                -0.5,
+                0.5
+              ],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5
+          }
+        ],
+        "engine": [
+          "Animation 1",
+          5,
+          false,
+          1,
+          0,
+          false,
+          535575995812557,
+          []
+        ]
+      }
+    ],
+    "engine": [
+      "spr_key",
+      2,
+      false,
+      null,
+      1,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      741558804773269,
+      [],
+      null,
+      14,
+      null
+    ]
+  },
+  {
+    "name": "UITip",
+    "plugin": "C3.Plugins.Spritefont2",
+    "variables": [
+      {
+        "name": "IDTEXT",
+        "engine": [
+          900039404189875,
+          1,
+          "IDTEXT",
+          15
+        ]
+      }
+    ],
+    "behaviors": [
+      {
+        "name": "Tween",
+        "engine": [
+          "Tween",
+          9,
+          531712506409198,
+          16
+        ]
+      }
+    ],
+    "texture": {
+      "asset": "images/shared-0-sheet3.webp",
+      "x": 747,
+      "y": 449,
+      "width": 1024,
+      "height": 32,
+      "engine": [
+        "images/shared-0-sheet3.webp",
+        16166,
+        747,
+        449,
+        1024,
+        32,
+        false
+      ]
+    },
+    "animations": null,
+    "engine": [
+      "UITip",
+      8,
+      false,
+      null,
+      1,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      853752604580262,
+      [],
+      null,
+      17,
+      null
+    ]
+  },
+  {
+    "name": "GameManager",
+    "plugin": "C3.Plugins.Sprite",
+    "variables": [
+      {
+        "name": "var_id",
+        "engine": [
+          975547860922700,
+          1,
+          "var_id",
+          18
+        ]
+      }
+    ],
+    "behaviors": [],
+    "texture": null,
+    "animations": [
+      {
+        "name": "Animation 1",
+        "speed": 5,
+        "loop": false,
+        "frames": [
+          {
+            "asset": "images/shared-0-sheet5.webp",
+            "x": 86,
+            "y": 81,
+            "width": 16,
+            "height": 16,
+            "engine": [
+              "images/shared-0-sheet5.webp",
+              2392,
+              86,
+              81,
+              16,
+              16,
+              false,
+              1,
+              0.5,
+              0.5,
+              [],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5
+          }
+        ],
+        "engine": [
+          "Animation 1",
+          5,
+          false,
+          1,
+          0,
+          false,
+          669750472668738,
+          []
+        ]
+      }
+    ],
+    "engine": [
+      "GameManager",
+      2,
+      false,
+      null,
+      0,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      676978453044688,
+      [],
+      null,
+      19,
+      null
+    ]
+  },
+  {
+    "name": "spr_Clock",
+    "plugin": "C3.Plugins.Sprite",
+    "variables": [],
+    "behaviors": [
+      {
+        "name": "Timer",
+        "engine": [
+          "Timer",
+          10,
+          763960788087847,
+          7
+        ]
+      }
+    ],
+    "texture": null,
+    "animations": [
+      {
+        "name": "Animation 1",
+        "speed": 5,
+        "loop": false,
+        "frames": [
+          {
+            "asset": "images/shared-0-sheet5.webp",
+            "x": 19,
+            "y": 75,
+            "width": 16,
+            "height": 16,
+            "engine": [
+              "images/shared-0-sheet5.webp",
+              2392,
+              19,
+              75,
+              16,
+              16,
+              false,
+              1,
+              0.5,
+              0.5,
+              [],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5
+          }
+        ],
+        "engine": [
+          "Animation 1",
+          5,
+          false,
+          1,
+          0,
+          false,
+          670312280410373,
+          []
+        ]
+      }
+    ],
+    "engine": [
+      "spr_Clock",
+      2,
+      false,
+      null,
+      1,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      756912892578259,
+      [],
+      null,
+      20,
+      null
+    ]
+  },
+  {
+    "name": "par_sparckles",
+    "plugin": "C3.Plugins.Particles",
+    "variables": [],
+    "behaviors": [],
+    "texture": {
+      "asset": "images/shared-0-sheet5.webp",
+      "x": 107,
+      "y": 27,
+      "width": 16,
+      "height": 16,
+      "engine": [
+        "images/shared-0-sheet5.webp",
+        2392,
+        107,
+        27,
+        16,
+        16,
+        false
+      ]
+    },
+    "animations": null,
+    "engine": [
+      "par_sparckles",
+      11,
+      false,
+      null,
+      0,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      902089755013181,
+      [],
+      null,
+      21,
+      null
+    ]
+  },
+  {
+    "name": "Explosion",
+    "plugin": "C3.Plugins.Sprite",
+    "variables": [],
+    "behaviors": [],
+    "texture": null,
+    "animations": [
+      {
+        "name": "Animation 1",
+        "speed": 20,
+        "loop": false,
+        "frames": [
+          {
+            "asset": "images/explosion-sheet0.webp",
+            "x": 1,
+            "y": 1,
+            "width": 16,
+            "height": 16,
+            "engine": [
+              "images/explosion-sheet0.webp",
+              862,
+              1,
+              1,
+              16,
+              16,
+              false,
+              1,
+              0.5,
+              0.5,
+              [],
+              [
+                -0.0625,
+                -0.125,
+                0.0625,
+                -0.125,
+                0.125,
+                -0.0625,
+                0.125,
+                0.0625,
+                0.0625,
+                0.125,
+                -0.0625,
+                0.125,
+                -0.125,
+                0.0625,
+                -0.125,
+                -0.0625
+              ],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5
+          },
+          {
+            "asset": "images/explosion-sheet0.webp",
+            "x": 19,
+            "y": 1,
+            "width": 16,
+            "height": 16,
+            "engine": [
+              "images/explosion-sheet0.webp",
+              862,
+              19,
+              1,
+              16,
+              16,
+              false,
+              1,
+              0.5,
+              0.5,
+              [],
+              [
+                -0.0625,
+                -0.1875,
+                0.0625,
+                -0.1875,
+                0.1875,
+                -0.0625,
+                0.1875,
+                0.0625,
+                0.0625,
+                0.1875,
+                -0.0625,
+                0.1875,
+                -0.1875,
+                0.0625,
+                -0.1875,
+                -0.0625
+              ],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5
+          },
+          {
+            "asset": "images/explosion-sheet0.webp",
+            "x": 37,
+            "y": 1,
+            "width": 16,
+            "height": 16,
+            "engine": [
+              "images/explosion-sheet0.webp",
+              862,
+              37,
+              1,
+              16,
+              16,
+              false,
+              1,
+              0.5,
+              0.5,
+              [],
+              [
+                -0.125,
+                -0.25,
+                0.125,
+                -0.25,
+                0.25,
+                -0.125,
+                0.25,
+                0.125,
+                0.125,
+                0.25,
+                -0.125,
+                0.25,
+                -0.25,
+                0.125,
+                -0.25,
+                -0.125
+              ],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5
+          },
+          {
+            "asset": "images/explosion-sheet0.webp",
+            "x": 1,
+            "y": 19,
+            "width": 16,
+            "height": 16,
+            "engine": [
+              "images/explosion-sheet0.webp",
+              862,
+              1,
+              19,
+              16,
+              16,
+              false,
+              1,
+              0.5,
+              0.5,
+              [],
+              [
+                -0.25,
+                -0.4375,
+                0,
+                -0.4375,
+                0.3125,
+                -0.375,
+                0.4375,
+                -0.25,
+                0.4375,
+                0,
+                0.375,
+                0.3125,
+                0.25,
+                0.4375,
+                0,
+                0.4375,
+                -0.3125,
+                0.375,
+                -0.4375,
+                0.25,
+                -0.4375,
+                0,
+                -0.375,
+                -0.3125
+              ],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5
+          },
+          {
+            "asset": "images/explosion-sheet0.webp",
+            "x": 19,
+            "y": 19,
+            "width": 16,
+            "height": 16,
+            "engine": [
+              "images/explosion-sheet0.webp",
+              862,
+              19,
+              19,
+              16,
+              16,
+              false,
+              1,
+              0.5,
+              0.5,
+              [],
+              [
+                -0.3125,
+                -0.5,
+                -0.0625,
+                -0.5,
+                0.375,
+                -0.4375,
+                0.5,
+                -0.3125,
+                0.5,
+                -0.0625,
+                0.4375,
+                0.375,
+                0.3125,
+                0.5,
+                0.0625,
+                0.5,
+                -0.375,
+                0.4375,
+                -0.5,
+                0.3125,
+                -0.5,
+                0.0625,
+                -0.4375,
+                -0.375
+              ],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5
+          },
+          {
+            "asset": "images/explosion-sheet0.webp",
+            "x": 37,
+            "y": 33,
+            "width": 16,
+            "height": 16,
+            "engine": [
+              "images/explosion-sheet0.webp",
+              862,
+              37,
+              33,
+              16,
+              16,
+              false,
+              1,
+              0.5,
+              0.5,
+              [],
+              [
+                -0.3125,
+                -0.5,
+                -0.1875,
+                -0.5,
+                0.375,
+                -0.4375,
+                0.5,
+                -0.3125,
+                0.5,
+                -0.1875,
+                0.4375,
+                0.375,
+                0.3125,
+                0.5,
+                0.1875,
+                0.5,
+                -0.375,
+                0.4375,
+                -0.5,
+                0.3125,
+                -0.5,
+                0.1875,
+                -0.4375,
+                -0.375
+              ],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5
+          },
+          {
+            "asset": "images/explosion-sheet0.webp",
+            "x": 1,
+            "y": 37,
+            "width": 16,
+            "height": 16,
+            "engine": [
+              "images/explosion-sheet0.webp",
+              862,
+              1,
+              37,
+              16,
+              16,
+              false,
+              1,
+              0.5,
+              0.5,
+              [],
+              [
+                -0.375,
+                -0.5,
+                -0.25,
+                -0.5,
+                0.4375,
+                -0.4375,
+                0.5,
+                -0.375,
+                0.5,
+                -0.25,
+                0.4375,
+                0.4375,
+                0.375,
+                0.5,
+                0.25,
+                0.5,
+                -0.4375,
+                0.4375,
+                -0.5,
+                0.375,
+                -0.5,
+                0.25,
+                -0.4375,
+                -0.4375
+              ],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5
+          },
+          {
+            "asset": "images/explosion-sheet0.webp",
+            "x": 19,
+            "y": 37,
+            "width": 16,
+            "height": 16,
+            "engine": [
+              "images/explosion-sheet0.webp",
+              862,
+              19,
+              37,
+              16,
+              16,
+              false,
+              1,
+              0.5,
+              0.5,
+              [],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5
+          }
+        ],
+        "engine": [
+          "Animation 1",
+          20,
+          false,
+          1,
+          0,
+          false,
+          943674565632402,
+          []
+        ]
+      }
+    ],
+    "engine": [
+      "Explosion",
+      2,
+      false,
+      null,
+      0,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      398464071052499,
+      [],
+      null,
+      22,
+      null
+    ]
+  },
+  {
+    "name": "spr_dark_area",
+    "plugin": "C3.Plugins.TiledBg",
+    "variables": [],
+    "behaviors": [],
+    "texture": {
+      "asset": "images/spr_dark_area-sheet0.webp",
+      "x": 0,
+      "y": 0,
+      "width": 16,
+      "height": 16,
+      "engine": [
+        "images/spr_dark_area-sheet0.webp",
+        516,
+        0,
+        0,
+        16,
+        16,
+        false
+      ]
+    },
+    "animations": null,
+    "engine": [
+      "spr_dark_area",
+      12,
+      false,
+      null,
+      0,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      271835751005468,
+      [],
+      null,
+      23,
+      [
+        1,
+        1
+      ]
+    ]
+  },
+  {
+    "name": "hidden_solid",
+    "plugin": "C3.Plugins.TiledBg",
+    "variables": [],
+    "behaviors": [
+      {
+        "name": "Solid",
+        "engine": [
+          "Solid",
+          1,
+          472816420616695,
+          0
+        ]
+      }
+    ],
+    "texture": {
+      "asset": "images/hidden_solid-sheet0.webp",
+      "x": 0,
+      "y": 0,
+      "width": 16,
+      "height": 16,
+      "engine": [
+        "images/hidden_solid-sheet0.webp",
+        520,
+        0,
+        0,
+        16,
+        16,
+        false
+      ]
+    },
+    "animations": null,
+    "engine": [
+      "hidden_solid",
+      12,
+      false,
+      null,
+      1,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      475699895688224,
+      [],
+      null,
+      24,
+      [
+        1,
+        1
+      ]
+    ]
+  },
+  {
+    "name": "spr_ground_draggable",
+    "plugin": "C3.Plugins.Sprite",
+    "variables": [],
+    "behaviors": [
+      {
+        "name": "DragDrop",
+        "engine": [
+          "DragDrop",
+          4,
+          297326751983314,
+          5
+        ]
+      },
+      {
+        "name": "Solid",
+        "engine": [
+          "Solid",
+          1,
+          608659518168870,
+          0
+        ]
+      }
+    ],
+    "texture": null,
+    "animations": [
+      {
+        "name": "Animation 1",
+        "speed": 0,
+        "loop": false,
+        "frames": [
+          {
+            "asset": "images/shared-0-sheet4.webp",
+            "x": 188,
+            "y": 43,
+            "width": 64,
+            "height": 16,
+            "engine": [
+              "images/shared-0-sheet4.webp",
+              3200,
+              188,
+              43,
+              64,
+              16,
+              true,
+              1,
+              0.5,
+              0.5,
+              [],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5
+          },
+          {
+            "asset": "images/shared-0-sheet5.webp",
+            "x": 1,
+            "y": 1,
+            "width": 48,
+            "height": 16,
+            "engine": [
+              "images/shared-0-sheet5.webp",
+              2392,
+              1,
+              1,
+              48,
+              16,
+              true,
+              1,
+              0.5,
+              0.5,
+              [],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5
+          }
+        ],
+        "engine": [
+          "Animation 1",
+          0,
+          false,
+          1,
+          0,
+          false,
+          703362779982178,
+          []
+        ]
+      }
+    ],
+    "engine": [
+      "spr_ground_draggable",
+      2,
+      false,
+      null,
+      2,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      829746543451381,
+      [],
+      null,
+      25,
+      null
+    ]
+  },
+  {
+    "name": "spr_lava",
+    "plugin": "C3.Plugins.TiledBg",
+    "variables": [],
+    "behaviors": [
+      {
+        "name": "Tween",
+        "engine": [
+          "Tween",
+          9,
+          707300409531553,
+          16
+        ]
+      }
+    ],
+    "texture": {
+      "asset": "images/spr_lava-sheet0.webp",
+      "x": 0,
+      "y": 0,
+      "width": 16,
+      "height": 32,
+      "engine": [
+        "images/spr_lava-sheet0.webp",
+        584,
+        0,
+        0,
+        16,
+        32,
+        false
+      ]
+    },
+    "animations": null,
+    "engine": [
+      "spr_lava",
+      12,
+      false,
+      null,
+      1,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      590347722032981,
+      [],
+      null,
+      26,
+      [
+        1,
+        0
+      ]
+    ]
+  },
+  {
+    "name": "spr_spike",
+    "plugin": "C3.Plugins.Sprite",
+    "variables": [],
+    "behaviors": [],
+    "texture": null,
+    "animations": [
+      {
+        "name": "Animation 1",
+        "speed": 0,
+        "loop": false,
+        "frames": [
+          {
+            "asset": "images/shared-0-sheet5.webp",
+            "x": 104,
+            "y": 97,
+            "width": 16,
+            "height": 16,
+            "engine": [
+              "images/shared-0-sheet5.webp",
+              2392,
+              104,
+              97,
+              16,
+              16,
+              false,
+              1,
+              0.5,
+              0.5,
+              [],
+              [
+                -0.5,
+                0.1875,
+                0.5,
+                0.1875,
+                0.5,
+                0.5,
+                -0.5,
+                0.5
+              ],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5
+          },
+          {
+            "asset": "images/shared-0-sheet5.webp",
+            "x": 1,
+            "y": 97,
+            "width": 16,
+            "height": 16,
+            "engine": [
+              "images/shared-0-sheet5.webp",
+              2392,
+              1,
+              97,
+              16,
+              16,
+              false,
+              1,
+              0.5,
+              0.5,
+              [],
+              [
+                -0.5,
+                0.1875,
+                0.5,
+                0.1875,
+                0.5,
+                0.5,
+                -0.5,
+                0.5
+              ],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5
+          },
+          {
+            "asset": "images/shared-0-sheet5.webp",
+            "x": 37,
+            "y": 97,
+            "width": 16,
+            "height": 16,
+            "engine": [
+              "images/shared-0-sheet5.webp",
+              2392,
+              37,
+              97,
+              16,
+              16,
+              false,
+              1,
+              0.5,
+              0.5,
+              [],
+              [
+                -0.5,
+                0.1875,
+                0.5,
+                0.1875,
+                0.5,
+                0.5,
+                -0.5,
+                0.5
+              ],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5
+          },
+          {
+            "asset": "images/shared-0-sheet5.webp",
+            "x": 55,
+            "y": 97,
+            "width": 16,
+            "height": 16,
+            "engine": [
+              "images/shared-0-sheet5.webp",
+              2392,
+              55,
+              97,
+              16,
+              16,
+              false,
+              1,
+              0.5,
+              0.5,
+              [],
+              [
+                -0.5,
+                0.1875,
+                0.5,
+                0.1875,
+                0.5,
+                0.5,
+                -0.5,
+                0.5
+              ],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5
+          },
+          {
+            "asset": "images/shared-0-sheet5.webp",
+            "x": 19,
+            "y": 97,
+            "width": 16,
+            "height": 16,
+            "engine": [
+              "images/shared-0-sheet5.webp",
+              2392,
+              19,
+              97,
+              16,
+              16,
+              false,
+              1,
+              0.5,
+              0.5,
+              [],
+              [
+                -0.5,
+                0.1875,
+                0.5,
+                0.1875,
+                0.5,
+                0.5,
+                -0.5,
+                0.5
+              ],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5
+          },
+          {
+            "asset": "images/shared-0-sheet5.webp",
+            "x": 73,
+            "y": 99,
+            "width": 16,
+            "height": 16,
+            "engine": [
+              "images/shared-0-sheet5.webp",
+              2392,
+              73,
+              99,
+              16,
+              16,
+              false,
+              1,
+              0.5,
+              0.5,
+              [],
+              [
+                -0.5,
+                0.1875,
+                0.5,
+                0.1875,
+                0.5,
+                0.5,
+                -0.5,
+                0.5
+              ],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5
+          }
+        ],
+        "engine": [
+          "Animation 1",
+          0,
+          false,
+          1,
+          0,
+          false,
+          257973344371373,
+          []
+        ]
+      }
+    ],
+    "engine": [
+      "spr_spike",
+      2,
+      false,
+      null,
+      0,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      513729859361103,
+      [],
+      null,
+      27,
+      null
+    ]
+  },
+  {
+    "name": "spr_gate",
+    "plugin": "C3.Plugins.TiledBg",
+    "variables": [
+      {
+        "name": "Timer",
+        "engine": [
+          815584591076661,
+          1,
+          "Timer",
+          7
+        ]
+      }
+    ],
+    "behaviors": [],
+    "texture": {
+      "asset": "images/spr_gate-sheet0.webp",
+      "x": 0,
+      "y": 0,
+      "width": 16,
+      "height": 16,
+      "engine": [
+        "images/spr_gate-sheet0.webp",
+        598,
+        0,
+        0,
+        16,
+        16,
+        false
+      ]
+    },
+    "animations": null,
+    "engine": [
+      "spr_gate",
+      12,
+      false,
+      null,
+      0,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      125561482110086,
+      [],
+      null,
+      28,
+      [
+        1,
+        1
+      ]
+    ]
+  },
+  {
+    "name": "par_smoke",
+    "plugin": "C3.Plugins.Particles",
+    "variables": [],
+    "behaviors": [],
+    "texture": {
+      "asset": "images/shared-0-sheet5.webp",
+      "x": 58,
+      "y": 35,
+      "width": 16,
+      "height": 16,
+      "engine": [
+        "images/shared-0-sheet5.webp",
+        2392,
+        58,
+        35,
+        16,
+        16,
+        false
+      ]
+    },
+    "animations": null,
+    "engine": [
+      "par_smoke",
+      11,
+      false,
+      null,
+      0,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      477767212547629,
+      [],
+      null,
+      29,
+      null
+    ]
+  },
+  {
+    "name": "Ghost",
+    "plugin": "C3.Plugins.Sprite",
+    "variables": [
+      {
+        "name": "State",
+        "engine": [
+          276697068496548,
+          2,
+          "State",
+          30
+        ]
+      }
+    ],
+    "behaviors": [
+      {
+        "name": "MoveTo",
+        "engine": [
+          "MoveTo",
+          13,
+          314091367168239,
+          31
+        ]
+      },
+      {
+        "name": "DragDrop",
+        "engine": [
+          "DragDrop",
+          4,
+          511889472158076,
+          5
+        ]
+      }
+    ],
+    "texture": null,
+    "animations": [
+      {
+        "name": "Animation 1",
+        "speed": 8,
+        "loop": true,
+        "frames": [
+          {
+            "asset": "images/shared-0-sheet5.webp",
+            "x": 1,
+            "y": 51,
+            "width": 16,
+            "height": 16,
+            "engine": [
+              "images/shared-0-sheet5.webp",
+              2392,
+              1,
+              51,
+              16,
+              16,
+              false,
+              1,
+              0.5,
+              1,
+              [],
+              [
+                -0.1875,
+                -0.9375,
+                0.1875,
+                -0.9375,
+                0.375,
+                -0.75,
+                0.375,
+                -0.1875,
+                0.25,
+                -0.0625,
+                -0.25,
+                -0.0625,
+                -0.375,
+                -0.1875,
+                -0.375,
+                -0.75
+              ],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 1
+          },
+          {
+            "asset": "images/shared-0-sheet5.webp",
+            "x": 58,
+            "y": 53,
+            "width": 16,
+            "height": 16,
+            "engine": [
+              "images/shared-0-sheet5.webp",
+              2392,
+              58,
+              53,
+              16,
+              16,
+              false,
+              1,
+              0.5,
+              1,
+              [],
+              [
+                -0.1875,
+                -1,
+                0.1875,
+                -1,
+                0.375,
+                -0.8125,
+                0.375,
+                -0.25,
+                0.25,
+                -0.125,
+                -0.1875,
+                -0.125,
+                -0.3125,
+                -0.1875,
+                -0.375,
+                -0.25,
+                -0.375,
+                -0.8125
+              ],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 1
+          },
+          {
+            "asset": "images/shared-0-sheet5.webp",
+            "x": 76,
+            "y": 53,
+            "width": 16,
+            "height": 16,
+            "engine": [
+              "images/shared-0-sheet5.webp",
+              2392,
+              76,
+              53,
+              16,
+              16,
+              false,
+              1,
+              0.5,
+              1,
+              [],
+              [
+                -0.1875,
+                -1,
+                0.1875,
+                -1,
+                0.375,
+                -0.8125,
+                0.375,
+                -0.25,
+                0.25,
+                -0.125,
+                -0.1875,
+                -0.125,
+                -0.3125,
+                -0.1875,
+                -0.375,
+                -0.25,
+                -0.375,
+                -0.8125
+              ],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 1
+          },
+          {
+            "asset": "images/shared-0-sheet5.webp",
+            "x": 32,
+            "y": 57,
+            "width": 16,
+            "height": 16,
+            "engine": [
+              "images/shared-0-sheet5.webp",
+              2392,
+              32,
+              57,
+              16,
+              16,
+              false,
+              1,
+              0.5,
+              1,
+              [],
+              [
+                -0.1875,
+                -0.9375,
+                0.1875,
+                -0.9375,
+                0.375,
+                -0.75,
+                0.375,
+                -0.1875,
+                0.25,
+                -0.0625,
+                -0.25,
+                -0.0625,
+                -0.375,
+                -0.1875,
+                -0.375,
+                -0.75
+              ],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 1
+          },
+          {
+            "asset": "images/shared-0-sheet5.webp",
+            "x": 97,
+            "y": 63,
+            "width": 16,
+            "height": 16,
+            "engine": [
+              "images/shared-0-sheet5.webp",
+              2392,
+              97,
+              63,
+              16,
+              16,
+              false,
+              1,
+              0.5,
+              1,
+              [],
+              [
+                -0.1875,
+                -0.875,
+                0.1875,
+                -0.875,
+                0.375,
+                -0.6875,
+                0.375,
+                -0.125,
+                0.3125,
+                -0.0625,
+                0.1875,
+                0,
+                -0.25,
+                0,
+                -0.375,
+                -0.125,
+                -0.375,
+                -0.6875
+              ],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 1
+          },
+          {
+            "asset": "images/shared-0-sheet5.webp",
+            "x": 1,
+            "y": 69,
+            "width": 16,
+            "height": 16,
+            "engine": [
+              "images/shared-0-sheet5.webp",
+              2392,
+              1,
+              69,
+              16,
+              16,
+              false,
+              1,
+              0.5,
+              1,
+              [],
+              [
+                -0.1875,
+                -0.875,
+                0.1875,
+                -0.875,
+                0.375,
+                -0.6875,
+                0.375,
+                -0.125,
+                0.25,
+                0,
+                -0.25,
+                0,
+                -0.375,
+                -0.125,
+                -0.375,
+                -0.6875
+              ],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 1
+          }
+        ],
+        "engine": [
+          "Animation 1",
+          8,
+          true,
+          1,
+          0,
+          false,
+          126031548681133,
+          []
+        ]
+      }
+    ],
+    "engine": [
+      "Ghost",
+      2,
+      false,
+      null,
+      2,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      323363072775209,
+      [],
+      null,
+      32,
+      null
+    ]
+  },
+  {
+    "name": "Camera",
+    "plugin": "C3.Plugins.Sprite",
+    "variables": [],
+    "behaviors": [
+      {
+        "name": "ScrollTo",
+        "engine": [
+          "ScrollTo",
+          14,
+          805432498176793,
+          33
+        ]
+      }
+    ],
+    "texture": null,
+    "animations": [
+      {
+        "name": "Animation 1",
+        "speed": 5,
+        "loop": false,
+        "frames": [
+          {
+            "asset": "images/shared-0-sheet5.webp",
+            "x": 97,
+            "y": 45,
+            "width": 16,
+            "height": 16,
+            "engine": [
+              "images/shared-0-sheet5.webp",
+              2392,
+              97,
+              45,
+              16,
+              16,
+              false,
+              1,
+              0.5,
+              0.5,
+              [],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5
+          }
+        ],
+        "engine": [
+          "Animation 1",
+          5,
+          false,
+          1,
+          0,
+          false,
+          956197323982783,
+          []
+        ]
+      }
+    ],
+    "engine": [
+      "Camera",
+      2,
+      false,
+      null,
+      1,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      534567392180855,
+      [],
+      null,
+      34,
+      null
+    ]
+  },
+  {
+    "name": "Sprite2",
+    "plugin": "C3.Plugins.Sprite",
+    "variables": [],
+    "behaviors": [],
+    "texture": null,
+    "animations": [
+      {
+        "name": "Animation 1",
+        "speed": 5,
+        "loop": false,
+        "frames": [
+          {
+            "asset": "images/shared-0-sheet3.webp",
+            "x": 495,
+            "y": 257,
+            "width": 250,
+            "height": 250,
+            "engine": [
+              "images/shared-0-sheet3.webp",
+              16166,
+              495,
+              257,
+              250,
+              250,
+              false,
+              1,
+              0.5,
+              0.5,
+              [],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5
+          }
+        ],
+        "engine": [
+          "Animation 1",
+          5,
+          false,
+          1,
+          0,
+          false,
+          123693266447612,
+          []
+        ]
+      }
+    ],
+    "engine": [
+      "Sprite2",
+      2,
+      false,
+      null,
+      0,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      784535241052059,
+      [],
+      null,
+      35,
+      null
+    ]
+  },
+  {
+    "name": "spr_ceilling",
+    "plugin": "C3.Plugins.TiledBg",
+    "variables": [],
+    "behaviors": [
+      {
+        "name": "Tween",
+        "engine": [
+          "Tween",
+          9,
+          368752059340518,
+          16
+        ]
+      }
+    ],
+    "texture": {
+      "asset": "images/spr_ceilling-sheet0.webp",
+      "x": 0,
+      "y": 0,
+      "width": 16,
+      "height": 16,
+      "engine": [
+        "images/spr_ceilling-sheet0.webp",
+        624,
+        0,
+        0,
+        16,
+        16,
+        false
+      ]
+    },
+    "animations": null,
+    "engine": [
+      "spr_ceilling",
+      12,
+      false,
+      null,
+      1,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      775374744002713,
+      [],
+      null,
+      36,
+      [
+        1,
+        1
+      ]
+    ]
+  },
+  {
+    "name": "spr_fire",
+    "plugin": "C3.Plugins.Sprite",
+    "variables": [],
+    "behaviors": [],
+    "texture": null,
+    "animations": [
+      {
+        "name": "Animation 1",
+        "speed": 10,
+        "loop": true,
+        "frames": [
+          {
+            "asset": "images/spr_fire-sheet0.webp",
+            "x": 1,
+            "y": 1,
+            "width": 16,
+            "height": 16,
+            "engine": [
+              "images/spr_fire-sheet0.webp",
+              862,
+              1,
+              1,
+              16,
+              16,
+              false,
+              1,
+              0.5,
+              0.5,
+              [],
+              [
+                -0.3125,
+                -0.1875,
+                0.3125,
+                -0.1875,
+                0.3125,
+                0.5,
+                -0.3125,
+                0.5
+              ],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5
+          },
+          {
+            "asset": "images/spr_fire-sheet0.webp",
+            "x": 19,
+            "y": 1,
+            "width": 16,
+            "height": 16,
+            "engine": [
+              "images/spr_fire-sheet0.webp",
+              862,
+              19,
+              1,
+              16,
+              16,
+              false,
+              1,
+              0.5,
+              0.5,
+              [],
+              [
+                -0.3125,
+                -0.1875,
+                0.3125,
+                -0.1875,
+                0.3125,
+                0.5,
+                -0.3125,
+                0.5
+              ],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5
+          },
+          {
+            "asset": "images/spr_fire-sheet0.webp",
+            "x": 37,
+            "y": 1,
+            "width": 16,
+            "height": 16,
+            "engine": [
+              "images/spr_fire-sheet0.webp",
+              862,
+              37,
+              1,
+              16,
+              16,
+              false,
+              1,
+              0.5,
+              0.5,
+              [],
+              [
+                -0.3125,
+                -0.1875,
+                0.3125,
+                -0.1875,
+                0.3125,
+                0.5,
+                -0.3125,
+                0.5
+              ],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5
+          },
+          {
+            "asset": "images/spr_fire-sheet0.webp",
+            "x": 1,
+            "y": 19,
+            "width": 16,
+            "height": 16,
+            "engine": [
+              "images/spr_fire-sheet0.webp",
+              862,
+              1,
+              19,
+              16,
+              16,
+              false,
+              1,
+              0.5,
+              0.5,
+              [],
+              [
+                -0.3125,
+                -0.1875,
+                0.3125,
+                -0.1875,
+                0.3125,
+                0.5,
+                -0.3125,
+                0.5
+              ],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5
+          },
+          {
+            "asset": "images/spr_fire-sheet0.webp",
+            "x": 19,
+            "y": 19,
+            "width": 16,
+            "height": 16,
+            "engine": [
+              "images/spr_fire-sheet0.webp",
+              862,
+              19,
+              19,
+              16,
+              16,
+              false,
+              1,
+              0.5,
+              0.5,
+              [],
+              [
+                -0.3125,
+                -0.1875,
+                0.3125,
+                -0.1875,
+                0.3125,
+                0.5,
+                -0.3125,
+                0.5
+              ],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5
+          },
+          {
+            "asset": "images/spr_fire-sheet0.webp",
+            "x": 37,
+            "y": 33,
+            "width": 16,
+            "height": 16,
+            "engine": [
+              "images/spr_fire-sheet0.webp",
+              862,
+              37,
+              33,
+              16,
+              16,
+              false,
+              1,
+              0.5,
+              0.5,
+              [],
+              [
+                -0.3125,
+                -0.1875,
+                0.3125,
+                -0.1875,
+                0.3125,
+                0.5,
+                -0.3125,
+                0.5
+              ],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5
+          },
+          {
+            "asset": "images/spr_fire-sheet0.webp",
+            "x": 1,
+            "y": 37,
+            "width": 16,
+            "height": 16,
+            "engine": [
+              "images/spr_fire-sheet0.webp",
+              862,
+              1,
+              37,
+              16,
+              16,
+              false,
+              1,
+              0.5,
+              0.5,
+              [],
+              [
+                -0.3125,
+                -0.1875,
+                0.3125,
+                -0.1875,
+                0.3125,
+                0.5,
+                -0.3125,
+                0.5
+              ],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5
+          },
+          {
+            "asset": "images/spr_fire-sheet0.webp",
+            "x": 19,
+            "y": 37,
+            "width": 16,
+            "height": 16,
+            "engine": [
+              "images/spr_fire-sheet0.webp",
+              862,
+              19,
+              37,
+              16,
+              16,
+              false,
+              1,
+              0.5,
+              0.5,
+              [],
+              [
+                -0.3125,
+                -0.1875,
+                0.3125,
+                -0.1875,
+                0.3125,
+                0.5,
+                -0.3125,
+                0.5
+              ],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5
+          }
+        ],
+        "engine": [
+          "Animation 1",
+          10,
+          true,
+          1,
+          0,
+          false,
+          721128510782157,
+          []
+        ]
+      }
+    ],
+    "engine": [
+      "spr_fire",
+      2,
+      false,
+      null,
+      0,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      672346421474094,
+      [],
+      null,
+      37,
+      null
+    ]
+  },
+  {
+    "name": "spr_fall_spike",
+    "plugin": "C3.Plugins.Sprite",
+    "variables": [],
+    "behaviors": [
+      {
+        "name": "Tween",
+        "engine": [
+          "Tween",
+          9,
+          149320681954982,
+          16
+        ]
+      }
+    ],
+    "texture": null,
+    "animations": [
+      {
+        "name": "Animation 1",
+        "speed": 5,
+        "loop": false,
+        "frames": [
+          {
+            "asset": "images/shared-0-sheet4.webp",
+            "x": 170,
+            "y": 43,
+            "width": 64,
+            "height": 16,
+            "engine": [
+              "images/shared-0-sheet4.webp",
+              3200,
+              170,
+              43,
+              64,
+              16,
+              true,
+              1,
+              0.5,
+              0.5,
+              [],
+              [
+                -0.5,
+                0.125,
+                0.5,
+                0.125,
+                0.5,
+                0.5,
+                -0.5,
+                0.5
+              ],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5
+          }
+        ],
+        "engine": [
+          "Animation 1",
+          5,
+          false,
+          1,
+          0,
+          false,
+          567037765016202,
+          []
+        ]
+      }
+    ],
+    "engine": [
+      "spr_fall_spike",
+      2,
+      false,
+      null,
+      1,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      731229421869248,
+      [],
+      null,
+      38,
+      null
+    ]
+  },
+  {
+    "name": "Player_Clone",
+    "plugin": "C3.Plugins.Sprite",
+    "variables": [],
+    "behaviors": [],
+    "texture": null,
+    "animations": [
+      {
+        "name": "Run",
+        "speed": 10,
+        "loop": true,
+        "frames": [
+          {
+            "asset": "images/vladcat-sprites.png",
+            "x": 0,
+            "y": 32,
+            "width": 32,
+            "height": 32,
+            "engine": [
+              "images/player_clone-sheet0.webp",
+              1676,
+              69,
+              193,
+              32,
+              32,
+              false,
+              1,
+              0.5,
+              0.75,
+              [
+                [
+                  "Spawner_Effect",
+                  0.5,
+                  0.5
+                ]
+              ],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.75
+          },
+          {
+            "asset": "images/vladcat-sprites.png",
+            "x": 32,
+            "y": 32,
+            "width": 32,
+            "height": 32,
+            "engine": [
+              "images/player_clone-sheet0.webp",
+              1676,
+              35,
+              193,
+              32,
+              32,
+              false,
+              1,
+              0.5,
+              0.75,
+              [
+                [
+                  "Spawner_Effect",
+                  0.5,
+                  0.5
+                ]
+              ],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.75
+          },
+          {
+            "asset": "images/vladcat-sprites.png",
+            "x": 64,
+            "y": 32,
+            "width": 32,
+            "height": 32,
+            "engine": [
+              "images/player_clone-sheet0.webp",
+              1676,
+              1,
+              193,
+              32,
+              32,
+              false,
+              1,
+              0.5,
+              0.75,
+              [
+                [
+                  "Spawner_Effect",
+                  0.5,
+                  0.5
+                ]
+              ],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.75
+          },
+          {
+            "asset": "images/vladcat-sprites.png",
+            "x": 96,
+            "y": 32,
+            "width": 32,
+            "height": 32,
+            "engine": [
+              "images/player_clone-sheet0.webp",
+              1676,
+              69,
+              137,
+              32,
+              32,
+              false,
+              1,
+              0.5,
+              0.75,
+              [
+                [
+                  "Spawner_Effect",
+                  0.5,
+                  0.5
+                ]
+              ],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.75
+          },
+          {
+            "asset": "images/vladcat-sprites.png",
+            "x": 0,
+            "y": 64,
+            "width": 32,
+            "height": 32,
+            "engine": [
+              "images/player_clone-sheet0.webp",
+              1676,
+              35,
+              137,
+              32,
+              32,
+              false,
+              1,
+              0.5,
+              0.75,
+              [
+                [
+                  "Spawner_Effect",
+                  0.5,
+                  0.5
+                ]
+              ],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.75
+          },
+          {
+            "asset": "images/vladcat-sprites.png",
+            "x": 32,
+            "y": 64,
+            "width": 32,
+            "height": 32,
+            "engine": [
+              "images/player_clone-sheet0.webp",
+              1676,
+              1,
+              137,
+              32,
+              32,
+              false,
+              1,
+              0.5,
+              0.75,
+              [
+                [
+                  "Spawner_Effect",
+                  0.5,
+                  0.5
+                ]
+              ],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.75
+          },
+          {
+            "asset": "images/vladcat-sprites.png",
+            "x": 64,
+            "y": 64,
+            "width": 32,
+            "height": 32,
+            "engine": [
+              "images/player_clone-sheet0.webp",
+              1676,
+              69,
+              103,
+              32,
+              32,
+              false,
+              1,
+              0.5,
+              0.75,
+              [
+                [
+                  "Spawner_Effect",
+                  0.5,
+                  0.5
+                ]
+              ],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.75
+          }
+        ],
+        "engine": [
+          "Run",
+          10,
+          true,
+          1,
+          0,
+          false,
+          826154541580393,
+          []
+        ]
+      },
+      {
+        "name": "Idle",
+        "speed": 8,
+        "loop": true,
+        "frames": [
+          {
+            "asset": "images/vladcat-sprites.png",
+            "x": 0,
+            "y": 0,
+            "width": 32,
+            "height": 32,
+            "engine": [
+              "images/player_clone-sheet0.webp",
+              1676,
+              35,
+              103,
+              32,
+              32,
+              false,
+              1,
+              0.5,
+              0.75,
+              [
+                [
+                  "Spawner_Effect",
+                  0.5,
+                  0.5
+                ]
+              ],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.75
+          },
+          {
+            "asset": "images/vladcat-sprites.png",
+            "x": 32,
+            "y": 0,
+            "width": 32,
+            "height": 32,
+            "engine": [
+              "images/player_clone-sheet0.webp",
+              1676,
+              1,
+              103,
+              32,
+              32,
+              false,
+              1,
+              0.5,
+              0.75,
+              [
+                [
+                  "Spawner_Effect",
+                  0.5,
+                  0.5
+                ]
+              ],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.75
+          },
+          {
+            "asset": "images/vladcat-sprites.png",
+            "x": 64,
+            "y": 0,
+            "width": 32,
+            "height": 32,
+            "engine": [
+              "images/player_clone-sheet0.webp",
+              1676,
+              69,
+              69,
+              32,
+              32,
+              false,
+              1,
+              0.5,
+              0.75,
+              [
+                [
+                  "Spawner_Effect",
+                  0.5,
+                  0.5
+                ]
+              ],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.75
+          },
+          {
+            "asset": "images/vladcat-sprites.png",
+            "x": 96,
+            "y": 0,
+            "width": 32,
+            "height": 32,
+            "engine": [
+              "images/player_clone-sheet0.webp",
+              1676,
+              35,
+              69,
+              32,
+              32,
+              false,
+              1,
+              0.5,
+              0.75,
+              [
+                [
+                  "Spawner_Effect",
+                  0.5,
+                  0.5
+                ]
+              ],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.75
+          },
+          {
+            "asset": "images/vladcat-sprites.png",
+            "x": 64,
+            "y": 0,
+            "width": 32,
+            "height": 32,
+            "engine": [
+              "images/player_clone-sheet0.webp",
+              1676,
+              1,
+              69,
+              32,
+              32,
+              false,
+              1,
+              0.5,
+              0.75,
+              [
+                [
+                  "Spawner_Effect",
+                  0.5,
+                  0.5
+                ]
+              ],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.75
+          },
+          {
+            "asset": "images/vladcat-sprites.png",
+            "x": 32,
+            "y": 0,
+            "width": 32,
+            "height": 32,
+            "engine": [
+              "images/player_clone-sheet0.webp",
+              1676,
+              69,
+              35,
+              32,
+              32,
+              false,
+              1,
+              0.5,
+              0.75,
+              [
+                [
+                  "Spawner_Effect",
+                  0.5,
+                  0.5
+                ]
+              ],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.75
+          },
+          {
+            "asset": "images/vladcat-sprites.png",
+            "x": 0,
+            "y": 0,
+            "width": 32,
+            "height": 32,
+            "engine": [
+              "images/player_clone-sheet0.webp",
+              1676,
+              35,
+              35,
+              32,
+              32,
+              false,
+              1,
+              0.5,
+              0.75,
+              [
+                [
+                  "Spawner_Effect",
+                  0.5,
+                  0.5
+                ]
+              ],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.75
+          }
+        ],
+        "engine": [
+          "Idle",
+          8,
+          true,
+          1,
+          0,
+          false,
+          557770288539360,
+          []
+        ]
+      },
+      {
+        "name": "Jump",
+        "speed": 15,
+        "loop": false,
+        "frames": [
+          {
+            "asset": "images/vladcat-sprites.png",
+            "x": 0,
+            "y": 96,
+            "width": 32,
+            "height": 32,
+            "engine": [
+              "images/player_clone-sheet0.webp",
+              1676,
+              1,
+              35,
+              32,
+              32,
+              false,
+              1,
+              0.5,
+              0.75,
+              [
+                [
+                  "Spawner_Effect",
+                  0.5,
+                  0.5
+                ]
+              ],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.75
+          },
+          {
+            "asset": "images/vladcat-sprites.png",
+            "x": 32,
+            "y": 96,
+            "width": 32,
+            "height": 32,
+            "engine": [
+              "images/player_clone-sheet0.webp",
+              1676,
+              69,
+              1,
+              32,
+              32,
+              false,
+              1,
+              0.5,
+              0.75,
+              [
+                [
+                  "Spawner_Effect",
+                  0.5,
+                  0.5
+                ]
+              ],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.75
+          },
+          {
+            "asset": "images/vladcat-sprites.png",
+            "x": 64,
+            "y": 96,
+            "width": 32,
+            "height": 32,
+            "engine": [
+              "images/player_clone-sheet0.webp",
+              1676,
+              35,
+              1,
+              32,
+              32,
+              false,
+              1,
+              0.5,
+              0.75,
+              [
+                [
+                  "Spawner_Effect",
+                  0.5,
+                  0.5
+                ]
+              ],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.75
+          }
+        ],
+        "engine": [
+          "Jump",
+          15,
+          false,
+          1,
+          0,
+          false,
+          495447555053214,
+          []
+        ]
+      },
+      {
+        "name": "Fall",
+        "speed": 0,
+        "loop": false,
+        "frames": [
+          {
+            "asset": "images/vladcat-sprites.png",
+            "x": 96,
+            "y": 96,
+            "width": 32,
+            "height": 32,
+            "engine": [
+              "images/player_clone-sheet0.webp",
+              1676,
+              1,
+              1,
+              32,
+              32,
+              false,
+              1,
+              0.5,
+              0.75,
+              [
+                [
+                  "Spawner_Effect",
+                  0.5,
+                  0.5
+                ]
+              ],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.75
+          }
+        ],
+        "engine": [
+          "Fall",
+          0,
+          false,
+          1,
+          0,
+          false,
+          358808601518924,
+          []
+        ]
+      }
+    ],
+    "engine": [
+      "Player_Clone",
+      2,
+      false,
+      null,
+      0,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      329064857538899,
+      [],
+      null,
+      39,
+      null
+    ]
+  },
+  {
+    "name": "spr_player_key",
+    "plugin": "C3.Plugins.Sprite",
+    "variables": [],
+    "behaviors": [],
+    "texture": null,
+    "animations": [
+      {
+        "name": "Animation 1",
+        "speed": 5,
+        "loop": false,
+        "frames": [
+          {
+            "asset": "images/vladcat-key.png",
+            "x": 0,
+            "y": 0,
+            "width": 16,
+            "height": 16,
+            "engine": [
+              "images/shared-0-sheet5.webp",
+              2392,
+              76,
+              35,
+              16,
+              16,
+              false,
+              1,
+              0.5,
+              1,
+              [],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 1
+          }
+        ],
+        "engine": [
+          "Animation 1",
+          5,
+          false,
+          1,
+          0,
+          false,
+          656333303542455,
+          []
+        ]
+      }
+    ],
+    "engine": [
+      "spr_player_key",
+      2,
+      false,
+      null,
+      0,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      125633706929968,
+      [],
+      null,
+      40,
+      null
+    ]
+  },
+  {
+    "name": "Pause_Btn",
+    "plugin": "C3.Plugins.Sprite",
+    "variables": [
+      {
+        "name": "ButtonClicked",
+        "engine": [
+          852885414646070,
+          0,
+          "ButtonClicked",
+          41
+        ]
+      }
+    ],
+    "behaviors": [],
+    "texture": null,
+    "animations": [
+      {
+        "name": "Animation 1",
+        "speed": 0,
+        "loop": false,
+        "frames": [
+          {
+            "asset": "images/shared-0-sheet4.webp",
+            "x": 206,
+            "y": 65,
+            "width": 32,
+            "height": 32,
+            "engine": [
+              "images/shared-0-sheet4.webp",
+              3200,
+              206,
+              65,
+              32,
+              32,
+              false,
+              1,
+              0.5,
+              0.5,
+              [],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5
+          }
+        ],
+        "engine": [
+          "Animation 1",
+          0,
+          false,
+          1,
+          0,
+          false,
+          251310552175308,
+          []
+        ]
+      }
+    ],
+    "engine": [
+      "Pause_Btn",
+      2,
+      false,
+      null,
+      0,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      992842234637392,
+      [],
+      null,
+      42,
+      null
+    ]
+  },
+  {
+    "name": "Restart_Btn",
+    "plugin": "C3.Plugins.Sprite",
+    "variables": [
+      {
+        "name": "ButtonClicked",
+        "engine": [
+          816570876294363,
+          0,
+          "ButtonClicked",
+          41
+        ]
+      }
+    ],
+    "behaviors": [],
+    "texture": null,
+    "animations": [
+      {
+        "name": "Animation 1",
+        "speed": 0,
+        "loop": false,
+        "frames": [
+          {
+            "asset": "images/shared-0-sheet4.webp",
+            "x": 129,
+            "y": 66,
+            "width": 32,
+            "height": 32,
+            "engine": [
+              "images/shared-0-sheet4.webp",
+              3200,
+              129,
+              66,
+              32,
+              32,
+              false,
+              1,
+              0.5,
+              0.5,
+              [],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5
+          }
+        ],
+        "engine": [
+          "Animation 1",
+          0,
+          false,
+          1,
+          0,
+          false,
+          422501367547124,
+          []
+        ]
+      }
+    ],
+    "engine": [
+      "Restart_Btn",
+      2,
+      false,
+      null,
+      0,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      194423293495204,
+      [],
+      null,
+      43,
+      null
+    ]
+  },
+  {
+    "name": "Pause_bg",
+    "plugin": "C3.Plugins.NinePatch",
+    "variables": [],
+    "behaviors": [
+      {
+        "name": "Tween",
+        "engine": [
+          "Tween",
+          9,
+          473781595148221,
+          16
+        ]
+      }
+    ],
+    "texture": {
+      "asset": "images/shared-0-sheet4.webp",
+      "x": 65,
+      "y": 129,
+      "width": 32,
+      "height": 32,
+      "engine": [
+        "images/shared-0-sheet4.webp",
+        3200,
+        65,
+        129,
+        32,
+        32,
+        false
+      ]
+    },
+    "animations": null,
+    "engine": [
+      "Pause_bg",
+      15,
+      false,
+      null,
+      1,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      399061636770230,
+      [],
+      null,
+      44,
+      null
+    ]
+  },
+  {
+    "name": "resume_btn",
+    "plugin": "C3.Plugins.Sprite",
+    "variables": [],
+    "behaviors": [],
+    "texture": null,
+    "animations": [
+      {
+        "name": "Animation 1",
+        "speed": 5,
+        "loop": false,
+        "frames": [
+          {
+            "asset": "images/shared-0-sheet4.webp",
+            "x": 61,
+            "y": 1,
+            "width": 64,
+            "height": 64,
+            "engine": [
+              "images/shared-0-sheet4.webp",
+              3200,
+              61,
+              1,
+              64,
+              64,
+              false,
+              1,
+              0.5,
+              0.5,
+              [],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5
+          }
+        ],
+        "engine": [
+          "Animation 1",
+          5,
+          false,
+          1,
+          0,
+          false,
+          168240960844335,
+          []
+        ]
+      }
+    ],
+    "engine": [
+      "resume_btn",
+      2,
+      false,
+      null,
+      0,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      375161411143116,
+      [],
+      null,
+      45,
+      null
+    ]
+  },
+  {
+    "name": "Menu_Btn",
+    "plugin": "C3.Plugins.Sprite",
+    "variables": [],
+    "behaviors": [],
+    "texture": null,
+    "animations": [
+      {
+        "name": "Default",
+        "speed": 5,
+        "loop": false,
+        "frames": [
+          {
+            "asset": "images/shared-0-sheet4.webp",
+            "x": 163,
+            "y": 193,
+            "width": 32,
+            "height": 32,
+            "engine": [
+              "images/shared-0-sheet4.webp",
+              3200,
+              163,
+              193,
+              32,
+              32,
+              false,
+              1,
+              0.5,
+              0.5,
+              [],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5
+          }
+        ],
+        "engine": [
+          "Default",
+          5,
+          false,
+          1,
+          0,
+          false,
+          874673210697165,
+          []
+        ]
+      }
+    ],
+    "engine": [
+      "Menu_Btn",
+      2,
+      false,
+      null,
+      0,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      340645973670197,
+      [],
+      null,
+      46,
+      null
+    ]
+  },
+  {
+    "name": "Audio_Btn",
+    "plugin": "C3.Plugins.Sprite",
+    "variables": [],
+    "behaviors": [],
+    "texture": null,
+    "animations": [
+      {
+        "name": "Audio",
+        "speed": 0,
+        "loop": false,
+        "frames": [
+          {
+            "asset": "images/shared-0-sheet4.webp",
+            "x": 193,
+            "y": 129,
+            "width": 32,
+            "height": 32,
+            "engine": [
+              "images/shared-0-sheet4.webp",
+              3200,
+              193,
+              129,
+              32,
+              32,
+              false,
+              1,
+              0.5,
+              0.5,
+              [],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5
+          },
+          {
+            "asset": "images/shared-0-sheet4.webp",
+            "x": 129,
+            "y": 129,
+            "width": 32,
+            "height": 32,
+            "engine": [
+              "images/shared-0-sheet4.webp",
+              3200,
+              129,
+              129,
+              32,
+              32,
+              false,
+              1,
+              0.5,
+              0.5,
+              [],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5
+          }
+        ],
+        "engine": [
+          "Audio",
+          0,
+          false,
+          1,
+          0,
+          false,
+          111396577830532,
+          []
+        ]
+      }
+    ],
+    "engine": [
+      "Audio_Btn",
+      2,
+      false,
+      null,
+      0,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      845207979291835,
+      [],
+      null,
+      47,
+      null
+    ]
+  },
+  {
+    "name": "Music_Btn",
+    "plugin": "C3.Plugins.Sprite",
+    "variables": [],
+    "behaviors": [],
+    "texture": null,
+    "animations": [
+      {
+        "name": "Music",
+        "speed": 0,
+        "loop": false,
+        "frames": [
+          {
+            "asset": "images/shared-0-sheet4.webp",
+            "x": 129,
+            "y": 193,
+            "width": 32,
+            "height": 32,
+            "engine": [
+              "images/shared-0-sheet4.webp",
+              3200,
+              129,
+              193,
+              32,
+              32,
+              false,
+              1,
+              0.5,
+              0.5,
+              [],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5
+          },
+          {
+            "asset": "images/shared-0-sheet4.webp",
+            "x": 1,
+            "y": 193,
+            "width": 32,
+            "height": 32,
+            "engine": [
+              "images/shared-0-sheet4.webp",
+              3200,
+              1,
+              193,
+              32,
+              32,
+              false,
+              1,
+              0.5,
+              0.5,
+              [],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5
+          }
+        ],
+        "engine": [
+          "Music",
+          0,
+          false,
+          1,
+          0,
+          false,
+          859412918118002,
+          []
+        ]
+      }
+    ],
+    "engine": [
+      "Music_Btn",
+      2,
+      false,
+      null,
+      0,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      822601293709288,
+      [],
+      null,
+      48,
+      null
+    ]
+  },
+  {
+    "name": "Menu_bg_black",
+    "plugin": "C3.Plugins.TiledBg",
+    "variables": [],
+    "behaviors": [
+      {
+        "name": "Tween",
+        "engine": [
+          "Tween",
+          9,
+          765261732316743,
+          16
+        ]
+      }
+    ],
+    "texture": {
+      "asset": "images/menu_bg_black-sheet0.webp",
+      "x": 0,
+      "y": 0,
+      "width": 16,
+      "height": 16,
+      "engine": [
+        "images/menu_bg_black-sheet0.webp",
+        516,
+        0,
+        0,
+        16,
+        16,
+        false
+      ]
+    },
+    "animations": null,
+    "engine": [
+      "Menu_bg_black",
+      12,
+      false,
+      null,
+      1,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      497078133063446,
+      [],
+      null,
+      49,
+      [
+        1,
+        1
+      ]
+    ]
+  },
+  {
+    "name": "Audio",
+    "plugin": "C3.Plugins.Audio",
+    "variables": [],
+    "behaviors": [],
+    "texture": null,
+    "animations": null,
+    "engine": [
+      "Audio",
+      16,
+      false,
+      null,
+      0,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      919718963192089,
+      [],
+      null,
+      50,
+      null,
+      [
+        0,
+        0,
+        false,
+        0,
+        true,
+        1,
+        1,
+        600,
+        600,
+        10000,
+        1
+      ]
+    ]
+  },
+  {
+    "name": "LocalStorage",
+    "plugin": "C3.Plugins.LocalStorage",
+    "variables": [],
+    "behaviors": [],
+    "texture": null,
+    "animations": null,
+    "engine": [
+      "LocalStorage",
+      17,
+      false,
+      null,
+      0,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      606619129086197,
+      [],
+      null,
+      51,
+      null,
+      [
+        false
+      ]
+    ]
+  },
+  {
+    "name": "FadeSprite",
+    "plugin": "C3.Plugins.Sprite",
+    "variables": [],
+    "behaviors": [
+      {
+        "name": "Tween",
+        "engine": [
+          "Tween",
+          9,
+          463877647939369,
+          16
+        ]
+      }
+    ],
+    "texture": null,
+    "animations": [
+      {
+        "name": "Animation 1",
+        "speed": 5,
+        "loop": false,
+        "frames": [
+          {
+            "asset": "images/shared-0-sheet3.webp",
+            "x": 243,
+            "y": 257,
+            "width": 250,
+            "height": 250,
+            "engine": [
+              "images/shared-0-sheet3.webp",
+              16166,
+              243,
+              257,
+              250,
+              250,
+              false,
+              1,
+              0.5,
+              0.5,
+              [],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5
+          }
+        ],
+        "engine": [
+          "Animation 1",
+          5,
+          false,
+          1,
+          0,
+          false,
+          967196978449227,
+          []
+        ]
+      }
+    ],
+    "engine": [
+      "FadeSprite",
+      2,
+      false,
+      null,
+      1,
+      0,
+      null,
+      null,
+      null,
+      true,
+      false,
+      993640250122878,
+      [],
+      null,
+      52,
+      null
+    ]
+  },
+  {
+    "name": "spr_secret_wall",
+    "plugin": "C3.Plugins.TiledBg",
+    "variables": [],
+    "behaviors": [],
+    "texture": {
+      "asset": "images/spr_secret_wall-sheet0.webp",
+      "x": 0,
+      "y": 0,
+      "width": 16,
+      "height": 16,
+      "engine": [
+        "images/spr_secret_wall-sheet0.webp",
+        626,
+        0,
+        0,
+        16,
+        16,
+        false
+      ]
+    },
+    "animations": null,
+    "engine": [
+      "spr_secret_wall",
+      12,
+      false,
+      null,
+      0,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      595945818556618,
+      [],
+      null,
+      53,
+      [
+        1,
+        1
+      ]
+    ]
+  },
+  {
+    "name": "spr_border",
+    "plugin": "C3.Plugins.TiledBg",
+    "variables": [],
+    "behaviors": [
+      {
+        "name": "Solid",
+        "engine": [
+          "Solid",
+          1,
+          782447094966606,
+          0
+        ]
+      }
+    ],
+    "texture": {
+      "asset": "images/spr_border-sheet0.webp",
+      "x": 0,
+      "y": 0,
+      "width": 16,
+      "height": 16,
+      "engine": [
+        "images/spr_border-sheet0.webp",
+        520,
+        0,
+        0,
+        16,
+        16,
+        false
+      ]
+    },
+    "animations": null,
+    "engine": [
+      "spr_border",
+      12,
+      false,
+      null,
+      1,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      140449566446909,
+      [],
+      null,
+      54,
+      [
+        1,
+        1
+      ]
+    ]
+  },
+  {
+    "name": "TiledBackground",
+    "plugin": "C3.Plugins.TiledBg",
+    "variables": [],
+    "behaviors": [],
+    "texture": {
+      "asset": "images/tiledbackground-sheet0.webp",
+      "x": 0,
+      "y": 0,
+      "width": 16,
+      "height": 16,
+      "engine": [
+        "images/tiledbackground-sheet0.webp",
+        520,
+        0,
+        0,
+        16,
+        16,
+        false
+      ]
+    },
+    "animations": null,
+    "engine": [
+      "TiledBackground",
+      12,
+      false,
+      null,
+      0,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      699876174581449,
+      [],
+      null,
+      55,
+      [
+        1,
+        1
+      ]
+    ]
+  },
+  {
+    "name": "Sprite",
+    "plugin": "C3.Plugins.Sprite",
+    "variables": [],
+    "behaviors": [],
+    "texture": null,
+    "animations": [
+      {
+        "name": "Animation 1",
+        "speed": 10,
+        "loop": true,
+        "frames": [
+          {
+            "asset": "images/vladcat-title.png",
+            "x": 0,
+            "y": 0,
+            "width": 142,
+            "height": 58,
+            "engine": [
+              "images/shared-0-sheet4.webp",
+              3200,
+              1,
+              1,
+              142,
+              58,
+              false,
+              1,
+              0.5,
+              0.5,
+              [],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5
+          }
+        ],
+        "engine": [
+          "Animation 1",
+          10,
+          true,
+          1,
+          0,
+          false,
+          273030913912043,
+          []
+        ]
+      },
+      {
+        "name": "Victory",
+        "speed": 0,
+        "loop": false,
+        "frames": [
+          {
+            "asset": "../vladcat/vladcat-ending.webp",
+            "x": 0,
+            "y": 0,
+            "width": 1672,
+            "height": 941,
+            "engine": [
+              "images/shared-0-sheet4.webp",
+              510952,
+              1,
+              1,
+              142,
+              58,
+              false,
+              1,
+              0.5,
+              0.5,
+              [],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5
+          }
+        ],
+        "engine": [
+          "Animation 1",
+          10,
+          true,
+          1,
+          0,
+          false,
+          320706501006171,
+          []
+        ]
+      }
+    ],
+    "engine": [
+      "Sprite",
+      2,
+      false,
+      null,
+      0,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      132828993413423,
+      [],
+      null,
+      56,
+      null
+    ]
+  },
+  {
+    "name": "9patch",
+    "plugin": "C3.Plugins.NinePatch",
+    "variables": [],
+    "behaviors": [
+      {
+        "name": "Sine",
+        "engine": [
+          "Sine",
+          18,
+          596818953109654,
+          57
+        ]
+      }
+    ],
+    "texture": {
+      "asset": "images/vladcat-panel.png",
+      "x": 0,
+      "y": 0,
+      "width": 32,
+      "height": 32,
+      "engine": [
+        "images/shared-0-sheet4.webp",
+        3200,
+        197,
+        193,
+        32,
+        32,
+        false
+      ]
+    },
+    "animations": null,
+    "engine": [
+      "9patch",
+      15,
+      false,
+      null,
+      1,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      385425170615711,
+      [],
+      null,
+      58,
+      null
+    ]
+  },
+  {
+    "name": "Sprite3",
+    "plugin": "C3.Plugins.Sprite",
+    "variables": [],
+    "behaviors": [
+      {
+        "name": "Sine",
+        "engine": [
+          "Sine",
+          18,
+          800038459626225,
+          57
+        ]
+      }
+    ],
+    "texture": null,
+    "animations": [
+      {
+        "name": "Animation 1",
+        "speed": 5,
+        "loop": false,
+        "frames": [
+          {
+            "asset": "images/shared-0-sheet5.webp",
+            "x": 107,
+            "y": 1,
+            "width": 16,
+            "height": 24,
+            "engine": [
+              "images/shared-0-sheet5.webp",
+              2392,
+              107,
+              1,
+              16,
+              24,
+              false,
+              1,
+              0.5,
+              0,
+              [],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0
+          }
+        ],
+        "engine": [
+          "Animation 1",
+          5,
+          false,
+          1,
+          0,
+          false,
+          409804425507034,
+          []
+        ]
+      }
+    ],
+    "engine": [
+      "Sprite3",
+      2,
+      false,
+      null,
+      1,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      411197957981007,
+      [],
+      null,
+      59,
+      null
+    ]
+  },
+  {
+    "name": "spr_txt_new_game",
+    "plugin": "C3.Plugins.Sprite",
+    "variables": [],
+    "behaviors": [
+      {
+        "name": "Flash",
+        "engine": [
+          "Flash",
+          19,
+          812501539261774,
+          60
+        ]
+      }
+    ],
+    "texture": null,
+    "animations": [
+      {
+        "name": "Animation 1",
+        "speed": 0,
+        "loop": false,
+        "frames": [
+          {
+            "asset": "images/shared-0-sheet5.webp",
+            "x": 32,
+            "y": 1,
+            "width": 54,
+            "height": 11,
+            "engine": [
+              "images/shared-0-sheet5.webp",
+              2392,
+              32,
+              1,
+              54,
+              11,
+              true,
+              1,
+              0.5,
+              0.5,
+              [],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5
+          }
+        ],
+        "engine": [
+          "Animation 1",
+          0,
+          false,
+          1,
+          0,
+          false,
+          159349155834470,
+          []
+        ]
+      }
+    ],
+    "engine": [
+      "spr_txt_new_game",
+      2,
+      false,
+      null,
+      1,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      585263837181669,
+      [],
+      null,
+      61,
+      null
+    ]
+  },
+  {
+    "name": "spr_txt_continue",
+    "plugin": "C3.Plugins.Sprite",
+    "variables": [],
+    "behaviors": [
+      {
+        "name": "Flash",
+        "engine": [
+          "Flash",
+          19,
+          174353303397268,
+          60
+        ]
+      }
+    ],
+    "texture": null,
+    "animations": [
+      {
+        "name": "Animation 1",
+        "speed": 0,
+        "loop": false,
+        "frames": [
+          {
+            "asset": "images/shared-0-sheet5.webp",
+            "x": 19,
+            "y": 1,
+            "width": 55,
+            "height": 11,
+            "engine": [
+              "images/shared-0-sheet5.webp",
+              2392,
+              19,
+              1,
+              55,
+              11,
+              true,
+              1,
+              0.5,
+              0.5,
+              [],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5
+          }
+        ],
+        "engine": [
+          "Animation 1",
+          0,
+          false,
+          1,
+          0,
+          false,
+          815052326277705,
+          []
+        ]
+      }
+    ],
+    "engine": [
+      "spr_txt_continue",
+      2,
+      false,
+      null,
+      1,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      947300757533221,
+      [],
+      null,
+      62,
+      null
+    ]
+  },
+  {
+    "name": "spr_txt_Quit",
+    "plugin": "C3.Plugins.Sprite",
+    "variables": [],
+    "behaviors": [
+      {
+        "name": "Flash",
+        "engine": [
+          "Flash",
+          19,
+          445572195446515,
+          60
+        ]
+      }
+    ],
+    "texture": null,
+    "animations": [
+      {
+        "name": "Animation 1",
+        "speed": 0,
+        "loop": false,
+        "frames": [
+          {
+            "asset": "images/shared-0-sheet5.webp",
+            "x": 45,
+            "y": 27,
+            "width": 28,
+            "height": 11,
+            "engine": [
+              "images/shared-0-sheet5.webp",
+              2392,
+              45,
+              27,
+              28,
+              11,
+              true,
+              1,
+              0.5,
+              0.5,
+              [],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5
+          }
+        ],
+        "engine": [
+          "Animation 1",
+          0,
+          false,
+          1,
+          0,
+          false,
+          602611423683323,
+          []
+        ]
+      }
+    ],
+    "engine": [
+      "spr_txt_Quit",
+      2,
+      false,
+      null,
+      1,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      976222724331243,
+      [],
+      null,
+      63,
+      null
+    ]
+  },
+  {
+    "name": "spr_button_Screen",
+    "plugin": "C3.Plugins.Sprite",
+    "variables": [
+      {
+        "name": "ButtonID",
+        "engine": [
+          786663832191512,
+          2,
+          "ButtonID",
+          64
+        ]
+      }
+    ],
+    "behaviors": [],
+    "texture": null,
+    "animations": [
+      {
+        "name": "Button_A",
+        "speed": 0,
+        "loop": false,
+        "frames": [
+          {
+            "asset": "images/shared-0-sheet4.webp",
+            "x": 170,
+            "y": 1,
+            "width": 40,
+            "height": 40,
+            "engine": [
+              "images/shared-0-sheet4.webp",
+              3200,
+              170,
+              1,
+              40,
+              40,
+              false,
+              1,
+              0.5,
+              0.5,
+              [],
+              [
+                -0.5,
+                -0.5,
+                0.1250000000000001,
+                -0.5,
+                0.5,
+                -0.1250000000000001,
+                0.5,
+                0.5,
+                -0.5,
+                0.5
+              ],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5
+          }
+        ],
+        "engine": [
+          "Button_A",
+          0,
+          false,
+          1,
+          0,
+          false,
+          646432218358956,
+          []
+        ]
+      },
+      {
+        "name": "Button_B",
+        "speed": 0,
+        "loop": false,
+        "frames": [
+          {
+            "asset": "images/shared-0-sheet4.webp",
+            "x": 212,
+            "y": 1,
+            "width": 40,
+            "height": 40,
+            "engine": [
+              "images/shared-0-sheet4.webp",
+              3200,
+              212,
+              1,
+              40,
+              40,
+              false,
+              1,
+              0.5,
+              0.5,
+              [],
+              [
+                -0.5,
+                -0.5,
+                0.5,
+                -0.5,
+                0.5,
+                0.5,
+                -0.1250000000000001,
+                0.5,
+                -0.5,
+                0.12499999999999989
+              ],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5
+          }
+        ],
+        "engine": [
+          "Button_B",
+          0,
+          false,
+          1,
+          0,
+          false,
+          290254608338055,
+          []
+        ]
+      }
+    ],
+    "engine": [
+      "spr_button_Screen",
+      2,
+      false,
+      null,
+      0,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      919189407718012,
+      [],
+      null,
+      65,
+      null
+    ]
+  },
+  {
+    "name": "Arrows",
+    "plugin": "C3.Plugins.Sprite",
+    "variables": [],
+    "behaviors": [],
+    "texture": null,
+    "animations": [
+      {
+        "name": "Animation 1",
+        "speed": 5,
+        "loop": false,
+        "frames": [
+          {
+            "asset": "images/shared-0-sheet4.webp",
+            "x": 127,
+            "y": 1,
+            "width": 63,
+            "height": 41,
+            "engine": [
+              "images/shared-0-sheet4.webp",
+              3200,
+              127,
+              1,
+              63,
+              41,
+              true,
+              1,
+              0.5,
+              0.5,
+              [],
+              [
+                0.5,
+                0.5,
+                -0.5,
+                0.5,
+                -0.5,
+                -0.5,
+                0.5,
+                -0.5
+              ],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5
+          }
+        ],
+        "engine": [
+          "Animation 1",
+          5,
+          false,
+          1,
+          0,
+          false,
+          642445475312207,
+          []
+        ]
+      }
+    ],
+    "engine": [
+      "Arrows",
+      2,
+      false,
+      null,
+      0,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      966722284673083,
+      [],
+      null,
+      66,
+      null
+    ]
+  },
+  {
+    "name": "Left_Button",
+    "plugin": "C3.Plugins.TiledBg",
+    "variables": [],
+    "behaviors": [],
+    "texture": {
+      "asset": "images/left_button-sheet0.webp",
+      "x": 0,
+      "y": 0,
+      "width": 16,
+      "height": 16,
+      "engine": [
+        "images/left_button-sheet0.webp",
+        520,
+        0,
+        0,
+        16,
+        16,
+        false
+      ]
+    },
+    "animations": null,
+    "engine": [
+      "Left_Button",
+      12,
+      false,
+      null,
+      0,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      963897988737831,
+      [],
+      null,
+      67,
+      [
+        1,
+        1
+      ]
+    ]
+  },
+  {
+    "name": "Right_Button",
+    "plugin": "C3.Plugins.TiledBg",
+    "variables": [],
+    "behaviors": [],
+    "texture": {
+      "asset": "images/right_button-sheet0.webp",
+      "x": 0,
+      "y": 0,
+      "width": 16,
+      "height": 16,
+      "engine": [
+        "images/right_button-sheet0.webp",
+        520,
+        0,
+        0,
+        16,
+        16,
+        false
+      ]
+    },
+    "animations": null,
+    "engine": [
+      "Right_Button",
+      12,
+      false,
+      null,
+      0,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      877241136594627,
+      [],
+      null,
+      68,
+      [
+        1,
+        1
+      ]
+    ]
+  },
+  {
+    "name": "Btn_skip_ad",
+    "plugin": "C3.Plugins.Sprite",
+    "variables": [
+      {
+        "name": "Btn_Pressed",
+        "engine": [
+          157161458050482,
+          0,
+          "Btn_Pressed",
+          69
+        ]
+      }
+    ],
+    "behaviors": [
+      {
+        "name": "Sine",
+        "engine": [
+          "Sine",
+          18,
+          561707628255623,
+          57
+        ]
+      }
+    ],
+    "texture": null,
+    "animations": [
+      {
+        "name": "Animation 1",
+        "speed": 5,
+        "loop": false,
+        "frames": [
+          {
+            "asset": "images/shared-0-sheet4.webp",
+            "x": 65,
+            "y": 193,
+            "width": 32,
+            "height": 32,
+            "engine": [
+              "images/shared-0-sheet4.webp",
+              3200,
+              65,
+              193,
+              32,
+              32,
+              false,
+              1,
+              0.5,
+              0.5625,
+              [],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5625
+          }
+        ],
+        "engine": [
+          "Animation 1",
+          5,
+          false,
+          1,
+          0,
+          false,
+          808191888618653,
+          []
+        ]
+      }
+    ],
+    "engine": [
+      "Btn_skip_ad",
+      2,
+      false,
+      null,
+      1,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      616573164180406,
+      [],
+      null,
+      70,
+      null
+    ]
+  },
+  {
+    "name": "TextInput",
+    "plugin": "C3.Plugins.TextBox",
+    "variables": [],
+    "behaviors": [],
+    "texture": null,
+    "animations": null,
+    "engine": [
+      "TextInput",
+      20,
+      false,
+      null,
+      0,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      182979326831236,
+      [],
+      null,
+      71,
+      null
+    ]
+  },
+  {
+    "name": "Scene",
+    "plugin": "C3.Plugins.Sprite",
+    "variables": [],
+    "behaviors": [],
+    "texture": null,
+    "animations": [
+      {
+        "name": "Animation 1",
+        "speed": 0,
+        "loop": false,
+        "frames": [
+          {
+            "asset": "../vladcat/vladcat-comic-01.webp",
+            "x": 0,
+            "y": 0,
+            "width": 1672,
+            "height": 941,
+            "engine": [
+              "images/shared-0-sheet2.webp",
+              669940,
+              0,
+              0,
+              1536,
+              1024,
+              false,
+              1,
+              0.5,
+              0.5,
+              [],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5
+          },
+          {
+            "asset": "../vladcat/vladcat-comic-02.webp",
+            "x": 0,
+            "y": 0,
+            "width": 1672,
+            "height": 941,
+            "engine": [
+              "images/shared-0-sheet1.webp",
+              684166,
+              0,
+              0,
+              1536,
+              1024,
+              false,
+              1,
+              0.5,
+              0.5,
+              [],
+              [],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 0.5
+          }
+        ],
+        "engine": [
+          "Animation 1",
+          0,
+          false,
+          1,
+          0,
+          false,
+          967914732615279,
+          []
+        ]
+      }
+    ],
+    "engine": [
+      "Scene",
+      2,
+      false,
+      null,
+      0,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      896129114830280,
+      [],
+      null,
+      72,
+      null
+    ]
+  },
+  {
+    "name": "Back_Btn",
+    "plugin": "C3.Plugins.Sprite",
+    "variables": [
+      {
+        "name": "ButtonClicked",
+        "engine": [
+          336761648796825,
+          0,
+          "ButtonClicked",
+          41
+        ]
+      }
+    ],
+    "behaviors": [
+      {
+        "name": "Tween",
+        "engine": [
+          "Tween",
+          9,
+          428601702519125,
+          16
+        ]
+      }
+    ],
+    "texture": null,
+    "animations": [
+      {
+        "name": "Animation 1",
+        "speed": 0,
+        "loop": false,
+        "frames": [
+          {
+            "asset": "images/shared-0-sheet5.webp",
+            "x": 45,
+            "y": 1,
+            "width": 24,
+            "height": 24,
+            "engine": [
+              "images/shared-0-sheet5.webp",
+              2392,
+              45,
+              1,
+              24,
+              24,
+              false,
+              1,
+              0.5,
+              1,
+              [],
+              [
+                0.5,
+                -1,
+                0.5,
+                -0.02083333333333337,
+                0.47916666666666663,
+                0,
+                -0.5,
+                0,
+                -0.5,
+                -1
+              ],
+              ""
+            ],
+            "duration": 1,
+            "originX": 0.5,
+            "originY": 1
+          }
+        ],
+        "engine": [
+          "Animation 1",
+          0,
+          false,
+          1,
+          0,
+          false,
+          850119293188428,
+          []
+        ]
+      }
+    ],
+    "engine": [
+      "Back_Btn",
+      2,
+      false,
+      null,
+      1,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      215910829867847,
+      [],
+      null,
+      73,
+      null
+    ]
+  },
+  {
+    "name": "ButtonsHuds",
+    "plugin": "C3.Plugins.Sprite",
+    "variables": [],
+    "behaviors": [
+      {
+        "name": "Tween",
+        "engine": [
+          "Tween",
+          9,
+          252502023368220,
+          16
+        ]
+      }
+    ],
+    "texture": null,
+    "animations": null,
+    "engine": [
+      "ButtonsHuds",
+      2,
+      true,
+      null,
+      1,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      948645600534373,
+      [],
+      null,
+      74,
+      null
+    ]
+  },
+  {
+    "name": "Menu",
+    "plugin": "C3.Plugins.Sprite",
+    "variables": [],
+    "behaviors": [],
+    "texture": null,
+    "animations": null,
+    "engine": [
+      "Menu",
+      2,
+      true,
+      null,
+      0,
+      0,
+      null,
+      null,
+      null,
+      false,
+      false,
+      603812667487730,
+      [],
+      null,
+      75,
+      null
+    ]
+  }
+]

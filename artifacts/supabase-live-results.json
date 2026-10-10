@@ -1,0 +1,15 @@
+{
+  "checks": [
+    "Email signup returns an immediate session",
+    "Game email login and HttpOnly session cookies",
+    "Iframe checkpoint saves server-calculated stage time",
+    "Refresh resumes the saved stage; pauses stop its clock",
+    "Live RLS denies inserts, score edits, deletes, RPC execution and cross-player reads",
+    "Game API rejects another owner, stale tokens and forged early finish",
+    "Ending the challenge saves and publishes only its handle/time",
+    "Game logout clears the session",
+    "49 ordered server checkpoints finish once, ignore forged times, and rank least time first"
+  ],
+  "browserErrors": [],
+  "cleanup": true
+}

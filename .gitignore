@@ -1,0 +1,15 @@
+node_modules/
+.next/
+out/
+.npm-cache/
+*.tsbuildinfo
+next-env.d.ts
+test-results/
+artifacts/*.png
+artifacts/*.webp
+*.log
+src/game/generated/
+public/game/scripts/expressions.js
+.data/
+.env*
+!.env.example

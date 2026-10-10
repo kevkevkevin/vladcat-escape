@@ -1,0 +1,373 @@
+{
+  "name": "Objects",
+  "width": 384,
+  "height": 216,
+  "eventSheet": null,
+  "engine": [
+    "Objects",
+    384,
+    216,
+    false,
+    false,
+    0.5,
+    0.5,
+    null,
+    422288910582561,
+    [],
+    [],
+    []
+  ],
+  "layers": [
+    {
+      "name": "Layer 0",
+      "visible": true,
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "transparent": false,
+      "engine": [
+        "Layer 0",
+        0,
+        491592897618566,
+        true,
+        [
+          255,
+          255,
+          255
+        ],
+        false,
+        1,
+        1,
+        1,
+        false,
+        false,
+        1,
+        0,
+        true,
+        [],
+        [],
+        0,
+        true,
+        false,
+        false,
+        []
+      ],
+      "instances": [
+        {
+          "id": 47,
+          "type": "par_sparckles",
+          "x": 8,
+          "y": 16,
+          "width": 16,
+          "height": 16,
+          "angle": 0,
+          "originX": 0,
+          "originY": 0.5,
+          "properties": [
+            16,
+            360,
+            1,
+            -1,
+            true,
+            32,
+            8,
+            100,
+            -16,
+            8,
+            8,
+            16,
+            0,
+            0,
+            -32,
+            0,
+            15,
+            0,
+            0,
+            1,
+            1
+          ],
+          "variables": {},
+          "behaviors": {},
+          "engine": [
+            [
+              8,
+              16,
+              0,
+              16,
+              16,
+              0,
+              0,
+              [
+                1,
+                1,
+                1,
+                1
+              ],
+              0,
+              0.5,
+              0,
+              0,
+              [],
+              null,
+              null,
+              null,
+              [
+                "",
+                ""
+              ]
+            ],
+            11,
+            47,
+            [],
+            [],
+            [
+              16,
+              360,
+              1,
+              -1,
+              true,
+              32,
+              8,
+              100,
+              -16,
+              8,
+              8,
+              16,
+              0,
+              0,
+              -32,
+              0,
+              15,
+              0,
+              0,
+              1,
+              1
+            ],
+            ""
+          ]
+        },
+        {
+          "id": 89,
+          "type": "Explosion",
+          "x": 40,
+          "y": 16,
+          "width": 16,
+          "height": 16,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 0.5,
+          "properties": [
+            true,
+            "Animation 1",
+            0,
+            true
+          ],
+          "variables": {},
+          "behaviors": {},
+          "engine": [
+            [
+              40,
+              16,
+              0,
+              16,
+              16,
+              0,
+              0,
+              [
+                1,
+                1,
+                1,
+                1
+              ],
+              0.5,
+              0.5,
+              0,
+              0,
+              [],
+              null,
+              null,
+              null,
+              [
+                "",
+                ""
+              ]
+            ],
+            12,
+            89,
+            [],
+            [],
+            [
+              true,
+              "Animation 1",
+              0,
+              true
+            ],
+            ""
+          ]
+        },
+        {
+          "id": 806,
+          "type": "par_smoke",
+          "x": 56,
+          "y": 16,
+          "width": 16,
+          "height": 16,
+          "angle": 0,
+          "originX": 0,
+          "originY": 0.5,
+          "properties": [
+            16,
+            360,
+            1,
+            -1,
+            true,
+            32,
+            8,
+            100,
+            -16,
+            8,
+            8,
+            16,
+            0,
+            0,
+            -32,
+            0,
+            15,
+            0,
+            0,
+            1,
+            1
+          ],
+          "variables": {},
+          "behaviors": {},
+          "engine": [
+            [
+              56,
+              16,
+              0,
+              16,
+              16,
+              0,
+              0,
+              [
+                1,
+                1,
+                1,
+                1
+              ],
+              0,
+              0.5,
+              0,
+              0,
+              [],
+              null,
+              null,
+              null,
+              [
+                "",
+                ""
+              ]
+            ],
+            19,
+            806,
+            [],
+            [],
+            [
+              16,
+              360,
+              1,
+              -1,
+              true,
+              32,
+              8,
+              100,
+              -16,
+              8,
+              8,
+              16,
+              0,
+              0,
+              -32,
+              0,
+              15,
+              0,
+              0,
+              1,
+              1
+            ],
+            ""
+          ]
+        },
+        {
+          "id": 1335,
+          "type": "spr_fall_spike",
+          "x": 112,
+          "y": 16,
+          "width": 64,
+          "height": 16,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 0.5,
+          "properties": [
+            true,
+            "Animation 1",
+            0,
+            true
+          ],
+          "variables": {},
+          "behaviors": {
+            "Tween": [
+              true
+            ]
+          },
+          "engine": [
+            [
+              112,
+              16,
+              0,
+              64,
+              16,
+              0,
+              0,
+              [
+                1,
+                1,
+                1,
+                1
+              ],
+              0.5,
+              0.5,
+              0,
+              0,
+              [],
+              null,
+              null,
+              null,
+              [
+                "",
+                ""
+              ]
+            ],
+            25,
+            1335,
+            [],
+            [
+              [
+                true
+              ]
+            ],
+            [
+              true,
+              "Animation 1",
+              0,
+              true
+            ],
+            ""
+          ]
+        }
+      ]
+    }
+  ]
+}

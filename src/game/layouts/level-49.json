@@ -1,0 +1,933 @@
+{
+  "name": "Level_49",
+  "width": 384,
+  "height": 216,
+  "eventSheet": "esLevels",
+  "engine": [
+    "Level_49",
+    384,
+    216,
+    false,
+    false,
+    0.5,
+    0.5,
+    "esLevels",
+    835075593518377,
+    [],
+    [],
+    []
+  ],
+  "layers": [
+    {
+      "name": "Game",
+      "visible": true,
+      "background": [
+        16,
+        12,
+        33
+      ],
+      "transparent": false,
+      "engine": [
+        "Game",
+        0,
+        999378125646928,
+        true,
+        [
+          16,
+          12,
+          33
+        ],
+        false,
+        1,
+        1,
+        1,
+        false,
+        false,
+        1,
+        0,
+        true,
+        [],
+        [],
+        0,
+        true,
+        false,
+        false,
+        []
+      ],
+      "instances": [
+        {
+          "id": 1893,
+          "type": "GameManager",
+          "x": 8,
+          "y": -32,
+          "width": 16,
+          "height": 16,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 0.5,
+          "properties": [
+            true,
+            "Animation 1",
+            0,
+            true
+          ],
+          "variables": {
+            "var_id": 48
+          },
+          "behaviors": {},
+          "engine": [
+            [
+              8,
+              -32,
+              0,
+              16,
+              16,
+              0,
+              0,
+              [
+                1,
+                1,
+                1,
+                1
+              ],
+              0.5,
+              0.5,
+              0,
+              0,
+              [],
+              null,
+              null,
+              null,
+              [
+                "",
+                ""
+              ]
+            ],
+            9,
+            1893,
+            [
+              48
+            ],
+            [],
+            [
+              true,
+              "Animation 1",
+              0,
+              true
+            ],
+            ""
+          ]
+        },
+        {
+          "id": 1894,
+          "type": "spr_Clock",
+          "x": 40,
+          "y": -32,
+          "width": 16,
+          "height": 16,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 0.5,
+          "properties": [
+            true,
+            "Animation 1",
+            0,
+            true
+          ],
+          "variables": {},
+          "behaviors": {
+            "Timer": []
+          },
+          "engine": [
+            [
+              40,
+              -32,
+              0,
+              16,
+              16,
+              0,
+              0,
+              [
+                1,
+                1,
+                1,
+                1
+              ],
+              0.5,
+              0.5,
+              0,
+              0,
+              [],
+              null,
+              null,
+              null,
+              [
+                "",
+                ""
+              ]
+            ],
+            10,
+            1894,
+            [],
+            [
+              []
+            ],
+            [
+              true,
+              "Animation 1",
+              0,
+              true
+            ],
+            ""
+          ]
+        },
+        {
+          "id": 1901,
+          "type": "Scene",
+          "x": 192,
+          "y": 108,
+          "width": 320,
+          "height": 216,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 0.5,
+          "properties": [
+            true,
+            "Animation 1",
+            2,
+            true
+          ],
+          "variables": {},
+          "behaviors": {},
+          "engine": [
+            [
+              192,
+              108,
+              0,
+              320,
+              216,
+              0,
+              0,
+              [
+                1,
+                1,
+                1,
+                1
+              ],
+              0.5,
+              0.5,
+              0,
+              0,
+              [],
+              null,
+              null,
+              null,
+              [
+                "",
+                ""
+              ]
+            ],
+            54,
+            1901,
+            [],
+            [],
+            [
+              true,
+              "Animation 1",
+              2,
+              true
+            ],
+            ""
+          ]
+        },
+        {
+          "id": 213,
+          "type": "Back_Btn",
+          "x": 364,
+          "y": 32,
+          "width": 24,
+          "height": 24,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 1,
+          "properties": [
+            true,
+            "Animation 1",
+            0,
+            true
+          ],
+          "variables": {
+            "ButtonClicked": 0
+          },
+          "behaviors": {
+            "Tween": [
+              true
+            ]
+          },
+          "engine": [
+            [
+              364,
+              32,
+              0,
+              24,
+              24,
+              0,
+              0,
+              [
+                1,
+                1,
+                1,
+                1
+              ],
+              0.5,
+              1,
+              0,
+              0,
+              [],
+              null,
+              null,
+              null,
+              [
+                "",
+                ""
+              ]
+            ],
+            55,
+            213,
+            [
+              0
+            ],
+            [
+              [
+                true
+              ]
+            ],
+            [
+              true,
+              "Animation 1",
+              0,
+              true
+            ],
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pause",
+      "visible": true,
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "transparent": true,
+      "engine": [
+        "Pause",
+        1,
+        549983807061926,
+        true,
+        [
+          255,
+          255,
+          255
+        ],
+        true,
+        0,
+        0,
+        1,
+        false,
+        false,
+        0,
+        0,
+        true,
+        [],
+        [],
+        0,
+        true,
+        false,
+        false,
+        []
+      ],
+      "instances": [
+        {
+          "id": 1505,
+          "type": "Menu_bg_black",
+          "x": 0,
+          "y": 0,
+          "width": 384,
+          "height": 216,
+          "angle": 0,
+          "originX": 0,
+          "originY": 0,
+          "properties": [
+            true,
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,
+            false,
+            1,
+            1,
+            1,
+            0.1,
+            0.1
+          ],
+          "variables": {},
+          "behaviors": {
+            "Tween": [
+              true
+            ]
+          },
+          "engine": [
+            [
+              0,
+              0,
+              0,
+              384,
+              216,
+              0,
+              0,
+              [
+                1,
+                1,
+                1,
+                0.5
+              ],
+              0,
+              0,
+              0,
+              0,
+              [],
+              null,
+              null,
+              null,
+              [
+                "",
+                ""
+              ]
+            ],
+            35,
+            1505,
+            [],
+            [
+              [
+                true
+              ]
+            ],
+            [
+              true,
+              0,
+              1,
+              1,
+              0,
+              0,
+              1,
+              1,
+              0,
+              false,
+              1,
+              1,
+              1,
+              0.1,
+              0.1
+            ],
+            ""
+          ]
+        },
+        {
+          "id": 845,
+          "type": "Pause_bg",
+          "x": 192,
+          "y": 284,
+          "width": 384,
+          "height": 96,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 0.5,
+          "properties": [
+            8,
+            8,
+            8,
+            8,
+            1,
+            1,
+            true,
+            4,
+            1
+          ],
+          "variables": {},
+          "behaviors": {
+            "Tween": [
+              true
+            ]
+          },
+          "engine": [
+            [
+              192,
+              284,
+              0,
+              384,
+              96,
+              0,
+              0,
+              [
+                1,
+                1,
+                1,
+                1
+              ],
+              0.5,
+              0.5,
+              0,
+              0,
+              [],
+              null,
+              [
+                127,
+                [
+                  [
+                    347075757445867,
+                    3,
+                    1504,
+                    99,
+                    0,
+                    47
+                  ],
+                  [
+                    347075757445867,
+                    3,
+                    1501,
+                    99,
+                    0,
+                    44
+                  ],
+                  [
+                    347075757445867,
+                    3,
+                    1503,
+                    99,
+                    0,
+                    46
+                  ],
+                  [
+                    347075757445867,
+                    3,
+                    1502,
+                    99,
+                    0,
+                    45
+                  ]
+                ],
+                43
+              ],
+              null,
+              [
+                "",
+                ""
+              ]
+            ],
+            30,
+            845,
+            [],
+            [
+              [
+                true
+              ]
+            ],
+            [
+              8,
+              8,
+              8,
+              8,
+              1,
+              1,
+              true,
+              4,
+              1
+            ],
+            ""
+          ]
+        },
+        {
+          "id": 1501,
+          "type": "Menu_Btn",
+          "x": 160,
+          "y": 316,
+          "width": 32,
+          "height": 32,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 0.5,
+          "properties": [
+            true,
+            "Default",
+            0,
+            true
+          ],
+          "variables": {},
+          "behaviors": {},
+          "engine": [
+            [
+              160,
+              316,
+              0,
+              32,
+              32,
+              0,
+              0,
+              [
+                1,
+                1,
+                1,
+                1
+              ],
+              0.5,
+              0.5,
+              0,
+              0,
+              [],
+              null,
+              [
+                99,
+                null,
+                44
+              ],
+              null,
+              [
+                "",
+                ""
+              ]
+            ],
+            32,
+            1501,
+            [],
+            [
+              [
+                true
+              ]
+            ],
+            [
+              true,
+              "Default",
+              0,
+              true
+            ],
+            ""
+          ]
+        },
+        {
+          "id": 1502,
+          "type": "Music_Btn",
+          "x": 224,
+          "y": 316,
+          "width": 32,
+          "height": 32,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 0.5,
+          "properties": [
+            true,
+            "Music",
+            0,
+            true
+          ],
+          "variables": {},
+          "behaviors": {},
+          "engine": [
+            [
+              224,
+              316,
+              0,
+              32,
+              32,
+              0,
+              0,
+              [
+                1,
+                1,
+                1,
+                1
+              ],
+              0.5,
+              0.5,
+              0,
+              0,
+              [],
+              null,
+              [
+                99,
+                null,
+                45
+              ],
+              null,
+              [
+                "",
+                ""
+              ]
+            ],
+            34,
+            1502,
+            [],
+            [
+              [
+                true
+              ]
+            ],
+            [
+              true,
+              "Music",
+              0,
+              true
+            ],
+            ""
+          ]
+        },
+        {
+          "id": 1503,
+          "type": "Audio_Btn",
+          "x": 192,
+          "y": 316,
+          "width": 32,
+          "height": 32,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 0.5,
+          "properties": [
+            true,
+            "Audio",
+            0,
+            true
+          ],
+          "variables": {},
+          "behaviors": {},
+          "engine": [
+            [
+              192,
+              316,
+              0,
+              32,
+              32,
+              0,
+              0,
+              [
+                1,
+                1,
+                1,
+                1
+              ],
+              0.5,
+              0.5,
+              0,
+              0,
+              [],
+              null,
+              [
+                99,
+                null,
+                46
+              ],
+              null,
+              [
+                "",
+                ""
+              ]
+            ],
+            33,
+            1503,
+            [],
+            [
+              [
+                true
+              ]
+            ],
+            [
+              true,
+              "Audio",
+              0,
+              true
+            ],
+            ""
+          ]
+        },
+        {
+          "id": 1504,
+          "type": "resume_btn",
+          "x": 192,
+          "y": 268,
+          "width": 64,
+          "height": 64,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 0.5,
+          "properties": [
+            true,
+            "Animation 1",
+            0,
+            true
+          ],
+          "variables": {},
+          "behaviors": {},
+          "engine": [
+            [
+              192,
+              268,
+              0,
+              64,
+              64,
+              0,
+              0,
+              [
+                1,
+                1,
+                1,
+                1
+              ],
+              0.5,
+              0.5,
+              0,
+              0,
+              [],
+              null,
+              [
+                99,
+                null,
+                47
+              ],
+              null,
+              [
+                "",
+                ""
+              ]
+            ],
+            31,
+            1504,
+            [],
+            [
+              [
+                true
+              ]
+            ],
+            [
+              true,
+              "Animation 1",
+              0,
+              true
+            ],
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fade",
+      "visible": true,
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "transparent": true,
+      "engine": [
+        "Fade",
+        2,
+        464403769663917,
+        true,
+        [
+          255,
+          255,
+          255
+        ],
+        true,
+        0,
+        0,
+        1,
+        false,
+        false,
+        0,
+        0,
+        true,
+        [],
+        [],
+        0,
+        true,
+        false,
+        false,
+        []
+      ],
+      "instances": [
+        {
+          "id": 1508,
+          "type": "FadeSprite",
+          "x": 152,
+          "y": -96,
+          "width": 0,
+          "height": 0,
+          "angle": 0.7853981633974483,
+          "originX": 0.5,
+          "originY": 0.5,
+          "properties": [
+            true,
+            "Animation 1",
+            0,
+            true
+          ],
+          "variables": {},
+          "behaviors": {
+            "Tween": [
+              true
+            ]
+          },
+          "engine": [
+            [
+              152,
+              -96,
+              0,
+              0,
+              0,
+              0,
+              0.7853981633974483,
+              [
+                1,
+                1,
+                1,
+                1
+              ],
+              0.5,
+              0.5,
+              0,
+              0,
+              [],
+              null,
+              null,
+              null,
+              [
+                "",
+                ""
+              ]
+            ],
+            38,
+            1508,
+            [],
+            [
+              [
+                true
+              ]
+            ],
+            [
+              true,
+              "Animation 1",
+              0,
+              true
+            ],
+            ""
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "checks": [
+    "Login prompts for details; closing keeps the game in practice without a stage picker",
+    "Server gate rejects missing details, forged metadata, zero wallets and cross-origin updates",
+    "Save-and-challenge persists the checksum wallet and handle and starts stage 1",
+    "Profile dialog pauses the challenge clock, fits mobile and preserves the current run handle",
+    "Refresh keeps saved details; complete profiles start directly and caller handles are ignored",
+    "Resume still works with saved account details; no browser JavaScript errors",
+    "Ending a challenge saves the shame entry and opens the dedicated leaderboard page"
+  ],
+  "browserErrors": [],
+  "cleanup": true
+}

@@ -1,0 +1,297 @@
+{
+  "name": "Scene",
+  "width": 384,
+  "height": 216,
+  "eventSheet": "esScene",
+  "engine": [
+    "Scene",
+    384,
+    216,
+    false,
+    false,
+    0.5,
+    0.5,
+    "esScene",
+    873561730282921,
+    [],
+    [],
+    []
+  ],
+  "layers": [
+    {
+      "name": "Background",
+      "visible": true,
+      "background": [
+        16,
+        12,
+        33
+      ],
+      "transparent": false,
+      "engine": [
+        "Background",
+        0,
+        630197326470963,
+        true,
+        [
+          16,
+          12,
+          33
+        ],
+        false,
+        1,
+        1,
+        1,
+        false,
+        false,
+        1,
+        0,
+        true,
+        [],
+        [],
+        0,
+        true,
+        false,
+        false,
+        []
+      ],
+      "instances": [
+        {
+          "id": 1898,
+          "type": "Scene",
+          "x": 192,
+          "y": 108,
+          "width": 384,
+          "height": 216,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 0.5,
+          "properties": [
+            true,
+            "Animation 1",
+            0,
+            true
+          ],
+          "variables": {},
+          "behaviors": {},
+          "engine": [
+            [
+              192,
+              108,
+              0,
+              320,
+              216,
+              0,
+              0,
+              [
+                1,
+                1,
+                1,
+                1
+              ],
+              0.5,
+              0.5,
+              0,
+              0,
+              [],
+              null,
+              null,
+              null,
+              [
+                "",
+                ""
+              ]
+            ],
+            54,
+            1898,
+            [],
+            [],
+            [
+              true,
+              "Animation 1",
+              0,
+              true
+            ],
+            ""
+          ]
+        },
+        {
+          "id": 1900,
+          "type": "Back_Btn",
+          "x": 364,
+          "y": 32,
+          "width": 24,
+          "height": 24,
+          "angle": 0,
+          "originX": 0.5,
+          "originY": 1,
+          "properties": [
+            true,
+            "Animation 1",
+            0,
+            true
+          ],
+          "variables": {
+            "ButtonClicked": 0
+          },
+          "behaviors": {
+            "Tween": [
+              true
+            ]
+          },
+          "engine": [
+            [
+              364,
+              32,
+              0,
+              24,
+              24,
+              0,
+              0,
+              [
+                1,
+                1,
+                1,
+                1
+              ],
+              0.5,
+              1,
+              0,
+              0,
+              [],
+              null,
+              null,
+              null,
+              [
+                "",
+                ""
+              ]
+            ],
+            55,
+            1900,
+            [
+              0
+            ],
+            [
+              [
+                true
+              ]
+            ],
+            [
+              true,
+              "Animation 1",
+              0,
+              true
+            ],
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fade",
+      "visible": true,
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "transparent": true,
+      "engine": [
+        "Fade",
+        1,
+        656292062482431,
+        true,
+        [
+          255,
+          255,
+          255
+        ],
+        true,
+        0,
+        0,
+        1,
+        false,
+        false,
+        0,
+        0,
+        true,
+        [],
+        [],
+        0,
+        true,
+        false,
+        false,
+        []
+      ],
+      "instances": [
+        {
+          "id": 1508,
+          "type": "FadeSprite",
+          "x": 152,
+          "y": -96,
+          "width": 0,
+          "height": 0,
+          "angle": 0.7853981633974483,
+          "originX": 0.5,
+          "originY": 0.5,
+          "properties": [
+            true,
+            "Animation 1",
+            0,
+            true
+          ],
+          "variables": {},
+          "behaviors": {
+            "Tween": [
+              true
+            ]
+          },
+          "engine": [
+            [
+              152,
+              -96,
+              0,
+              0,
+              0,
+              0,
+              0.7853981633974483,
+              [
+                1,
+                1,
+                1,
+                1
+              ],
+              0.5,
+              0.5,
+              0,
+              0,
+              [],
+              null,
+              null,
+              null,
+              [
+                "",
+                ""
+              ]
+            ],
+            38,
+            1508,
+            [],
+            [
+              [
+                true
+              ]
+            ],
+            [
+              true,
+              "Animation 1",
+              0,
+              true
+            ],
+            ""
+          ]
+        }
+      ]
+    }
+  ]
+}

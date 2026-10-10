@@ -1,0 +1,43 @@
+// Package the saved generated comics and ending into the editable engine source.
+import fs from 'node:fs/promises';
+import sharp from 'sharp';
+const read = async file => JSON.parse(await fs.readFile(file, 'utf8'));
+const save = (file, data) => fs.writeFile(file, JSON.stringify(data, null, 2) + '\n');
+for (const name of ['comic-01', 'comic-02', 'ending']) await sharp(`public/vladcat/vladcat-${name}.png`).webp({ quality: 92 }).toFile(`public/vladcat/vladcat-${name}.webp`);
+const objects = await read('src/game/objects.json');
+const scene = objects.find(o => o.name === 'Scene').animations[0];
+scene.frames = scene.frames.slice(0, 2);
+for (const [index, frame] of scene.frames.entries()) {
+  Object.assign(frame, { asset: `../vladcat/vladcat-comic-0${index + 1}.webp`, x: 0, y: 0, width: 1672, height: 941 });
+  frame.engine[1] = (await fs.stat(`public/vladcat/vladcat-comic-0${index + 1}.webp`)).size;
+  frame.engine[6] = false;
+}
+const titleType = objects.find(o => o.name === 'Sprite');
+const victory = structuredClone(titleType.animations[0]);
+Object.assign(victory, { name: 'Victory', speed: 0, loop: false });
+victory.engine[6] = 320706501006171;
+Object.assign(victory.frames[0], { asset: '../vladcat/vladcat-ending.webp', x: 0, y: 0, width: 1672, height: 941 });
+victory.frames[0].engine[1] = (await fs.stat('public/vladcat/vladcat-ending.webp')).size;
+victory.frames[0].engine[6] = false;
+titleType.animations = [titleType.animations[0], victory];
+await save('src/game/objects.json', objects);
+const story = await read('src/game/layouts/scene.json');
+const picture = story.layers.flatMap(l => l.instances).find(i => i.type === 'Scene');
+Object.assign(picture, { width: 384, height: 216 });
+await save('src/game/layouts/scene.json', story);
+const final = await read('src/game/layouts/level-50.json');
+const menu = await read('src/game/layouts/menu.json');
+const endingImage = structuredClone(menu.layers.flatMap(l => l.instances).find(i => i.type === 'Sprite'));
+Object.assign(endingImage, { id: 1910, x: 192, y: 108, width: 384, height: 216, properties: [true, 'Victory', 0, true] });
+endingImage.engine[2] = 1910;
+final.layers[0].instances = final.layers[0].instances.filter(i => i.id !== 1910);
+final.layers[0].instances.unshift(endingImage);
+const text = final.layers.flatMap(l => l.instances).find(i => i.type === 'UITip');
+Object.assign(text, { x: 98, y: 108, width: 180, height: 168 });
+text.properties[0] = 'CLANK WORLD SAVED!\nThank you for helping me, escape artist!\nPlease share it on X and you will receive your reward.';
+text.properties[6] = 0.58;
+text.properties[9] = 0;
+const returnButton = final.layers[0].instances.find(i => i.type === 'Menu_Btn');
+Object.assign(returnButton, { x: 24, y: 194, width: 24, height: 24 });
+await save('src/game/layouts/level-50.json', final);
+console.log('Two comic slides (eight panels) and the VLADCAT victory image are packaged.');
