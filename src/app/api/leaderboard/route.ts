@@ -1,17 +1,18 @@
 import { readLeaderboard } from "@/game/leaderboard-store.mjs";
 import { apiFailure, cloudConfigured, requireUser } from "@/lib/supabase/server";
-import { publicBoard, runAction } from "@/lib/supabase/runs";
+import { publicBoard } from "@/lib/supabase/runs";
+import { challengeAction } from '@/lib/authority';
 import { jsonInput } from "@/lib/supabase/request";
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 export async function GET() {
-  try { return Response.json(cloudConfigured() ? await publicBoard('completed') : await readLeaderboard(), { headers: { "Cache-Control": "no-store" } }); }
+  try { return Response.json(cloudConfigured() ? await publicBoard('completed') : { storage: 'development', entries: [], provisional: (await readLeaderboard()).entries }, { headers: { "Cache-Control": "no-store" } }); }
   catch (error) { return apiFailure(error); }
 }
 export async function POST(request: Request) {
   try {
     const input = await jsonInput(request);
-    const run = await runAction((await requireUser()).id, { ...input, action: 'finish' });
+    const run = await challengeAction((await requireUser()).id, { ...input, action: 'finish' });
     return Response.json({ id: run.id, run, ...(await publicBoard('completed')) }, { headers: { "Cache-Control": "no-store" } });
   } catch (error) { return apiFailure(error); }
 }

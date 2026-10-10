@@ -1,0 +1,17 @@
+{
+  "checks": [
+    "Stage 5 genuine dragging reaches the exit in the isolated server engine",
+    "Stage 1 uses real platform physics, key pickup alone cannot complete it, pause freezes movement",
+    "Stage 49 genuine back-button solve ends the game once and freezes further inputs",
+    "All 49 challenge stages load in the trusted engine (smoke coverage)",
+    "Live login opens trusted stream; scripted checkpoints, timer claims and premature finish are rejected",
+    "Server pause freezes stored time, refresh resumes saved progress with a new engine",
+    "Live mouse dragging solves stage 5, persists a genuine signed receipt, and cannot verify unsigned earlier stages",
+    "Mobile layout fits viewport and ending a challenge persists an immutable shame record",
+    "An unsigned 49-stage completion remains provisional and cannot pass the reward finish API",
+    "QA-only signed prefix plus genuine final solve commits once, renders personalized ending, and enters verified rankings",
+    "Public boards expose no signatures/account IDs; no browser errors"
+  ],
+  "errors": [],
+  "cleanup": true
+}

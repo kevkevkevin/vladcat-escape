@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { GamePlayer } from "./GamePlayer";
+import { AuthoritativePlayer } from './AuthoritativePlayer';
 import { LevelEditor } from "./LevelEditor";
 import type { GameProject } from "@/game/types";
 import { SiteHeader } from './SiteHeader';
@@ -46,8 +47,7 @@ export function GameWorkspace({ mode }: { mode: "play" | "editor" }) {
   activeTicket.current = ticket?.id ?? null;
   const stage = useRef<HTMLDivElement>(null);
   const playerHandle = ticket?.name ?? user?.xHandle ?? '';
-  // Completed split times come from the server. The local clock provides the
-  // smooth in-progress display until the next server acknowledgement.
+  // Challenges display the trusted engine clock and persisted split times.
   const recorded = cloud.run;
   const displayedTiming = ticket && recorded && timing && recorded.stage >= (timing.stage ?? 0) ? {
     ...timing,
@@ -108,6 +108,7 @@ export function GameWorkspace({ mode }: { mode: "play" | "editor" }) {
   }
 
   function openRun(body: CloudRun) {
+    setError('');
     activeTicket.current = body.id;
     cloud.replace(body); setSaved(body); setTimerSeed(body);
     setTicket(body); setLayout(`Level_${body.stage}`); setCurrent(`Level_${body.stage}`);
@@ -228,7 +229,7 @@ export function GameWorkspace({ mode }: { mode: "play" | "editor" }) {
             <button className="icon-button" aria-label="Enter fullscreen" onClick={() => stage.current?.requestFullscreen().catch(() => setError("Fullscreen is unavailable in this browser."))}>⛶</button>
             <button className="end-challenge-button" aria-label="End challenge" title={ticket ? "End challenge and join the list of shames" : "Start a ranked run to enter the challenge"} disabled={!ticket || !timing?.stage || timing.finished || timing.splits.length >= 49 || starting || endModal} onClick={endChallenge}><span aria-hidden="true">☠</span><span className="end-challenge-label">End challenge</span></button>
           </div></div>
-          <GamePlayer key={`${revision}-${layout}`} layout={layout} paused={paused || cloud.blocked || profileOpen} ranked={Boolean(ticket)} handle={ticket?.name ?? ""} ended={endModal} savedTiming={timerSeed} onCheckpoint={(completed) => { void cloud.checkpoint(completed).catch(() => {}); }} onLayout={setCurrent} onTiming={receiveTiming} onEnded={receiveEnded} overlay={current === "Scene" ? <StoryReader onBegin={() => preview("Level_1")} /> : current === "Level_50" ? <EscapeEnding handle={playerHandle} totalMs={cloud.run?.status === 'completed' ? cloud.run.totalMs : timing?.finished ? timing.totalMs : undefined} onReplay={() => preview()} /> : undefined} />
+          {timerSeed?.streamId ? <AuthoritativePlayer key={timerSeed.streamId} streamId={timerSeed.streamId} paused={paused || cloud.blocked || profileOpen} ended={endModal} onRun={cloud.accept} onLayout={setCurrent} onTiming={receiveTiming} onEnded={receiveEnded} onError={cloud.stop} overlay={current === 'Level_50' ? <EscapeEnding handle={playerHandle} totalMs={cloud.run?.totalMs} onReplay={() => preview()} /> : undefined} /> : <GamePlayer key={`${revision}-${layout}`} layout={layout} paused={paused || cloud.blocked || profileOpen} handle="" onLayout={setCurrent} onTiming={receiveTiming} overlay={current === "Scene" ? <StoryReader onBegin={() => preview("Level_1")} /> : current === "Level_50" ? <EscapeEnding handle={playerHandle} onReplay={() => preview()} /> : undefined} />}
           {cloud.blocked && <div className="paused-banner"><span>Progress sync stopped. Resume your saved stage to continue.</span><button className="button primary" disabled={starting} onClick={() => void resumeRun()}>Resume saved stage →</button></div>}
           {paused && <div className="paused-banner"><span>Taking a breather.</span><button className="button primary" onClick={() => setPaused(false)}>Resume game →</button></div>}
           <div className="stage-footer"><span><span className="small-dot" /> {ticket ? `CHALLENGE · ${ticket.name}` : 'PRACTICE'}</span></div>
@@ -236,7 +237,7 @@ export function GameWorkspace({ mode }: { mode: "play" | "editor" }) {
         </section>
         <div className="challenge-invite"><div><span className="eyebrow">TAKE THE VLADCAT CHALLENGE</span><h2>{ticket && !timing?.finished && !endModal ? 'Challenge accepted. Save CLANK WORLD.' : 'Want to take the challenge?'}</h2><p>A fresh timer for each stage. One total for your escape.</p></div><button className="button primary" disabled={accountLoading || starting || Boolean(ticket && !timing?.finished && (!endModal || endStatus !== 'saved'))} onClick={() => void startRanked()}>{starting ? 'Starting…' : ticket && !timing?.finished && !endModal ? 'Challenge in progress' : 'Take the challenge →'}</button></div>
         <div className="run-summary">
-          <p>{ticket && timing?.eligible ? "Complete each stage in order to post your time. Failed attempts count; pauses do not." : timing?.reason && timing.reason !== "Practice run" ? timing.reason : "Practice freely, or take the challenge to join the leaderboard."}</p>
+          <p>{ticket && timing?.eligible ? "Challenge gameplay is verified on the server. Failed attempts count; pauses do not. A stable connection is required." : timing?.reason && timing.reason !== "Practice run" ? timing.reason : "Practice freely, or take the challenge to join the leaderboard."}</p>
           {displayedTiming?.splits.length ? <details><summary>{displayedTiming.splits.length} stage{displayedTiming.splits.length === 1 ? "" : "s"} completed · View times</summary><div className="split-grid">{displayedTiming.splits.map((split) => <span key={split.stage}><small>Stage {split.stage.toString().padStart(2, "0")}</small><time>{formatTime(split.milliseconds)}</time></span>)}</div></details> : null}
           {timing?.finished && <div className="run-finished"><span className="eyebrow">ESCAPE COMPLETE</span><h2>Your total: {formatTime(cloud.run?.status === 'completed' ? cloud.run.totalMs : timing.totalMs)}</h2><p role="status">{scoreStatus || (ticket ? scoreError : "Take the challenge to post a time.")}</p>{scoreError && <button className="button primary" onClick={() => void submitScore(timing)}>Retry saving score</button>}<Link className="invite-link" href="/leaderboard">View leaderboard →</Link></div>}
         </div>

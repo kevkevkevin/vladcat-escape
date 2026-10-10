@@ -14,6 +14,12 @@ export function useCloudRun(onError: (message: string) => void) {
     generation.current++;
     ref.current = next; setRun(next); setBlocked(false); desiredPlaying.current = false;
   }, []);
+  const accept = useCallback((next: CloudRun) => {
+    if (ref.current?.id !== next.id) return;
+    const value = { ...next, streamId: ref.current.streamId };
+    ref.current = value; setRun(value);
+  }, []);
+  const stop = useCallback((message: string) => { setBlocked(true); onErrorRef.current(message); }, []);
   const action = useCallback((kind: string, stage?: number, endpoint = '/api/runs') => {
     const id = ref.current?.id;
     const epoch = generation.current;
@@ -36,12 +42,14 @@ export function useCloudRun(onError: (message: string) => void) {
     return task;
   }, []);
   const syncPlaying = useCallback((playing: boolean, stage: number) => {
+    if (ref.current?.authoritative) return;
     if (!ref.current || !['active','paused'].includes(ref.current.status) || blocked) return;
     if (desiredPlaying.current === playing) return;
     desiredPlaying.current = playing;
     void action(playing ? 'play' : 'pause', stage).catch(e => { setBlocked(true); onErrorRef.current(e.message); });
   }, [action, blocked]);
   const checkpoint = useCallback(async (stage: number) => {
+    if (ref.current?.authoritative) return;
     if (!ref.current) return;
     desiredPlaying.current = false;
     try { return await action('checkpoint', stage); }
@@ -50,7 +58,7 @@ export function useCloudRun(onError: (message: string) => void) {
   useEffect(() => {
     if (!run) return;
     const interval = setInterval(() => {
-      if (ref.current?.status !== 'active' || blocked) return;
+      if (ref.current?.status !== 'active' || ref.current.authoritative || blocked) return;
       void action('heartbeat').catch(e => { setBlocked(true); onErrorRef.current(e.message); });
     }, 4000);
     return () => clearInterval(interval);
@@ -63,5 +71,5 @@ export function useCloudRun(onError: (message: string) => void) {
     window.addEventListener('pagehide', leave);
     return () => { window.removeEventListener('pagehide', leave); leave(); };
   }, []);
-  return { run, blocked, replace, action, checkpoint, syncPlaying };
+  return { run, blocked, replace, accept, stop, action, checkpoint, syncPlaying };
 }

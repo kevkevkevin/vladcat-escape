@@ -36,33 +36,43 @@ choose **Resume challenge** to continue from the beginning of your saved stage.
 
 ## Security and timing
 
-- Login uses Supabase email/password auth. The server verifies the user through
-  `auth.getUser()` on every protected request. Auth tokens stay in HttpOnly,
+- Login uses Supabase email/password auth. Start/resume/profile/stream verify
+  the user with `auth.getUser()`; frequent control requests verify the JWT's
+  signature and expiry with `auth.getClaims()`. Auth tokens stay in HttpOnly,
   same-site cookies; the game receives only an opaque run token.
 - Anonymous users have no access to the run table. Logged-in users can read
   only their own progress. Neither role has INSERT, UPDATE, DELETE, or RPC
   execution privileges. Public boards come from a server API that exposes
   handles and times, never emails or account IDs.
-- The server-only RPC serializes run changes, verifies ownership/session and
-  stage order, and calculates times from Postgres timestamps. Client-supplied
-  totals and splits are ignored. Completed/abandoned runs cannot be reopened
-  or overwritten through game APIs. Retried checkpoints add no duplicate split.
-- Each completed stage is saved; the current stage clock is saved every four
-  seconds. Resume reloads the beginning of the saved stage, retaining its
-  accumulated time and completed splits. Failed attempts count. Pauses, menu
-  puzzles, and loading do not run the stage clock. Unexpected disconnects can
-  count up to 12 seconds after the last successful heartbeat; longer offline
-  time is excluded. Network transit can slightly affect server-measured time.
+- The server-only RPC verifies ownership/session and serializes start, resume
+  and final outcome requests. Engine checkpoints atomically persist server-timed
+  splits and signed receipts with conditional owner/token/stage checks. Client
+  times and completion claims are rejected. Completed/abandoned runs cannot be
+  reopened or overwritten through game APIs.
+- Each completed stage is saved; the engine stopwatch is saved about once a
+  second. Resume reloads the saved stage's beginning with its accumulated time
+  and completed splits. Failed attempts count; pause/loading/menu/exit fades do
+  not. A disconnected engine freezes after six seconds without controls and is
+  removed after 90 seconds. Unsaved current-stage time can be lost on a crash;
+  completed splits are durable. Network latency still affects control response.
 - Resuming rotates the run token so an old tab cannot keep submitting changes.
   A failed sync pauses the game and offers to reload the server's saved stage.
-- This protects database rows and rejects browser-edited timer values. It does
-  **not** prove that a player solved a puzzle: a determined attacker can imitate
-  stage-completion requests. Competitive rewards requiring strong anti-cheat
-  need server-side gameplay validation or review of replay evidence.
+- Challenges now execute the original engine in isolated server Chromium. The
+  player sends controls and receives frames/sound events. Public completion and
+  timer claims are rejected. Every solve receives a server-signed receipt; all
+  49 receipts are required for verified ranking. Older runs are unverified and
+  excluded from automatic reward eligibility. See [trusted gameplay hosting and
+  limitations](AUTHORITY.md): persistent Node/Chromium and sticky routing are
+  required. This prevents unsolved claims, not legitimate input bots.
 - Disabling email confirmation means players can register an email address
   they do not own. This setting does not verify their X handle either.
 
 ## Validation
+
+Current gameplay validation is `npm run verify:authority`; see
+`../artifacts/authority-results.json`. The older Supabase protocol/UI reports
+below are historical checks from before server gameplay. The old script's
+client checkpoint actions are now deliberately blocked.
 
 After login, the game asks for an active X handle and EVM wallet in a modal.
 Players can close it and practice. The challenge button requires both details;

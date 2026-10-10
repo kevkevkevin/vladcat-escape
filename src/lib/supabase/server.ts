@@ -40,6 +40,14 @@ export async function requireUser() {
   if (error || !data.user) throw new ApiError("Log in to save progress and play a ranked challenge.", 401);
   return data.user;
 }
+// Frequent control packets need identity only. Signature/expiry verification
+// uses Supabase's cached public signing keys; symmetric projects fall back to
+// the Auth server. Start/resume, profile and stream still use fresh getUser().
+export async function requireGameplayUser() {
+  const { data, error } = await (await authClient()).auth.getClaims();
+  if (error || typeof data?.claims.sub !== 'string') throw new ApiError('Log in to continue your challenge.', 401);
+  return { id: data.claims.sub };
+}
 export function apiFailure(error: unknown) {
   return Response.json({ error: error instanceof ApiError ? error.message : "Cloud storage is unavailable. Please retry." }, { status: error instanceof ApiError ? error.status : 503, headers: { "Cache-Control": "no-store" } });
 }

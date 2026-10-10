@@ -10,7 +10,7 @@ export type RunTiming = {
   stopped: boolean;
 };
 export type RunTicket = { token: string; id: string; name: string };
-export type CloudRun = RunTicket & { stage: number; stageMs: number; totalMs: number; splits: StageSplit[]; status: string };
+export type CloudRun = RunTicket & { stage: number; stageMs: number; totalMs: number; splits: StageSplit[]; status: string; authoritative?: boolean; streamId?: string };
 export type LeaderboardEntry = { id: string; name: string; totalMs: number; splits: StageSplit[]; completedAt: string };
 export type ShameEntry = { id: string; name: string; totalMs: number; stage: number; completedStages: number; abandonedAt: string };
 

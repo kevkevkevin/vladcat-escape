@@ -2,6 +2,21 @@
 
 The complete 50-level Construct game now runs inside a Next.js 16 / React 19 / TypeScript application, with a visual level editor and editable game source. The original export is preserved in `legacy-export/`.
 
+## Trusted challenge gameplay
+
+Challenges run the original rules in isolated server Chromium. Players send
+keyboard/pointer controls and receive game frames and sound events. Only actual
+engine exits save stage completions. Signed receipts for all 49 puzzles are
+required for verified rankings; older scores remain unverified. Practice and
+editor previews run locally. This closes scripted completion/score claims but
+does not prevent bots that solve puzzles through legal controls.
+
+Hosting now requires persistent Node plus Chromium, sticky session routing and
+unbuffered SSE. It introduces network latency and browser resources per player;
+the default cap is four simultaneous challenges. See [deployment and security
+details](supabase/AUTHORITY.md). `npm run verify:authority` exercises the real
+engine and live app with disposable accounts, then removes their data.
+
 ## Website pages
 
 The home strip is a 100vw seamless marquee with pause/resume, hover pause and

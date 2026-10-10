@@ -1,3 +1,5 @@
+// Historical pre-authority protocol verification. Client checkpoint actions
+// below are now deliberately blocked. Use npm run verify:authority instead.
 // Explicit live setup verification. Creates two random QA accounts, uses only
 // their runs, and removes those accounts (and their cascading runs) in finally.
 // Never logs credentials, auth tokens, real players, or their records.
