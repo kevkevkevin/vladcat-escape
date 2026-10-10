@@ -1,0 +1,57 @@
+services:
+  app:
+    build:
+      context: .
+      args:
+        NEXT_PUBLIC_SUPABASE_URL: ${NEXT_PUBLIC_SUPABASE_URL:?Set the Supabase URL}
+        NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY: ${NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY:?Set the public Supabase key}
+        NEXT_PUBLIC_VLADCAT_TOKEN_CA: ${NEXT_PUBLIC_VLADCAT_TOKEN_CA:-}
+        NEXT_PUBLIC_VLADCAT_X_URL: ${NEXT_PUBLIC_VLADCAT_X_URL:-}
+        NEXT_PUBLIC_VLADCAT_TELEGRAM_URL: ${NEXT_PUBLIC_VLADCAT_TELEGRAM_URL:-}
+    env_file: ./deploy/production.env
+    environment:
+      VLADCAT_MAX_SESSIONS: ${VLADCAT_MAX_SESSIONS:-1}
+    restart: unless-stopped
+    init: true
+    shm_size: 512mb
+    security_opt:
+      - seccomp=./deploy/seccomp_profile.json
+    expose:
+      - "3000"
+    stop_grace_period: 30s
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:3000/').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 30s
+      timeout: 10s
+      start_period: 60s
+      retries: 3
+
+  proxy:
+    image: caddy:2-alpine
+    environment:
+      VLADCAT_DOMAIN: ${VLADCAT_DOMAIN:?Set the game domain without https://}
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      app:
+        condition: service_healthy
+    restart: unless-stopped
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+volumes:
+  caddy_data:
+  caddy_config:

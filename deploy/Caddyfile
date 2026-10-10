@@ -1,0 +1,6 @@
+{$VLADCAT_DOMAIN} {
+    # Send game frames immediately. One backend keeps each session in one process.
+    reverse_proxy app:3000 {
+        flush_interval -1
+    }
+}

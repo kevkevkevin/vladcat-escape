@@ -8,6 +8,11 @@ approximate implementation of the puzzles is trusted.
 
 ## Deployment
 
+The [Hostinger VPS guide](../deploy/HOSTINGER.md) provides a Docker configuration
+with non-root Chromium, its sandbox profile, HTTPS and unbuffered streams. That
+configuration defaults to one active challenge for initial KVM 1 testing. Run
+the container build and browser check on the actual VPS before launch.
+
 Use a persistent Node server with Chromium. Ordinary short-lived serverless
 functions cannot host these sessions. On Linux install the browser and libraries
 with `npx playwright install --with-deps chromium`. Run Node as a non-root user

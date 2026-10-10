@@ -17,6 +17,11 @@ the default cap is four simultaneous challenges. See [deployment and security
 details](supabase/AUTHORITY.md). `npm run verify:authority` exercises the real
 engine and live app with disposable accounts, then removes their data.
 
+For a Hostinger VPS, [deployment steps](deploy/HOSTINGER.md) cover the Docker
+build, non-root sandboxed Chromium, HTTPS, secrets and launch verification.
+The Compose configuration defaults to one active challenge for initial KVM 1
+testing; actual capacity still needs to be measured on the server.
+
 ## Website pages
 
 The home strip is a 100vw seamless marquee with pause/resume, hover pause and

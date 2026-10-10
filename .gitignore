@@ -13,3 +13,4 @@ public/game/scripts/expressions.js
 .data/
 .env*
 !.env.example
+deploy/production.env
