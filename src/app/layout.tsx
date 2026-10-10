@@ -4,7 +4,7 @@ import { VladcatGuide } from '@/components/VladcatGuide';
 
 export const metadata: Metadata = {
   title: "VLADCAT ESCAPE",
-  description: "One fearless catguy. Fifty twisted stages. Play VLADCAT ESCAPE, beat the clock, and build your own escapes in the level editor.",
+  description: "One fearless catguy. Fifty twisted stages. Play VLADCAT ESCAPE, beat the clock, and preview the upcoming level creator.",
   icons: { icon: "/vladcat/mark.svg", apple: "/vladcat/apple-icon.png" },
 };
 export const viewport: Viewport = { width: "device-width", initialScale: 1, themeColor: "#11130f" };

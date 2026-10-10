@@ -41,7 +41,8 @@ UI verification is recorded in `artifacts/marquee-guide-results.json`.
 - `/`: landing page with VLADCAT, controls, the weekly incentive plan, token/community links and future games/buybacks.
 - `/play`: expanded game canvas, account/challenge flow and saved progress. Profile and instructions collapse by default on mobile; portrait phones get a landscape tip.
 - `/leaderboard`: public completed-run rankings and the list of shames. Ranking tables are no longer embedded on Play.
-- `/editor`: existing level editor.
+- `/editor`: coming-soon level creator preview. The interactive editor and
+  playtest controls are hidden; their source is retained for future work.
 
 Play uses a desktop canvas-left/sidebar-right layout. The sidebar contains
 profile details, a newly generated VLADCAT challenge banner and instructions.
@@ -49,6 +50,12 @@ On phones the canvas leads and sidebar cards stack below it. Guest login stays
 collapsed until opened or requested by the challenge button; logged-in profile
 details open on desktop. Artwork and its generation prompt are documented in
 `public/vladcat/ARTWORK.md`.
+
+The landing page includes an actual game screenshot and a static level-creator
+sneak peek: build your own escape, share it with friends, and challenge them to
+beat it. The preview is clearly marked coming soon; level sharing is not yet
+implemented. Editor navigation is hidden, and visiting `/editor` shows the same
+preview instead of the interactive tool. Screenshots are in `public/showcase/`.
 
 Set `NEXT_PUBLIC_VLADCAT_TOKEN_CA`, `NEXT_PUBLIC_VLADCAT_X_URL` and
 `NEXT_PUBLIC_VLADCAT_TELEGRAM_URL` in `.env.local`, then restart/rebuild, to publish

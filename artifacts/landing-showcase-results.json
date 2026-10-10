@@ -1,0 +1,9 @@
+{
+  "checks": [
+    "Landing showcases actual game and links to Play; editor navigation is hidden",
+    "Creator sneak peek shows coming-soon build/share/friend challenge copy",
+    "Direct /editor is a static preview with no editor canvas or playtest button",
+    "Landing and creator preview fit touch mobile without horizontal overflow"
+  ],
+  "errors": []
+}

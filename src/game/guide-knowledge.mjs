@@ -6,6 +6,7 @@ export const guideTopics = [
   { label: 'Save my progress', match: /save|progress|resume|login|log in|email|wallet|handle|profile/i, answer: 'Log in with email to save challenge progress. Add your active X handle and EVM wallet below your email. A wrong handle can’t receive rewards. Refreshing keeps your saved challenge; “Resume challenge” reloads the saved stage with its accumulated time. On mobile, tap “Your profile” to open it.' },
   { label: 'Stuck on stage 5?', match: /stage\s*5\b|level\s*5\b|drag/i, answer: 'Stage 5 gets handsy: drag VLADCAT until he touches the unlocked door after collecting the key. Mouse or touch both work. If you’re playing a challenge, retries keep that stage’s clock running. Nine lives, zero excuses.' },
   { label: 'End my challenge', match: /quit|end|skull|shame|abandon/i, answer: 'The ☠ button ends an unfinished challenge and puts your handle on the list of shames. That run cannot be resumed afterward. Just need a breather? Pause instead; closing the tab does not put you on the shame list.' },
+  { label: 'Build my own level', match: /editor|edit.*level|own.*level|creat.*level|playtest|share.*friend/i, answer: 'Your level, their problem! The level creator is coming soon. The preview shows the plan: build your own escape, share it with friends and dare them to beat it. Editing, playtesting and sharing are not open yet. Play the main game at /play while VLADCAT sharpens his tools.' },
 ];
 export function builtInGuide(question) {
   const specific = guideTopics.slice(5).find(topic => topic.match.test(question));

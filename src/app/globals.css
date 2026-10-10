@@ -512,3 +512,44 @@ body { background:radial-gradient(ellipse at 85% 0%,#29331b66,transparent 45%),v
 @media (max-height: 550px) and (orientation: landscape) {
   .play-main .play-shell { margin-inline: auto; }
 }
+
+/* A real game showcase and the upcoming friend-challenge level creator. */
+.game-showcase { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 44px; align-items: center; }
+.showcase-game-frame { border: 1px solid #52633c; border-radius: 12px; overflow: hidden; background: #181425; box-shadow: 0 20px 65px #0003; }
+.preview-window-bar { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding: 15px 18px; color: var(--muted); background: #20251a; font-size: 9px; letter-spacing: 1.2px; }
+.preview-window-bar > span:first-child { display: flex; align-items: center; gap: 8px; color: var(--green); }
+.showcase-game-frame > img { display: block; width: 100%; height: auto; image-rendering: pixelated; }
+.showcase-game-copy h2 { margin-top: 14px; }
+.showcase-game-copy h2 > span, .creator-preview-copy h2 > span { color: var(--green); }
+.showcase-game-copy > p, .creator-preview-copy > p { margin-top: 20px; color: var(--muted); font-size: 14px; line-height: 1.8; }
+.showcase-game-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+.showcase-game-tags > span { border: 1px solid var(--line); padding: 7px 10px; border-radius: 20px; font-size: 9px; color: var(--muted); letter-spacing: .7px; }
+.showcase-game-copy > .button { margin-top: 26px; padding: 14px 20px; }
+.creator-preview { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 38px; align-items: center; border: 1px solid #574564; border-radius: 14px; background: #1a1520; padding: 32px; margin-bottom: 70px; scroll-margin-top: 24px; }
+.creator-preview-art { position: relative; overflow: hidden; border: 1px solid #4e405a; border-radius: 9px; background: #181425; min-width: 0; }
+.creator-preview-art .preview-window-bar { background: #292033; letter-spacing: .6px; font-size: 8px; padding: 12px; }
+.creator-preview-art .preview-window-bar > span:first-child { letter-spacing: 2px; color: #a995ba; }
+.coming-soon-badge { display: inline-block; padding: 5px 8px; border: 1px solid #6d587e; border-radius: 20px; color: #d6c6e3; font-size: 8px; letter-spacing: .7px; }
+.creator-preview-art > img { display: block; width: 100%; height: auto; }
+.preview-image-label { position: absolute; bottom: 12px; left: 12px; background: #17111fe8; border: 1px solid #6d587e; padding: 8px 10px; color: #d6c6e3; font-size: 8px; letter-spacing: 1px; border-radius: 5px; }
+.creator-preview-copy h2 { font-size: clamp(30px, 3.2vw, 44px); letter-spacing: -1.4px; line-height: 1.1; margin-top: 14px; }
+.creator-preview-copy > .creator-taunt { color: var(--text); font-size: 17px; }
+.creator-preview-steps { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; font-size: 9px; letter-spacing: .7px; margin-top: 24px; }
+.creator-preview-steps > span:nth-child(even) { color: var(--green); font-size: 16px; }
+.creator-preview-copy > .creator-preview-note { font-size: 11px; color: #a99ab4; margin-top: 16px; }
+.creator-workspace > main { padding-top: 36px; padding-bottom: 36px; }
+.creator-workspace .creator-preview { margin-bottom: 24px; }
+.creator-preview-back { display: flex; align-items: center; flex-wrap: wrap; gap: 24px; }
+.creator-preview-back > a:last-child { color: var(--muted); font-size: 12px; }
+@media (max-width: 900px) {
+  .game-showcase { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .creator-preview { grid-template-columns: minmax(0, 1fr); gap: 26px; padding: 24px; margin-bottom: 50px; }
+}
+@media (max-width: 600px) {
+  .creator-preview { padding: 18px; }
+  .creator-preview-art .preview-window-bar > span:nth-child(2) { display: none; }
+  .showcase-game-copy > p, .creator-preview-copy > p { font-size: 13px; }
+  .creator-preview-copy > .creator-taunt { font-size: 16px; }
+  .creator-preview-copy > .creator-preview-note { font-size: 11px; }
+  .creator-workspace > main { padding-top: 24px; padding-bottom: 28px; }
+}
