@@ -21,6 +21,18 @@ Use case: stylized-concept. Asset type: production pixel-art animation sprite sh
 
 No external image API key was used.
 
+## Play-page challenge banner
+
+Generated with the built-in image-generation tool. The existing
+`vladcat-hero.webp` was supplied as the character identity reference.
+`vladcat-challenge.png` preserves the original 1536 × 1024 output;
+`vladcat-challenge.webp` is the optimized 900 × 600 website asset.
+The challenge heading and button remain accessible HTML rather than image text.
+
+Final prompt:
+
+Use case: ads-marketing. Create a new landscape 3:2 illustrated banner for the 'Ready to take a challenge?' CTA card on the VLADCAT ESCAPE game website. The supplied image is a character identity reference only; create new artwork and a new pose. VLADCAT is the same handsome muscular catguy with tousled brown hair, lime-green cat ears, a mustache and pointed goatee, lime one-shoulder sash, dark belt and wrist wraps. Show him waist-up on the right half, leaning toward the viewer with a cheeky confident grin and beckoning with one hand, inviting the player into an escape challenge. Behind him are the dark purple Void Ruins and a luminous lime-green escape doorway with subtle floating sparks. Polished anime/comic illustration matching the character reference, strong silhouette and bold lighting that stays readable at a 320px card width. Dark charcoal and aubergine background with lime-green accents, energetic and playful. Keep face and ears inside the frame with comfortable margins, no cropped head. Left half shows atmospheric ruins and the doorway. No words, no lettering, no button, no logo, no watermark: accessible website text and a real button will be placed below the artwork in HTML. Opaque background.
+
 ## Chibi guide mascot
 
 Generated using the built-in image-generation tool with `vladcat-hero.png` as

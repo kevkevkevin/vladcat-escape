@@ -216,12 +216,11 @@ export function GameWorkspace({ mode }: { mode: "play" | "editor" }) {
       </div>}
       {error && <div className="notice error" role="alert">{error}</div>}
       {mode === "editor" ? project ? <LevelEditor project={project} onSaved={(next) => setProject(next)} /> : <div className="empty-state">Opening the level files…</div> : <>
-        <div className="play-topline"><h1>VLADCAT ESCAPE<span className="play-title-dot">.</span></h1><Link href="/leaderboard">Leaderboard ↗</Link></div>
-        <div className="play-panels"><PlayDisclosure id="profile-panel" title="Your profile" hint={user ? user.xHandle ?? 'Add challenge details' : 'Log in & save your escape'}><AccountPanel user={user} loading={accountLoading} onChange={accountChanged} onLogout={logout} onEditProfile={editProfile} /></PlayDisclosure>
-        <PlayDisclosure id="instructions-panel" title="How to play" hint="Controls & challenge rules"><div className="play-instructions"><p><kbd>←</kbd> <kbd>→</kbd> Move <span className="control-divider" /> <kbd>↑</kbd> Jump</p><p>Grab the key and find the door. Some stages change the rules. On mobile, use the on-screen buttons.</p><p>Practice freely. Log in and add your active X handle and EVM wallet to take the challenge. Clear stages in order; the lowest total time wins.</p><p>Failed attempts count. Pauses don’t. Your challenge progress is saved so you can resume later.</p><p className="instruction-phone-tip">Turn your phone horizontally for a better experience. Tap ⛶ to enter fullscreen.</p></div></PlayDisclosure></div>
+        <h1 className="sr-only">Play VLADCAT ESCAPE</h1>
         <div className="rotate-phone-tip"><span aria-hidden="true">↻</span><p>Turn your phone horizontally for a better experience.</p></div>
         <ProfileModal open={profileOpen} user={user} takingChallenge={Boolean(profileIntent)} onSaved={profileSaved} onClose={closeProfile} />
-        {user && saved && !ticket && <div className="saved-progress"><div><strong>Escape saved at stage {saved.stage}.</strong><p>{saved.name} · {saved.splits.length} stages completed · {formatTime(saved.totalMs + saved.stageMs)}</p></div><button className="button primary" disabled={starting} onClick={() => void resumeRun()}>Resume challenge →</button></div>}
+        <div className="play-layout">
+        <div className="play-main">
         <section className="play-shell" ref={stage} aria-label="Game">
           <div className="stage-toolbar"><div className="stage-label"><span className="status-dot" /><span>{current.startsWith("Level_") ? `STAGE ${current.slice(6).padStart(2, "0")} / 50` : current === "Scene" ? "THE STORY" : "READY TO ESCAPE"}</span></div><div className="run-clocks"><div><span>STAGE TIME</span><time aria-label="Stage time">{formatTime(displayedTiming?.stageMs ?? 0)}</time></div><div><span>TOTAL TIME</span><time aria-label="Total time">{formatTime(displayedTiming?.totalMs ?? 0)}</time></div></div><div className="toolbar-actions">
             <button className="icon-button" aria-label={paused ? "Resume game" : "Pause game"} onClick={() => setPaused(!paused)}>{paused ? "▶" : "Ⅱ"}</button>
@@ -232,14 +231,37 @@ export function GameWorkspace({ mode }: { mode: "play" | "editor" }) {
           {timerSeed?.streamId ? <AuthoritativePlayer key={timerSeed.streamId} streamId={timerSeed.streamId} paused={paused || cloud.blocked || profileOpen} ended={endModal} onRun={cloud.accept} onLayout={setCurrent} onTiming={receiveTiming} onEnded={receiveEnded} onError={cloud.stop} overlay={current === 'Level_50' ? <EscapeEnding handle={playerHandle} totalMs={cloud.run?.totalMs} onReplay={() => preview()} /> : undefined} /> : <GamePlayer key={`${revision}-${layout}`} layout={layout} paused={paused || cloud.blocked || profileOpen} handle="" onLayout={setCurrent} onTiming={receiveTiming} overlay={current === "Scene" ? <StoryReader onBegin={() => preview("Level_1")} /> : current === "Level_50" ? <EscapeEnding handle={playerHandle} onReplay={() => preview()} /> : undefined} />}
           {cloud.blocked && <div className="paused-banner"><span>Progress sync stopped. Resume your saved stage to continue.</span><button className="button primary" disabled={starting} onClick={() => void resumeRun()}>Resume saved stage →</button></div>}
           {paused && <div className="paused-banner"><span>Taking a breather.</span><button className="button primary" onClick={() => setPaused(false)}>Resume game →</button></div>}
-          <div className="stage-footer"><span><span className="small-dot" /> {ticket ? `CHALLENGE · ${ticket.name}` : 'PRACTICE'}</span></div>
+          <div className="stage-footer"><span><span className="small-dot" /> {ticket ? `CHALLENGE · ${ticket.name}` : 'PRACTICE'}</span><Link href="/leaderboard">Leaderboard ↗</Link></div>
           <EndChallengeModal open={endModal} handle={ticket?.name ?? ""} timing={displayedTiming} status={endStatus} error={endError} onRetry={() => { if (endSnapshot.current) void saveShame(endSnapshot.current); }} onReturn={() => { window.location.assign('/leaderboard#shames'); }} />
         </section>
-        <div className="challenge-invite"><div><span className="eyebrow">TAKE THE VLADCAT CHALLENGE</span><h2>{ticket && !timing?.finished && !endModal ? 'Challenge accepted. Save CLANK WORLD.' : 'Want to take the challenge?'}</h2><p>A fresh timer for each stage. One total for your escape.</p></div><button className="button primary" disabled={accountLoading || starting || Boolean(ticket && !timing?.finished && (!endModal || endStatus !== 'saved'))} onClick={() => void startRanked()}>{starting ? 'Starting…' : ticket && !timing?.finished && !endModal ? 'Challenge in progress' : 'Take the challenge →'}</button></div>
         <div className="run-summary">
           <p>{ticket && timing?.eligible ? "Challenge gameplay is verified on the server. Failed attempts count; pauses do not. A stable connection is required." : timing?.reason && timing.reason !== "Practice run" ? timing.reason : "Practice freely, or take the challenge to join the leaderboard."}</p>
           {displayedTiming?.splits.length ? <details><summary>{displayedTiming.splits.length} stage{displayedTiming.splits.length === 1 ? "" : "s"} completed · View times</summary><div className="split-grid">{displayedTiming.splits.map((split) => <span key={split.stage}><small>Stage {split.stage.toString().padStart(2, "0")}</small><time>{formatTime(split.milliseconds)}</time></span>)}</div></details> : null}
           {timing?.finished && <div className="run-finished"><span className="eyebrow">ESCAPE COMPLETE</span><h2>Your total: {formatTime(cloud.run?.status === 'completed' ? cloud.run.totalMs : timing.totalMs)}</h2><p role="status">{scoreStatus || (ticket ? scoreError : "Take the challenge to post a time.")}</p>{scoreError && <button className="button primary" onClick={() => void submitScore(timing)}>Retry saving score</button>}<Link className="invite-link" href="/leaderboard">View leaderboard →</Link></div>}
+        </div>
+        </div>
+        <aside className="play-sidebar" aria-label="Player profile and challenge">
+          <PlayDisclosure id="profile-panel" title="Your profile" hint={user ? user.xHandle ?? 'Add details' : 'Log in & save'} desktopOpen={Boolean(user)}>
+            <AccountPanel user={user} loading={accountLoading} onChange={accountChanged} onLogout={logout} onEditProfile={editProfile} />
+            {user && saved && !ticket && <div className="saved-progress"><div><strong>Escape saved at stage {saved.stage}.</strong><p>{saved.name} · {saved.splits.length} stages completed · {formatTime(saved.totalMs + saved.stageMs)}</p></div><button className="button primary" disabled={starting} onClick={() => void resumeRun()}>Resume challenge →</button></div>}
+          </PlayDisclosure>
+          <section className="challenge-banner" aria-labelledby="challenge-banner-title">
+            <div className="challenge-banner-art"><img src="/vladcat/vladcat-challenge.webp" alt="VLADCAT beckons you toward a glowing escape doorway in the Void Ruins" width={900} height={600} /></div>
+            <div className="challenge-banner-copy">
+              <span className="eyebrow">{ticket && !timing?.finished && !endModal ? 'CLANK WORLD NEEDS YOU' : '49 PUZZLES. ONE ESCAPE.'}</span>
+              <h2 id="challenge-banner-title">{ticket && !timing?.finished && !endModal ? 'Challenge accepted.' : 'Ready to take a challenge?'}</h2>
+              <button className="button primary" disabled={accountLoading || starting || Boolean(ticket && !timing?.finished && (!endModal || endStatus !== 'saved'))} onClick={() => void startRanked()}>{starting ? 'Starting…' : ticket && !timing?.finished && !endModal ? 'Challenge in progress' : 'Take the challenge →'}</button>
+            </div>
+          </section>
+          <PlayDisclosure id="instructions-panel" title="How to play" hint="Controls & rules">
+            <div className="play-instructions">
+              <p><kbd>←</kbd> <kbd>→</kbd> Move <span className="control-divider" /> <kbd>↑</kbd> Jump</p>
+              <p>Grab the key. Find the door. Watch out: some stages change the rules.</p>
+              <p>Clear stages in order. Lowest total time wins. Retries count; pauses don’t.</p>
+              <p className="instruction-phone-tip">On mobile, turn your phone horizontally and use touch controls. Tap ⛶ for fullscreen.</p>
+            </div>
+          </PlayDisclosure>
+        </aside>
         </div>
       </>}
     </main>

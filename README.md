@@ -43,6 +43,13 @@ UI verification is recorded in `artifacts/marquee-guide-results.json`.
 - `/leaderboard`: public completed-run rankings and the list of shames. Ranking tables are no longer embedded on Play.
 - `/editor`: existing level editor.
 
+Play uses a desktop canvas-left/sidebar-right layout. The sidebar contains
+profile details, a newly generated VLADCAT challenge banner and instructions.
+On phones the canvas leads and sidebar cards stack below it. Guest login stays
+collapsed until opened or requested by the challenge button; logged-in profile
+details open on desktop. Artwork and its generation prompt are documented in
+`public/vladcat/ARTWORK.md`.
+
 Set `NEXT_PUBLIC_VLADCAT_TOKEN_CA`, `NEXT_PUBLIC_VLADCAT_X_URL` and
 `NEXT_PUBLIC_VLADCAT_TELEGRAM_URL` in `.env.local`, then restart/rebuild, to publish
 the real community details. Blank values show coming-soon text. CA has a copy

@@ -1,0 +1,11 @@
+{
+  "checks": [
+    "Desktop canvas/sidebar match wireframe; generated image loads and instructions open",
+    "Guest challenge CTA opens profile and focuses login",
+    "Touch mobile fits screen, puts canvas first, and toggles instructions",
+    "Landscape mobile fits screen and retains controls",
+    "Collapsed mobile profile fills the sidebar width",
+    "Desktop logged-in profile opens and shows reward details (read-only fixture)"
+  ],
+  "errors": []
+}

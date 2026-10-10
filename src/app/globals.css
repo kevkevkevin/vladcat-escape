@@ -456,3 +456,59 @@ body { background:radial-gradient(ellipse at 85% 0%,#29331b66,transparent 45%),v
 @media (max-width: 650px) { .main-nav { gap: 21px; } .main-nav a { font-size: 12px; } .landing-actions { flex-direction: column; align-items: stretch; } .landing-facts { gap: 18px; } .landing-facts > span { font-size: 8px; } .landing-facts strong { font-size: 24px; } .contract-card { padding: 20px; } .contract-card > div { align-items: start; flex-direction: column; } .landing-phone-tip { align-items: start; padding: 16px; } .play-topline > a { font-size: 10px; } .disclosure-hint { font-size: 10px; } }
 @media (max-width: 900px) and (orientation: portrait) { .rotate-phone-tip { display: flex; align-items: center; gap: 10px; background: #252c1d; padding: 11px 14px; border: 1px solid #455b30; border-radius: 7px; margin-bottom: 12px; } .rotate-phone-tip > span { font-size: 24px; color: var(--green); } .rotate-phone-tip p { font-size: 11px; color: var(--text); line-height: 1.6; } }
 @media (max-height: 550px) and (orientation: landscape) { .play-workspace .site-header { height: 60px; padding-top: 0; flex-wrap: nowrap; gap: 24px; } .play-workspace .brand { font-size: 19px; } .play-workspace .main-nav { width: auto; height: 60px; } .play-workspace .brand-mark { width: 28px; height: 28px; } .play-workspace .play-shell { max-width: min(100%, calc((100dvh - 94px) * 16 / 9)); } .play-workspace .play-topline { margin-bottom: 8px; } .play-workspace .play-panels { display: grid; grid-template-columns: 1fr 1fr; } }
+
+/* Play: the canvas leads, with profile, challenge artwork and help alongside. */
+.play-workspace > main { padding-top: 24px; padding-bottom: 32px; }
+.play-layout { display: grid; grid-template-columns: minmax(0, 1fr) clamp(300px, 24vw, 350px); gap: 22px; align-items: start; }
+.play-main, .play-sidebar { min-width: 0; }
+.play-main .play-shell { width: 100%; margin: 0; }
+.play-main .run-summary { margin-bottom: 0; }
+.play-main .stage-footer > a { color: var(--green); font-size: 10px; letter-spacing: 0; }
+.play-main .run-clocks { gap: 18px; margin-right: 18px; }
+.play-main .run-clocks > div { flex-direction: column; gap: 3px; align-items: flex-end; }
+.play-sidebar { display: flex; flex-direction: column; gap: 14px; }
+.play-sidebar .play-disclosure > summary { padding: 15px 16px; gap: 8px; }
+.play-sidebar .disclosure-hint { font-size: 10px; }
+.play-sidebar .account-card { display: flex; flex-direction: column; align-items: stretch; padding: 18px; margin: 0; border: 0; border-radius: 0; background: transparent; gap: 12px; }
+.play-sidebar .account-card h2 { font-size: 20px; line-height: 1.2; letter-spacing: -.5px; }
+.play-sidebar .account-card p { font-size: 12px; line-height: 1.6; }
+.play-sidebar .account-form { width: 100%; grid-template-columns: minmax(0, 1fr); gap: 12px; }
+.play-sidebar .account-switch { font-size: 11px; line-height: 1.6; }
+.play-sidebar .account-form input { padding: 10px 12px; }
+.play-sidebar .account-details { margin-top: 12px; }
+.play-sidebar .account-details .field-description { margin-bottom: 0; font-size: 11px; }
+.play-sidebar .account-wallet { font-size: 10px; }
+.play-sidebar .saved-progress { flex-direction: column; align-items: stretch; margin: 0 16px 16px; padding: 14px; }
+.play-sidebar .saved-progress strong { font-size: 12px; }
+.play-sidebar .saved-progress p { font-size: 11px; line-height: 1.6; }
+.play-sidebar .play-instructions { padding: 18px; }
+.play-sidebar .play-instructions > p { font-size: 12px; line-height: 1.65; }
+.play-sidebar .play-instructions > p:first-child { gap: 6px; font-size: 11px; flex-wrap: wrap; }
+.play-sidebar .control-divider { margin-inline: 3px; }
+.play-sidebar kbd { font-size: 12px; padding: 3px 7px; }
+.challenge-banner { overflow: hidden; border: 1px solid #65507b; border-radius: 10px; background: #20182a; }
+.challenge-banner-art { aspect-ratio: 3 / 2; overflow: hidden; border-bottom: 1px solid #65507b; }
+.challenge-banner-art > img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.challenge-banner-copy { position: relative; margin-top: -48px; padding: 28px 20px 20px; background: linear-gradient(180deg, transparent, #20182af5 24px, #20182a 50px); }
+.challenge-banner-copy > .eyebrow { font-size: 9px; letter-spacing: 1.4px; }
+.challenge-banner-copy h2 { margin-top: 10px; font-size: 28px; line-height: 1.08; letter-spacing: -.9px; text-wrap: balance; }
+.challenge-banner-copy > .button { width: 100%; margin-top: 18px; min-height: 44px; font-size: 12px; }
+@media (max-width: 1000px) {
+  .play-layout { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+  .play-sidebar { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; }
+  .play-sidebar .challenge-banner { grid-column: 2; grid-row: 1 / span 2; }
+  .play-sidebar #instructions-panel { grid-column: 1; }
+}
+@media (max-width: 600px) {
+  .play-workspace > main { padding-top: 14px; padding-bottom: 24px; }
+  .play-layout { gap: 16px; }
+  .play-sidebar { display: flex; align-items: stretch; gap: 12px; }
+  .play-sidebar .play-disclosure > summary { padding: 13px 16px; }
+  .play-main .run-clocks { margin: 0; }
+  .play-main .run-clocks > div { flex-direction: row; align-items: center; gap: 6px; }
+  .challenge-banner-art { aspect-ratio: 3 / 2; }
+  .challenge-banner-copy h2 { font-size: 28px; }
+}
+@media (max-height: 550px) and (orientation: landscape) {
+  .play-main .play-shell { margin-inline: auto; }
+}
