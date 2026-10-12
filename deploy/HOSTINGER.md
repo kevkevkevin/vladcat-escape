@@ -6,6 +6,25 @@ default is **one active challenge** for KVM 1 pilot testing; it is not a tested
 capacity guarantee. Practice runs in the player's browser. Do not add app
 replicas or PM2 cluster mode: active game sessions live in one Node process.
 
+## Purrvival domain deployment — 2026-10-13
+
+The Purrvival build at `3e9a7d2` is deployed at `https://purrvival.fun`.
+`www.purrvival.fun` and `vladcat.tech` redirect to the primary domain with HTTP
+308, preserving paths and query strings. HTTP redirects to HTTPS; certificate
+validation passed on all three hostnames. Supabase's Site URL is
+`https://purrvival.fun`, with the exact allowed redirect
+`https://purrvival.fun/play`. Existing data and score-signing secrets were kept.
+
+The production build, non-root Chromium sandbox check and container health
+checks passed. Ten HTTP production checks passed: secure login cookies,
+profile requirements, trusted engine startup, rejected forged completion,
+rejected injected controls, streamed game frames, cloud pause/resume,
+cross-origin write rejection, blocked direct score writes and public boards.
+The disposable QA account and runs were removed afterward. Homepage, practice
+and leaderboard were also checked in the browser. The previous image,
+environment file and proxy configuration are backed up privately on the VPS.
+The one-active-challenge pilot limit remains in place.
+
 ## Production validation — 2026-10-11
 
 The production image was built and deployed on the Ubuntu Hostinger VPS for
