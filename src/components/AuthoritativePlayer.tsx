@@ -89,7 +89,7 @@ export function AuthoritativePlayer({ streamId, paused, ended, overlay, onRun, o
   }
   function touchKey(code: string, down: boolean) { if (down) { audio.current?.unlock(); keys.current.add(code); } else keys.current.delete(code); enqueue(true); }
   return <div className={`game-player authoritative-player${overlay ? ' game-player-overlay' : ''}`}>
-    {image && <img ref={surface} className="authority-screen" src={image} alt="VLADCAT ESCAPE live challenge" width={WIDTH} height={HEIGHT} draggable={false} tabIndex={overlay ? -1 : 0}
+    {image && <img ref={surface} className="authority-screen" src={image} alt="Purrvival live challenge" width={WIDTH} height={HEIGHT} draggable={false} tabIndex={overlay ? -1 : 0}
       onKeyDown={event => { if (overlay || stopped.current || !Object.hasOwn(KEY_CODES, event.code)) return; audio.current?.unlock(); event.preventDefault(); if (!event.repeat && !keys.current.has(event.code)) { keys.current.add(event.code); enqueue(true); } }}
       onPointerDown={event => { if (event.button !== 0) return; audio.current?.unlock(); event.currentTarget.focus({ preventScroll: true }); event.currentTarget.setPointerCapture(event.pointerId); point(event, true); }}
       onPointerMove={event => point(event)} onPointerUp={event => point(event, false)} onPointerCancel={event => point(event, false)} onContextMenu={event => event.preventDefault()} />}

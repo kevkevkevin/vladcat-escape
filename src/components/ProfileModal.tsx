@@ -30,7 +30,8 @@ export function ProfileModal({ open, user, takingChallenge, onSaved, onClose }: 
   }
   return <dialog ref={dialog} className="profile-dialog" aria-labelledby="profile-title" aria-describedby="profile-description" onCancel={e => { e.preventDefault(); if (!busy) onClose(); }}>
     <span className="eyebrow">YOUR CHALLENGE DETAILS</span>
-    <h2 id="profile-title">Give VLADCAT your coordinates.</h2>
+    <img className="profile-mascot" src="/mewventure/pur-pur.webp" alt="PUR PUR waving hello" width={80} height={80} />
+    <h2 id="profile-title">Your adventure starts with you.</h2>
     <p id="profile-description">Add your X handle and EVM wallet for the challenge and rewards.</p>
     <form onSubmit={e => { e.preventDefault(); void save(); }}>
       <label htmlFor="profile-handle">Enter X handle</label>

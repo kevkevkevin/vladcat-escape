@@ -15,6 +15,7 @@ button { border:0; }
 .brand { display:flex; align-items:center; gap:12px; font:600 26px "Space Grotesk",var(--font); letter-spacing:-1.3px; }
 .brand-mark { width:33px; height:34px; display:grid; place-items:center; background:var(--green); color:var(--bg); font-size:31px; border-radius:10px 10px 10px 2px; position:relative; line-height:1; padding-bottom:6px; }
 .brand-mark span { position:absolute; right:3px; top:-9px; font-size:25px; }
+.brand .mew-brand-mark { width:44px; height:44px; padding:0; background:transparent; object-fit:contain; border-radius:0; }
 .brand-dot { color:var(--green); }
 .main-nav { display:flex; gap:30px; align-self:stretch; align-items:center; }
 .main-nav a { display:grid; place-items:center; height:100%; color:var(--muted); position:relative; font-weight:600; }

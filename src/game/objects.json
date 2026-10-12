@@ -15,9 +15,9 @@
       }
     ],
     "texture": {
-      "asset": "images/shared-0-sheet3.webp",
-      "x": 1,
-      "y": 1,
+      "asset": "images/mewventure-cave-tiles.png",
+      "x": 0,
+      "y": 0,
       "width": 240,
       "height": 288,
       "engine": [
@@ -891,7 +891,7 @@
         "loop": true,
         "frames": [
           {
-            "asset": "images/vladcat-sprites.png",
+            "asset": "images/mewventure-sprites.png",
             "x": 0,
             "y": 32,
             "width": 32,
@@ -916,7 +916,7 @@
             "originY": 0.75
           },
           {
-            "asset": "images/vladcat-sprites.png",
+            "asset": "images/mewventure-sprites.png",
             "x": 32,
             "y": 32,
             "width": 32,
@@ -941,7 +941,7 @@
             "originY": 0.75
           },
           {
-            "asset": "images/vladcat-sprites.png",
+            "asset": "images/mewventure-sprites.png",
             "x": 64,
             "y": 32,
             "width": 32,
@@ -966,7 +966,7 @@
             "originY": 0.75
           },
           {
-            "asset": "images/vladcat-sprites.png",
+            "asset": "images/mewventure-sprites.png",
             "x": 96,
             "y": 32,
             "width": 32,
@@ -991,7 +991,7 @@
             "originY": 0.75
           },
           {
-            "asset": "images/vladcat-sprites.png",
+            "asset": "images/mewventure-sprites.png",
             "x": 0,
             "y": 64,
             "width": 32,
@@ -1016,7 +1016,7 @@
             "originY": 0.75
           },
           {
-            "asset": "images/vladcat-sprites.png",
+            "asset": "images/mewventure-sprites.png",
             "x": 32,
             "y": 64,
             "width": 32,
@@ -1041,7 +1041,7 @@
             "originY": 0.75
           },
           {
-            "asset": "images/vladcat-sprites.png",
+            "asset": "images/mewventure-sprites.png",
             "x": 64,
             "y": 64,
             "width": 32,
@@ -1083,7 +1083,7 @@
         "loop": true,
         "frames": [
           {
-            "asset": "images/vladcat-sprites.png",
+            "asset": "images/mewventure-sprites.png",
             "x": 0,
             "y": 0,
             "width": 32,
@@ -1108,7 +1108,7 @@
             "originY": 0.75
           },
           {
-            "asset": "images/vladcat-sprites.png",
+            "asset": "images/mewventure-sprites.png",
             "x": 32,
             "y": 0,
             "width": 32,
@@ -1133,7 +1133,7 @@
             "originY": 0.75
           },
           {
-            "asset": "images/vladcat-sprites.png",
+            "asset": "images/mewventure-sprites.png",
             "x": 64,
             "y": 0,
             "width": 32,
@@ -1158,7 +1158,7 @@
             "originY": 0.75
           },
           {
-            "asset": "images/vladcat-sprites.png",
+            "asset": "images/mewventure-sprites.png",
             "x": 96,
             "y": 0,
             "width": 32,
@@ -1183,7 +1183,7 @@
             "originY": 0.75
           },
           {
-            "asset": "images/vladcat-sprites.png",
+            "asset": "images/mewventure-sprites.png",
             "x": 64,
             "y": 0,
             "width": 32,
@@ -1208,7 +1208,7 @@
             "originY": 0.75
           },
           {
-            "asset": "images/vladcat-sprites.png",
+            "asset": "images/mewventure-sprites.png",
             "x": 32,
             "y": 0,
             "width": 32,
@@ -1233,7 +1233,7 @@
             "originY": 0.75
           },
           {
-            "asset": "images/vladcat-sprites.png",
+            "asset": "images/mewventure-sprites.png",
             "x": 0,
             "y": 0,
             "width": 32,
@@ -1275,7 +1275,7 @@
         "loop": false,
         "frames": [
           {
-            "asset": "images/vladcat-sprites.png",
+            "asset": "images/mewventure-sprites.png",
             "x": 0,
             "y": 96,
             "width": 32,
@@ -1300,7 +1300,7 @@
             "originY": 0.75
           },
           {
-            "asset": "images/vladcat-sprites.png",
+            "asset": "images/mewventure-sprites.png",
             "x": 32,
             "y": 96,
             "width": 32,
@@ -1325,7 +1325,7 @@
             "originY": 0.75
           },
           {
-            "asset": "images/vladcat-sprites.png",
+            "asset": "images/mewventure-sprites.png",
             "x": 64,
             "y": 96,
             "width": 32,
@@ -1367,7 +1367,7 @@
         "loop": false,
         "frames": [
           {
-            "asset": "images/vladcat-sprites.png",
+            "asset": "images/mewventure-sprites.png",
             "x": 96,
             "y": 96,
             "width": 32,
@@ -1814,7 +1814,7 @@
         "loop": false,
         "frames": [
           {
-            "asset": "images/vladcat-key.png",
+            "asset": "images/mewventure-key.png",
             "x": 0,
             "y": 0,
             "width": 16,
@@ -2812,9 +2812,9 @@
         "loop": false,
         "frames": [
           {
-            "asset": "images/shared-0-sheet5.webp",
-            "x": 104,
-            "y": 97,
+            "asset": "images/mewventure-crystals.png",
+            "x": 0,
+            "y": 0,
             "width": 16,
             "height": 16,
             "engine": [
@@ -2846,9 +2846,9 @@
             "originY": 0.5
           },
           {
-            "asset": "images/shared-0-sheet5.webp",
-            "x": 1,
-            "y": 97,
+            "asset": "images/mewventure-crystals.png",
+            "x": 16,
+            "y": 0,
             "width": 16,
             "height": 16,
             "engine": [
@@ -2880,9 +2880,9 @@
             "originY": 0.5
           },
           {
-            "asset": "images/shared-0-sheet5.webp",
-            "x": 37,
-            "y": 97,
+            "asset": "images/mewventure-crystals.png",
+            "x": 32,
+            "y": 0,
             "width": 16,
             "height": 16,
             "engine": [
@@ -2914,9 +2914,9 @@
             "originY": 0.5
           },
           {
-            "asset": "images/shared-0-sheet5.webp",
-            "x": 55,
-            "y": 97,
+            "asset": "images/mewventure-crystals.png",
+            "x": 48,
+            "y": 0,
             "width": 16,
             "height": 16,
             "engine": [
@@ -2948,9 +2948,9 @@
             "originY": 0.5
           },
           {
-            "asset": "images/shared-0-sheet5.webp",
-            "x": 19,
-            "y": 97,
+            "asset": "images/mewventure-crystals.png",
+            "x": 64,
+            "y": 0,
             "width": 16,
             "height": 16,
             "engine": [
@@ -2982,9 +2982,9 @@
             "originY": 0.5
           },
           {
-            "asset": "images/shared-0-sheet5.webp",
-            "x": 73,
-            "y": 99,
+            "asset": "images/mewventure-crystals.png",
+            "x": 80,
+            "y": 0,
             "width": 16,
             "height": 16,
             "engine": [
@@ -4092,7 +4092,7 @@
         "loop": true,
         "frames": [
           {
-            "asset": "images/vladcat-sprites.png",
+            "asset": "images/mewventure-sprites.png",
             "x": 0,
             "y": 32,
             "width": 32,
@@ -4123,7 +4123,7 @@
             "originY": 0.75
           },
           {
-            "asset": "images/vladcat-sprites.png",
+            "asset": "images/mewventure-sprites.png",
             "x": 32,
             "y": 32,
             "width": 32,
@@ -4154,7 +4154,7 @@
             "originY": 0.75
           },
           {
-            "asset": "images/vladcat-sprites.png",
+            "asset": "images/mewventure-sprites.png",
             "x": 64,
             "y": 32,
             "width": 32,
@@ -4185,7 +4185,7 @@
             "originY": 0.75
           },
           {
-            "asset": "images/vladcat-sprites.png",
+            "asset": "images/mewventure-sprites.png",
             "x": 96,
             "y": 32,
             "width": 32,
@@ -4216,7 +4216,7 @@
             "originY": 0.75
           },
           {
-            "asset": "images/vladcat-sprites.png",
+            "asset": "images/mewventure-sprites.png",
             "x": 0,
             "y": 64,
             "width": 32,
@@ -4247,7 +4247,7 @@
             "originY": 0.75
           },
           {
-            "asset": "images/vladcat-sprites.png",
+            "asset": "images/mewventure-sprites.png",
             "x": 32,
             "y": 64,
             "width": 32,
@@ -4278,7 +4278,7 @@
             "originY": 0.75
           },
           {
-            "asset": "images/vladcat-sprites.png",
+            "asset": "images/mewventure-sprites.png",
             "x": 64,
             "y": 64,
             "width": 32,
@@ -4326,7 +4326,7 @@
         "loop": true,
         "frames": [
           {
-            "asset": "images/vladcat-sprites.png",
+            "asset": "images/mewventure-sprites.png",
             "x": 0,
             "y": 0,
             "width": 32,
@@ -4357,7 +4357,7 @@
             "originY": 0.75
           },
           {
-            "asset": "images/vladcat-sprites.png",
+            "asset": "images/mewventure-sprites.png",
             "x": 32,
             "y": 0,
             "width": 32,
@@ -4388,7 +4388,7 @@
             "originY": 0.75
           },
           {
-            "asset": "images/vladcat-sprites.png",
+            "asset": "images/mewventure-sprites.png",
             "x": 64,
             "y": 0,
             "width": 32,
@@ -4419,7 +4419,7 @@
             "originY": 0.75
           },
           {
-            "asset": "images/vladcat-sprites.png",
+            "asset": "images/mewventure-sprites.png",
             "x": 96,
             "y": 0,
             "width": 32,
@@ -4450,7 +4450,7 @@
             "originY": 0.75
           },
           {
-            "asset": "images/vladcat-sprites.png",
+            "asset": "images/mewventure-sprites.png",
             "x": 64,
             "y": 0,
             "width": 32,
@@ -4481,7 +4481,7 @@
             "originY": 0.75
           },
           {
-            "asset": "images/vladcat-sprites.png",
+            "asset": "images/mewventure-sprites.png",
             "x": 32,
             "y": 0,
             "width": 32,
@@ -4512,7 +4512,7 @@
             "originY": 0.75
           },
           {
-            "asset": "images/vladcat-sprites.png",
+            "asset": "images/mewventure-sprites.png",
             "x": 0,
             "y": 0,
             "width": 32,
@@ -4560,7 +4560,7 @@
         "loop": false,
         "frames": [
           {
-            "asset": "images/vladcat-sprites.png",
+            "asset": "images/mewventure-sprites.png",
             "x": 0,
             "y": 96,
             "width": 32,
@@ -4591,7 +4591,7 @@
             "originY": 0.75
           },
           {
-            "asset": "images/vladcat-sprites.png",
+            "asset": "images/mewventure-sprites.png",
             "x": 32,
             "y": 96,
             "width": 32,
@@ -4622,7 +4622,7 @@
             "originY": 0.75
           },
           {
-            "asset": "images/vladcat-sprites.png",
+            "asset": "images/mewventure-sprites.png",
             "x": 64,
             "y": 96,
             "width": 32,
@@ -4670,7 +4670,7 @@
         "loop": false,
         "frames": [
           {
-            "asset": "images/vladcat-sprites.png",
+            "asset": "images/mewventure-sprites.png",
             "x": 96,
             "y": 96,
             "width": 32,
@@ -4745,7 +4745,7 @@
         "loop": false,
         "frames": [
           {
-            "asset": "images/vladcat-key.png",
+            "asset": "images/mewventure-key.png",
             "x": 0,
             "y": 0,
             "width": 16,
@@ -5692,7 +5692,7 @@
         "loop": true,
         "frames": [
           {
-            "asset": "images/vladcat-title.png",
+            "asset": "images/mewventure-title.png",
             "x": 0,
             "y": 0,
             "width": 142,
@@ -5734,7 +5734,7 @@
         "loop": false,
         "frames": [
           {
-            "asset": "../vladcat/vladcat-ending.webp",
+            "asset": "images/purrvival-ending.webp",
             "x": 0,
             "y": 0,
             "width": 1672,
@@ -5806,7 +5806,7 @@
       }
     ],
     "texture": {
-      "asset": "images/vladcat-panel.png",
+      "asset": "images/mewventure-panel.png",
       "x": 0,
       "y": 0,
       "width": 32,
@@ -6594,7 +6594,7 @@
         "loop": false,
         "frames": [
           {
-            "asset": "../vladcat/vladcat-comic-01.webp",
+            "asset": "images/purrvival-story-01.webp",
             "x": 0,
             "y": 0,
             "width": 1672,
@@ -6619,7 +6619,7 @@
             "originY": 0.5
           },
           {
-            "asset": "../vladcat/vladcat-comic-02.webp",
+            "asset": "images/purrvival-story-02.webp",
             "x": 0,
             "y": 0,
             "width": 1672,

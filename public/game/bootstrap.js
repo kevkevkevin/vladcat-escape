@@ -2,6 +2,7 @@
 // owns navigation, editable source, and the level editor.
 import "./scripts/main.js";
 import { RunTimer } from "./run-timer.js";
+import { installKeyGlow } from "./key-glow.js";
 
 const embedded = window.parent !== window;
 const post = (type, payload = {}) => {
@@ -70,6 +71,7 @@ try {
   };
   window.runOnStartup((game) => {
     runtime = game;
+    installKeyGlow(game);
     timer = new RunTimer(ranked);
     if (ranked) timer.restore(savedTiming);
     const blocked = () => game.isSuspended || game.timeScale === 0 || game.globalVars.Paused === true || document.hidden;

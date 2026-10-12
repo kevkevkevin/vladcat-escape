@@ -207,7 +207,7 @@ export function GameWorkspace({ mode }: { mode: "play" | "editor" }) {
     endSnapshot.current = next; setTiming(next); void saveShame(next);
   }
 
-  return <div className={`workspace ${mode === 'play' ? 'play-workspace' : ''}`}>
+  return <div className={`workspace ${mode === 'play' ? 'play-workspace mew-ui' : ''}`}>
     <SiteHeader active={mode} />
     <main>
       {mode === 'editor' && <div className="page-intro vladcat-intro editor-intro">
@@ -216,7 +216,7 @@ export function GameWorkspace({ mode }: { mode: "play" | "editor" }) {
       </div>}
       {error && <div className="notice error" role="alert">{error}</div>}
       {mode === "editor" ? project ? <LevelEditor project={project} onSaved={(next) => setProject(next)} /> : <div className="empty-state">Opening the level files…</div> : <>
-        <h1 className="sr-only">Play VLADCAT ESCAPE</h1>
+        <h1 className="sr-only">Play Purrvival</h1>
         <div className="rotate-phone-tip"><span aria-hidden="true">↻</span><p>Turn your phone horizontally for a better experience.</p></div>
         <ProfileModal open={profileOpen} user={user} takingChallenge={Boolean(profileIntent)} onSaved={profileSaved} onClose={closeProfile} />
         <div className="play-layout">
@@ -246,10 +246,11 @@ export function GameWorkspace({ mode }: { mode: "play" | "editor" }) {
             {user && saved && !ticket && <div className="saved-progress"><div><strong>Escape saved at stage {saved.stage}.</strong><p>{saved.name} · {saved.splits.length} stages completed · {formatTime(saved.totalMs + saved.stageMs)}</p></div><button className="button primary" disabled={starting} onClick={() => void resumeRun()}>Resume challenge →</button></div>}
           </PlayDisclosure>
           <section className="challenge-banner" aria-labelledby="challenge-banner-title">
-            <div className="challenge-banner-art"><img src="/vladcat/vladcat-challenge.webp" alt="VLADCAT beckons you toward a glowing escape doorway in the Void Ruins" width={900} height={600} /></div>
+            <div className="challenge-banner-art"><img src="/mewventure/challenge-banner.webp" alt="EIRA holds a golden key beside PUR PUR in a cozy cave. Who’s up for a challenge?" width={800} height={1000} /></div>
             <div className="challenge-banner-copy">
-              <span className="eyebrow">{ticket && !timing?.finished && !endModal ? 'CLANK WORLD NEEDS YOU' : '49 PUZZLES. ONE ESCAPE.'}</span>
-              <h2 id="challenge-banner-title">{ticket && !timing?.finished && !endModal ? 'Challenge accepted.' : 'Ready to take a challenge?'}</h2>
+              {ticket && !timing?.finished && !endModal && <span className="eyebrow">YOU’VE GOT THIS, ADVENTURE BUDDY</span>}
+              <h2 id="challenge-banner-title" className={ticket && !timing?.finished && !endModal ? undefined : 'sr-only'}>{ticket && !timing?.finished && !endModal ? 'Challenge accepted.' : 'Who’s up for a challenge?'}</h2>
+              <p>{ticket && !timing?.finished && !endModal ? 'EIRA and PUR PUR are cheering you on. One little victory at a time.' : '49 playful puzzles. One timed adventure. EIRA and PUR PUR are rooting for you!'}</p>
               <button className="button primary" disabled={accountLoading || starting || Boolean(ticket && !timing?.finished && (!endModal || endStatus !== 'saved'))} onClick={() => void startRanked()}>{starting ? 'Starting…' : ticket && !timing?.finished && !endModal ? 'Challenge in progress' : 'Take the challenge →'}</button>
             </div>
           </section>

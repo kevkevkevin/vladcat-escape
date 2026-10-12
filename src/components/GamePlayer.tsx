@@ -11,7 +11,7 @@ export function GamePlayer({ layout, override, paused = false, ranked = false, h
   const onEndedRef = useRef(onEnded);
   const onCheckpointRef = useRef(onCheckpoint);
   const endedRef = useRef(ended);
-  const [status, setStatus] = useState("Getting VLADCAT ready…");
+  const [status, setStatus] = useState("Getting your adventure ready…");
   const [failed, setFailed] = useState(false);
   onLayoutRef.current = onLayout;
   pausedRef.current = paused;
@@ -63,7 +63,7 @@ export function GamePlayer({ layout, override, paused = false, ranked = false, h
   }, [ended]);
 
   return <div className={`game-player${overlay ? " game-player-overlay" : ""}`}>
-    <iframe ref={frame} src="/game/index.html" title="VLADCAT ESCAPE game" allow="autoplay; fullscreen" allowFullScreen tabIndex={overlay ? -1 : 0} aria-hidden={Boolean(overlay)} />
+    <iframe ref={frame} src="/game/index.html" title="Purrvival escape game" allow="autoplay; fullscreen" allowFullScreen tabIndex={overlay ? -1 : 0} aria-hidden={Boolean(overlay)} />
     {overlay}
     {status && <div className={`game-loading ${failed ? "failed" : ""}`} role={failed ? "alert" : "status"}>
       {!failed && <span className="loader" />}<span>{status}</span>

@@ -2,6 +2,7 @@
 // the player's engine. All runtime state is derived from the original rules.
 import './scripts/main.js';
 import { RunTimer } from './run-timer.js';
+import { installKeyGlow } from './key-glow.js';
 const response = await fetch('/authority-project');
 const { project, stage, handle, savedTiming } = await response.json();
 const originalFetch = window.fetch.bind(window);
@@ -47,6 +48,7 @@ window.__authority = {
 };
 window.runOnStartup(game => {
   runtime = game;
+  installKeyGlow(game);
   // Mirror this pinned export's audio actions while keeping the original
   // actions and their return values intact for the game engine.
   const acts = self.C3.Plugins.Audio.Acts;

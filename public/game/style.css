@@ -115,3 +115,6 @@ html[ioswebview] .c3htmlwrap > * {
     overflow: hidden;
     clip: rect(1px, 1px, 1px, 1px);
 }
+
+.key-glow-layer { position:fixed; inset:0; overflow:hidden; pointer-events:none; z-index:1; }
+.key-glow { position:absolute; transform:translate(-50%,-50%); border-radius:50%; pointer-events:none; background:radial-gradient(circle,rgba(255,246,178,.24) 0%,rgba(255,220,107,.23) 23%,rgba(255,197,76,.13) 42%,rgba(255,189,65,.055) 60%,transparent 75%); mix-blend-mode:screen; }
