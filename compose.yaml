@@ -35,6 +35,7 @@ services:
     image: caddy:2-alpine
     environment:
       VLADCAT_DOMAIN: ${VLADCAT_DOMAIN:?Set the game domain without https://}
+      VLADCAT_REDIRECT_DOMAINS: ${VLADCAT_REDIRECT_DOMAINS:?Set redirect hostnames separated by spaces}
     ports:
       - "80:80"
       - "443:443"

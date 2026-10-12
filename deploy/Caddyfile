@@ -4,3 +4,7 @@
         flush_interval -1
     }
 }
+
+{$VLADCAT_REDIRECT_DOMAINS} {
+    redir https://{$VLADCAT_DOMAIN}{uri} 308
+}

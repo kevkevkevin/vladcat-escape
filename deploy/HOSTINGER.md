@@ -62,7 +62,11 @@ chmod 600 deploy/production.env
 nano deploy/production.env
 ```
 
-Set `VLADCAT_DOMAIN` to the DNS name only, without a scheme or path. Copy the
+Set `VLADCAT_DOMAIN` to the primary DNS name only, without a scheme or path.
+Set `VLADCAT_REDIRECT_DOMAINS` to a quoted, space-separated list of aliases
+that also resolve to this VPS. For Purrvival these are `www.purrvival.fun` and
+the previous address `vladcat.tech`; Caddy redirects them to `purrvival.fun`
+with HTTP 308 and preserves paths and query strings. Copy the
 Supabase URL, public key and server secret from the existing private `.env.local`
 into this private file. Copy the existing verification key **only if already
 configured**. Otherwise leave `VLADCAT_VERIFICATION_KEY` blank and keep the same
