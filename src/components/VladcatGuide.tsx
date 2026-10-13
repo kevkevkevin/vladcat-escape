@@ -1,23 +1,23 @@
 "use client";
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
-import { builtInGuide, guideTopics } from '@/game/guide-knowledge.mjs';
+import { builtInGuide, guideGreeting, guideQuickTopics } from '@/game/guide-knowledge.mjs';
+import { siteInfo } from '@/game/site-info.mjs';
 type Message = { role: 'user' | 'assistant'; text: string };
+const officialLinks = new Set([siteInfo.buyUrl, siteInfo.xUrl, siteInfo.telegramUrl, siteInfo.origin]);
+function GuideReply({ text }: { text: string }) {
+  return text.split(/(https:\/\/[^\s]+)/g).map((part, index) => officialLinks.has(part) ? <a key={index} href={part} target="_blank" rel="noopener noreferrer">{part}</a> : part);
+}
 export function VladcatGuide() {
-  const pathname = usePathname();
-  const cozy = ['/', '/play', '/leaderboard'].includes(pathname);
-  const guideName = cozy ? 'PUR PUR' : 'VLADCAT';
-  const guideImage = cozy ? '/mewventure/pur-pur.webp' : '/vladcat/vladcat-chibi.webp';
-  const homeGreeting = 'Purr! I’m PUR PUR, EIRA’s little adventure buddy. Welcome to Purrvival! Need a paw finding your first adventure?';
-  const displayReply = (text: string) => cozy ? text.replaceAll('VLADCAT', 'the escape character').replace('cat wrangler', 'adventure buddy') : text;
+  const guideName = 'PUR PUR';
+  const guideImage = '/mewventure/pur-pur.webp';
   const [open, setOpen] = useState(false);
   const [fullscreen, setFullscreen] = useState(false);
   const [question, setQuestion] = useState('');
   const [mode, setMode] = useState<'ai' | 'builtin'>('builtin');
   const [busy, setBusy] = useState(false);
   const [notice, setNotice] = useState('');
-  const [messages, setMessages] = useState<Message[]>([{ role: 'assistant', text: 'Hey, cat wrangler. I’m mini VLADCAT. Big ears, tiny patience. Need a paw with the game?' }]);
+  const [messages, setMessages] = useState<Message[]>([{ role: 'assistant', text: guideGreeting }]);
   const launcher = useRef<HTMLButtonElement>(null);
   const input = useRef<HTMLInputElement>(null);
   const log = useRef<HTMLDivElement>(null);
@@ -44,13 +44,11 @@ export function VladcatGuide() {
   async function ask(text: string) {
     const trimmed = text.trim();
     if (!trimmed || sending.current) return;
-    const history = messages.slice(-2).map(message => ({ role: message.role, content: (cozy && message === messages[0] ? homeGreeting : message.role === 'assistant' ? displayReply(message.text) : message.text).slice(0, 240) }));
+    const history = messages.slice(-2).map(message => ({ role: message.role, content: message.text.slice(0, 240) }));
     setMessages(previous => [...previous.slice(-18), { role: 'user', text: trimmed }]);
     setQuestion(''); setNotice('');
     let reply = builtInGuide(trimmed);
-    const companionQuestion = cozy && /\beira\b|\bpur\s*pur\b|\bpurrvival\b/i.test(trimmed);
-    if (companionQuestion) reply = 'Purr! I’m PUR PUR, a curious blue-gray kitten with a very cozy heart. EIRA is my favorite human and adventure buddy. Purrvival is our little home for playful puzzles, friendly challenges, and happy paws. Want to play? Tap Play and start with practice!';
-    if (mode === 'ai' && !companionQuestion) {
+    if (mode === 'ai') {
       sending.current = true; setBusy(true);
       const controller = new AbortController(); request.current = controller;
       const timeout = window.setTimeout(() => controller.abort(), 20000);
@@ -64,17 +62,17 @@ export function VladcatGuide() {
     }
     setMessages(previous => [...previous, { role: 'assistant', text: reply }]);
   }
-  return <aside className={`vladcat-guide${cozy ? ' mew-guide' : ''}`} hidden={fullscreen} aria-label={`${guideName} game guide`}>
+  return <aside className="vladcat-guide mew-guide" hidden={fullscreen} aria-label={`${guideName} game guide`}>
     {open && <section className="guide-panel" role="dialog" aria-modal="false" aria-labelledby="guide-title" aria-describedby="guide-mode">
-      <header className="guide-header"><img src={guideImage} alt="" width={cozy ? 45 : 40} height={cozy ? 45 : 60} /><div><span className="eyebrow">A LITTLE PAW FROM {guideName}</span><h2 id="guide-title">{cozy ? 'Your little adventure buddy.' : 'Your catguy guide.'}</h2></div><button className="guide-close" aria-label={`Close ${guideName} guide`} onClick={close}>×</button></header>
+      <header className="guide-header"><img src={guideImage} alt="" width={45} height={45} /><div><span className="eyebrow">A LITTLE PAW FROM {guideName}</span><h2 id="guide-title">Your little adventure buddy.</h2></div><button className="guide-close" aria-label={`Close ${guideName} guide`} onClick={close}>×</button></header>
       <p id="guide-mode" className="guide-mode"><span className="status-dot" /> {mode === 'ai' ? 'Live AI · messages sent to OpenAI' : 'Built-in game help'}</p>
-      <div className="guide-log" ref={log} role="log" aria-label="Guide conversation" aria-live="polite" aria-relevant="additions">{messages.map((message, index) => <div className={`guide-message ${message.role}`} key={index}><span>{message.role === 'assistant' ? guideName : 'YOU'}</span><p>{cozy && index === 0 ? homeGreeting : message.role === 'assistant' ? displayReply(message.text) : message.text}</p></div>)}</div>
+      <div className="guide-log" ref={log} role="log" aria-label="Guide conversation" aria-live="polite" aria-relevant="additions">{messages.map((message, index) => <div className={`guide-message ${message.role}`} key={index}><span>{message.role === 'assistant' ? guideName : 'YOU'}</span><p>{message.role === 'assistant' ? <GuideReply text={message.text} /> : message.text}</p></div>)}</div>
       {busy && <p className="guide-notice" role="status">{guideName} is thinking…</p>}
       {notice && <p className="guide-notice" role="status">{notice}</p>}
-      <div className="guide-topics" aria-label="Quick help topics">{guideTopics.slice(0, 5).map(topic => <button key={topic.label} disabled={busy} onClick={() => void ask(topic.label)}>{topic.label}</button>)}</div>
+      <div className="guide-topics" aria-label="Quick help topics">{guideQuickTopics.map(topic => <button key={topic.label} disabled={busy} onClick={() => void ask(topic.label)}>{topic.label}</button>)}</div>
       <form className="guide-form" onSubmit={event => { event.preventDefault(); void ask(question); }}><label className="sr-only" htmlFor="guide-question">Ask {guideName} a game question</label><input ref={input} id="guide-question" value={question} maxLength={400} autoComplete="off" onChange={event => setQuestion(event.target.value)} placeholder="Need a paw? Ask about the game…" /><button className="button primary" disabled={busy || !question.trim()} aria-label="Send guide question">↑</button></form>
-      <div className="guide-links"><Link href="/play" onClick={() => setOpen(false)}>Play →</Link><Link href="/leaderboard" onClick={() => setOpen(false)}>Leaderboard →</Link><span>{mode === 'ai' ? 'Your question and two recent messages go to OpenAI.' : 'Built-in help stays in this browser.'}</span></div>
+      <div className="guide-links"><Link href="/play" onClick={() => setOpen(false)}>Play →</Link><Link href="/leaderboard" onClick={() => setOpen(false)}>Leaderboard →</Link><a href={siteInfo.buyUrl} target="_blank" rel="noopener noreferrer">BUY {siteInfo.tokenSymbol} ↗</a><a href={siteInfo.xUrl} target="_blank" rel="noopener noreferrer">X ↗</a><a href={siteInfo.telegramUrl} target="_blank" rel="noopener noreferrer">Telegram ↗</a><span>{mode === 'ai' ? 'Your question and two recent messages go to OpenAI.' : 'Built-in help stays in this browser.'}</span></div>
     </section>}
-    <button ref={launcher} className="guide-launcher" aria-label={`${open ? 'Hide' : 'Open'} ${guideName} guide`} aria-expanded={open} onClick={() => open ? close() : setOpen(true)}><span className="guide-bubble">{open ? 'Got your back.' : 'Need a paw?'}</span><img src={guideImage} alt={cozy ? 'PUR PUR, your fluffy blue-gray kitten guide' : 'Chibi VLADCAT waving, with lime cat ears and sash'} width={cozy ? 85 : 84} height={cozy ? 85 : 126} /></button>
+    <button ref={launcher} className="guide-launcher" aria-label={`${open ? 'Hide' : 'Open'} ${guideName} guide`} aria-expanded={open} onClick={() => open ? close() : setOpen(true)}><span className="guide-bubble">{open ? 'Got your back.' : 'Need a paw?'}</span><img src={guideImage} alt="PUR PUR, your fluffy blue-gray kitten guide" width={85} height={85} /></button>
   </aside>;
 }

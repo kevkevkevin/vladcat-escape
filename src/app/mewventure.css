@@ -2,6 +2,14 @@
 body:has(.mew-ui) { --bg:#faf9fe; --panel:#fff; --panel-2:#f0edfa; --line:#e4dff2; --text:#34364f; --muted:#6f7189; --green:#6864b3; background:#faf9fe; color:#34364f; }
 .mewventure-home { --mew-lavender:#7067bc; --mew-blue:#aab6de; --mew-pink:#f1dce9; --mew-cream:#fff7e8; color:var(--text); background:radial-gradient(ellipse at 88% 9%,#efedff 0,transparent 27%),#faf9fe; font-family:"Trebuchet MS",Arial,sans-serif; overflow:clip; }
 .mewventure-home h1,.mewventure-home h2,.mewventure-home h3 { font-family:var(--font-display),"Arial Rounded MT Bold",sans-serif; font-synthesis:none; }
+.mewventure-home main > section { position:relative; isolation:isolate; }
+.mewventure-home main > section::after { content:""; position:absolute; inset:0; z-index:-1; border-radius:inherit; background:url('/purrvival/paw-pattern.svg') repeat; opacity:.3; pointer-events:none; }
+.mewventure-home main > .purr-home-hero::after { mask-image:linear-gradient(90deg,#000 0%,#000 35%,transparent 55%); opacity:.22; }
+.mewventure-home main > .mew-community::after { opacity:.42; }
+@media (max-width:640px) {
+  .mewventure-home main > section::after { background-size:150px 125px; opacity:.26; }
+  .mewventure-home main > .mew-community::after { opacity:.34; }
+}
 .mew-container { width:min(1200px,calc(100% - 96px)); margin-inline:auto; }
 .mew-ui .site-header { height:94px; gap:54px; border-bottom:1px solid #e7e2f2; }
 .mew-ui .brand { font-family:var(--font-display),"Arial Rounded MT Bold",sans-serif; font-synthesis:none; font-size:27px; font-weight:400; letter-spacing:0; gap:9px; }
@@ -25,6 +33,14 @@ body:has(.mew-ui) { --bg:#faf9fe; --panel:#fff; --panel-2:#f0edfa; --line:#e4dff
 .mew-actions { display:flex; flex-wrap:wrap; align-items:center; gap:25px; margin-top:30px; }
 .mew-button { display:inline-flex; align-items:center; justify-content:center; gap:13px; padding:15px 24px; min-height:51px; border:1px solid #7a70bb; border-radius:15px; background:#7a70bb; color:#fff; font-size:13px; font-weight:700; box-shadow:0 5px 0 #5b519330,0 7px 20px #7561b61a; transition:transform .18s,background .18s; }
 .mew-button:hover { background:#6a60a9; transform:translateY(-2px); }
+.mew-ui .purr-buy-button { color:#70522b; background:#f6e4b8; border-color:#d9bd81; border-radius:15px; font-weight:700; }
+.mew-ui .purr-buy-button:hover { background:#eed59a; }
+.purr-hero-contract { max-width:440px; margin-top:18px; padding:11px 12px; border:1px solid #e3d5e8; border-radius:13px; background:#fffaf2cf; }
+.purr-hero-contract > .eyebrow { display:block; color:#857191; font-size:8px; letter-spacing:1px; }
+.purr-hero-contract > div { display:flex; align-items:center; gap:10px; margin-top:7px; }
+.purr-hero-contract code { min-width:0; color:#62516f; font:11px/1.65 ui-monospace,Consolas,monospace; overflow-wrap:anywhere; user-select:all; }
+.purr-hero-contract .button { flex-shrink:0; font-size:9px; padding:7px 9px; border:1px solid #dbcbea; border-radius:8px; color:#736091; background:#f9f4fc; }
+.purr-hero-contract > p { margin-top:8px; color:#74637d; font-size:10px; }
 .mew-button .mew-icon { width:20px; height:20px; }
 .mew-button > span { font-size:21px; line-height:1; }
 .mew-text-link { display:inline-flex; align-items:center; gap:12px; color:#797094; font-size:12px; font-weight:700; text-decoration:underline; text-decoration-color:#ded5ee; text-underline-offset:6px; }
@@ -127,7 +143,37 @@ body:has(.mew-ui) { --bg:#faf9fe; --panel:#fff; --panel-2:#f0edfa; --line:#e4dff
 .mew-rewards p { font-size:13px; color:#827a90; line-height:1.8; }
 .mew-rewards .mew-small-note { font-size:11px; margin-top:12px; color:#9b8fa5; }
 .mew-rewards .mew-text-link { margin-top:20px; }
-.mew-community { padding:64px 0 49px; background:#f0edf8; border-block:1px solid #e5dff0; }
+.purr-next-games { display:grid; grid-template-columns:1.2fr .8fr; align-items:center; gap:54px; padding:44px 54px; margin-bottom:70px; border:1px solid #e2d9ed; border-radius:30px; background:linear-gradient(120deg,#fff8ee,#f0edfb); }
+.purr-next-games-copy { max-width:580px; }
+.purr-next-games-copy .mew-coming-soon { color:#796398; font-size:9px; background:#fff9; }
+.purr-next-games-copy .mew-coming-soon .mew-icon { width:14px; height:14px; margin-right:7px; }
+.purr-next-games-copy h2 { margin:22px 0 18px; }
+.purr-next-games-copy h2 > span { color:#9383ba; }
+.purr-next-games-copy > p { color:#79718b; font-size:14px; line-height:1.85; margin-top:14px; }
+.purr-next-games-copy .mew-pills { margin-block:23px; }
+.purr-next-games-copy > .mew-text-link { display:inline-flex; gap:10px; }
+.purr-next-games-art { position:relative; display:flex; align-items:center; justify-content:center; min-width:0; }
+.purr-next-games-art > img { display:block; width:100%; height:400px; object-fit:contain; }
+.purr-next-games-art .mew-floating-label { bottom:4px; }
+.purr-next-games-spark { position:absolute; top:24px; right:8px; color:#b5a1d2; font-size:42px; }
+@media (max-width:850px) {
+  .purr-next-games { gap:25px; padding:34px; }
+  .purr-next-games-art > img { height:330px; }
+}
+@media (max-width:640px) {
+  .purr-next-games { grid-template-columns:1fr; padding:28px 24px; gap:25px; margin-bottom:45px; border-radius:23px; text-align:center; }
+  .purr-next-games-copy > p { font-size:12px; }
+  .purr-next-games-copy .mew-pills { justify-content:center; }
+  .purr-next-games-art > img { height:280px; }
+  .purr-next-games-spark { right:12%; }
+}
+.mew-community { position:relative; isolation:isolate; padding:64px 0 180px; background:linear-gradient(135deg,#f0edf8,#f5f1fc); border-block:1px solid #e5dff0; }
+.mew-community > .mew-container { position:relative; z-index:1; }
+.purr-community-cat { position:absolute; width:clamp(260px,29vw,380px); height:auto; right:max(24px,calc((100% - 1200px)/2)); bottom:-28px; pointer-events:none; user-select:none; }
+@media (max-width:640px) {
+  .mewventure-home .mew-community { padding-bottom:0; }
+  .purr-community-cat { position:relative; display:block; width:min(260px,68%); right:auto; bottom:auto; margin:24px 20px -19px auto; }
+}
 .mew-community .token-links { width:min(780px,100%); margin:auto; }
 .mew-community .contract-card { background:#fff9; border-color:#dcd4ec; border-radius:18px; padding:23px; }
 .mew-community .contract-card code { color:#9a8ba9; font-size:12px; }
@@ -166,6 +212,7 @@ body:has(.mew-ui) { --bg:#faf9fe; --panel:#fff; --panel-2:#f0edfa; --line:#e4dff
 .mew-guide .guide-form .primary { background:#9280b7; color:#fff; border-radius:12px; }
 .mew-guide .guide-links { color:#ad9bb8; border-color:#e4d9eb; }
 .mew-guide .guide-links a { color:#9b81b0; }
+.mew-guide .guide-message a { color:#766298; text-decoration:underline; text-underline-offset:3px; }
 @media (max-width:1100px) { .mew-container { width:calc(100% - 64px); } .mew-hero-art { height:520px; } .mew-hero { min-height:595px; } .mew-hero h1 { font-size:61px; } .mew-ui .header-tag { display:none; } .mew-buddy-card { grid-template-columns:.8fr 1fr; padding:21px; } .mew-adventure-grid { gap:36px; } .mew-creator { gap:38px; } .mew-final-heart { margin-left:10px; } }
 @media (max-width:850px) { .mew-hero h1 { font-size:51px; letter-spacing:0; } .mew-hero-copy > p { font-size:14px; } .mew-hero-art { height:490px; } .mew-art-label { right:-5%; font-size:7px; } .mew-hero-sticker { right:-5%; padding:12px; } .mew-hero-sticker p { font-size:9px; } .mew-actions { gap:20px; } .mew-actions .mew-text-link { font-size:10px; } .mew-buddy-card { grid-template-columns:1fr; gap:8px; padding:25px; } .mew-buddy-copy { padding-top:12px; } .mew-buddy-art { height:210px; } .eira-card .mew-buddy-art > img { height:230px; } .mew-how-grid { gap:12px; } .mew-how-grid > article { padding:23px 20px; } .mew-how-grid h3 { font-size:17px; } .mew-creator { padding:30px; gap:30px; } .mew-mini-level { height:240px; } .mew-mini-platform.platform-three { right:10px; } .mew-rewards { gap:30px; grid-template-columns:160px 1fr; } .mew-reward-seal { width:145px; height:145px; } .mew-rewards h2 { font-size:28px; } .mew-final-heart { display:none; } }
 @media (max-width:640px) { .mew-container { width:calc(100% - 40px); } .mew-ui .site-header { height:auto; padding-top:18px; gap:6px; flex-wrap:wrap; } .mew-ui .brand { font-size:24px; } .mew-ui .brand .mew-brand-mark { width:43px; height:43px; } .mew-ui .main-nav { width:auto; margin-left:auto; height:48px; gap:18px; } .mew-ui .main-nav a { font-size:10px; } .mew-ui .main-nav a.active:after { bottom:5px; } .mew-ui .brand-subtitle { font-size:6px; letter-spacing:.6px; } .mew-hero { grid-template-columns:1fr; gap:0; padding-top:30px; padding-bottom:27px; } .mew-hero-copy { text-align:center; padding:5px 0 10px; } .mew-hero-copy > .mew-eyebrow { font-size:8px; letter-spacing:1.3px; } .mew-hero h1 { font-size:clamp(43px,10vw,61px); margin:21px auto 29px; letter-spacing:0; } .mew-hero-copy > p { max-width:450px; margin:auto; font-size:13px; line-height:1.85; padding-inline:3px; } .mew-actions { justify-content:center; gap:17px; margin-top:24px; } .mew-button { font-size:12px; padding:13px 18px; min-height:47px; } .mew-hero-note { justify-content:center; font-size:10px; margin-top:23px; } .mew-hero-art { height:435px; width:min(375px,100%); margin:19px auto 8px; } .mew-art-label { right:-1%; top:11%; font-size:7px; padding:10px; } .mew-hero-sticker { right:-1%; bottom:13%; padding:12px; } .mew-character-caption { font-size:8px; } .mewventure-home .marquee-group { padding-block:17px; gap:30px; } .mewventure-home .landing-marquee { font-size:8px; } .mew-section { padding-block:57px; } .mew-section-heading { margin-bottom:27px; } .mew-section-heading h2,.mewventure-home h2 { font-size:28px; letter-spacing:0; } .mew-section-heading .mew-eyebrow { font-size:8px; letter-spacing:1px; } .mew-section-heading p { font-size:12px; } .mew-buddy-grid { grid-template-columns:1fr; gap:18px; } .mew-buddy-card { grid-template-columns:.9fr 1.1fr; gap:12px; padding:22px 16px; border-radius:21px; } .mew-buddy-art { height:195px; } .mew-buddy-art > img { height:165px; } .eira-card .mew-buddy-art > img { height:202px; } .mew-floating-label { font-size:7px; padding:6px; } .mew-buddy-copy h3 { font-size:24px; } .mew-buddy-copy .mew-eyebrow { font-size:7px; letter-spacing:.6px; } .mew-buddy-copy p { font-size:11px; } .mew-trait { font-size:8px; padding:6px 8px; } .mew-adventure-section { padding:47px 0; } .mew-adventure-grid { grid-template-columns:1fr; gap:33px; } .mew-game-preview { transform:rotate(-1deg); } .mew-adventure-copy > p { font-size:13px; } .mew-how-grid { grid-template-columns:1fr; gap:16px; } .mew-how-grid > article { padding:24px; } .mew-how-grid h3 { margin:18px 0 10px; font-size:20px; } .mew-how-grid p { font-size:12px; } .mew-phone-note { align-items:start; margin-top:20px; } .mew-phone-note p { font-size:10px; } .mew-creator { grid-template-columns:1fr; padding:24px; gap:30px; border-radius:23px; } .mew-creator-copy > p { font-size:13px; } .mew-mini-level { height:225px; } .mew-rewards { grid-template-columns:1fr; gap:26px; text-align:center; } .mew-reward-seal { margin:auto; width:135px; height:135px; } .mew-rewards h2 { font-size:28px; } .mew-rewards p { font-size:12px; } .mew-community { padding:50px 0 35px; } .mew-community .token-links { grid-template-columns:1fr; } .mew-community .contract-card { padding:18px; } .mew-community .contract-card code { font-size:11px; } .mew-future { align-items:start; } .mew-future p { font-size:11px; } .mew-future p > span { font-size:9px; } .mew-final { text-align:center; flex-direction:column; gap:4px; padding-block:34px 45px; } .mew-final > img { width:155px; height:155px; } .mew-final h2 { font-size:31px; } .mew-final .mew-eyebrow { font-size:8px; } .mew-ui .site-footer { flex-direction:column; gap:18px; text-align:center; padding-block:25px 100px; } .mew-guide .guide-launcher > img { width:68px; height:68px; } }

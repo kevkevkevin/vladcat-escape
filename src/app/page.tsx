@@ -5,6 +5,8 @@ import { SiteFooter } from '@/components/SiteFooter';
 import { TokenLinks } from '@/components/TokenLinks';
 import { LandingMarquee } from '@/components/LandingMarquee';
 import { MewIcon } from '@/components/MewIcon';
+import { ContractAddress } from '@/components/ContractAddress';
+import { siteInfo } from '@/game/site-info.mjs';
 
 export const viewport: Viewport = { themeColor: '#faf9fe' };
 
@@ -18,7 +20,8 @@ export default function Home() {
           <span className="mew-eyebrow"><MewIcon name="paw" /> TINY PAWS. BRAVE ESCAPES.</span>
           <h1 id="purr-title">Purrvival<span>A little courage.<br />A whole lot of purr.</span></h1>
           <p>Help <strong>Pur Pur</strong> find her way out of a cozy cave and back to EIRA. Playful puzzles, tiny victories, and plenty of “one more try.”</p>
-          <div className="mew-actions"><Link className="mew-button" href="/play"><MewIcon name="paw" /> Let’s play <span aria-hidden="true">↗</span></Link><a className="mew-text-link" href="#buddies">Meet your new besties <span aria-hidden="true">↓</span></a></div>
+          <div className="mew-actions"><Link className="mew-button" href="/play"><MewIcon name="paw" /> Let’s play <span aria-hidden="true">↗</span></Link><a className="mew-button purr-buy-button" href={siteInfo.buyUrl} target="_blank" rel="noopener noreferrer">BUY {siteInfo.tokenSymbol} <span aria-hidden="true">↗</span></a></div>
+          <ContractAddress contract={siteInfo.contract} compact />
           <div className="mew-hero-note"><span className="mew-mini-paw"><MewIcon name="heart" /></span><span>A little challenge. A whole lot of heart.</span></div>
         </div>
       </section>
@@ -43,8 +46,19 @@ export default function Home() {
       </section>
       <section className="mew-container mew-creator" id="create-level" aria-labelledby="creator-title"><div className="mew-creator-art" aria-hidden="true"><div className="mew-mini-level"><span className="mew-mini-cloud">☁</span><span className="mew-mini-star">✦</span><div className="mew-mini-platform platform-one" /><div className="mew-mini-platform platform-two" /><div className="mew-mini-platform platform-three" /><span className="mew-mini-door">♡</span><img src="/mewventure/pur-pur.webp" alt="" width={1024} height={1024} /></div><span className="mew-art-tag">a peek at what’s next</span></div><div className="mew-creator-copy"><span className="mew-coming-soon">✧ COMING SOON</span><h2 id="creator-title">Your imagination.<br /><span>Their next adventure.</span></h2><p>Dream up your own little level, add a few playful surprises, and share it with your friends.</p><blockquote>“I made this for you. Ready for a little challenge?”</blockquote><div className="mew-pills"><span>Create</span><span>Share</span><span>Play together</span></div><small>The level creator is a preview. Editing, playtesting, and sharing aren’t open yet.</small></div></section>
       <section className="mew-section mew-container purr-rewards" id="rewards" aria-labelledby="rewards-title"><div className="purr-rewards-art"><img src="/purrvival/rewards-banner.webp" alt="Happy EIRA and Pur Pur celebrate together with shiny gold tokens bearing paw-print emblems" width={1200} height={900} loading="lazy" /></div><div className="purr-rewards-copy"><span className="mew-eyebrow">HAPPY PAWS. LITTLE REWARDS.</span><h2 id="rewards-title">Good runs.<br /><span>Happy little rewards.</span></h2><p>The plan: weekly incentives for top leaderboard players, funded from the token’s initial buy. Keep your active X handle and correct wallet on your profile so we can find you.</p><p className="mew-small-note">Reward amounts and distribution details will be announced through our community channels.</p><div className="mew-actions"><Link className="mew-button" href="/play"><MewIcon name="flag" /> Take the challenge <span aria-hidden="true">↗</span></Link><Link className="mew-text-link" href="/leaderboard">Meet the quickest paws <span aria-hidden="true">↗</span></Link></div></div></section>
-      <section className="mew-community" id="token" aria-labelledby="community-title"><div className="mew-container"><div className="mew-section-heading"><span className="mew-eyebrow">THERE’S ALWAYS ROOM FOR ONE MORE.</span><h2 id="community-title">Come find your cozy little community.</h2><p>Game updates, friendly challenges, and little moments worth sharing.<br />Follow Purrvival on X and join us on Telegram.</p></div><TokenLinks contract={process.env.NEXT_PUBLIC_VLADCAT_TOKEN_CA?.trim() ?? ''} xUrl={process.env.NEXT_PUBLIC_VLADCAT_X_URL?.trim() ?? ''} telegramUrl={process.env.NEXT_PUBLIC_VLADCAT_TELEGRAM_URL?.trim() ?? ''} />
-      <div className="mew-future"><MewIcon name="heart" /><p>More little games. More adventures with EIRA and PUR PUR.<br /><span>Future plans include token buybacks and player rewards. We’re building this one happy pawstep at a time.</span></p></div></div></section>
+      <section className="mew-container purr-next-games" id="more-games" aria-labelledby="more-games-title">
+        <div className="purr-next-games-copy">
+          <span className="mew-coming-soon"><MewIcon name="star" /> COMING SOON</span>
+          <h2 id="more-games-title">More games.<br /><span>Same favorite besties.</span></h2>
+          <p>Purrvival is just the beginning. We’ll build more fun, easy-to-pick-up games starring EIRA and Pur Pur—new puzzles, playful challenges, and little adventures to enjoy together.</p>
+          <p>One cozy world. Lots of ways to play. Our two besties will be at the heart of every new adventure.</p>
+          <div className="mew-pills"><span><MewIcon name="paw" /> EIRA &amp; Pur Pur</span><span><MewIcon name="heart" /> Little games, big smiles</span></div>
+          <a className="mew-text-link" href="#token">Visit our little community <span aria-hidden="true">↓</span></a>
+        </div>
+        <div className="purr-next-games-art"><span className="purr-next-games-spark" aria-hidden="true">✧</span><img src="/mewventure/eira-pur-pur.webp" alt="EIRA happily cuddling Pur Pur, ready for their next adventure together" width={1024} height={1536} loading="lazy" /><span className="mew-floating-label">our next chapter is coming ♡</span></div>
+      </section>
+      <section className="mew-community" id="token" aria-labelledby="community-title"><div className="mew-container"><div className="mew-section-heading"><span className="mew-eyebrow">THERE’S ALWAYS ROOM FOR ONE MORE.</span><h2 id="community-title">Come find your cozy little community.</h2><p>Game updates, friendly challenges, and little moments worth sharing.<br />Follow Purrvival on X and join us on Telegram.</p></div><TokenLinks />
+      <div className="mew-future"><MewIcon name="heart" /><p>More little games. More adventures with EIRA and PUR PUR.<br /><span>Future plans include token buybacks and player rewards. We’re building this one happy pawstep at a time.</span></p></div></div><img className="purr-community-cat" src="/purrvival/pur-pur-resting.webp" alt="" aria-hidden="true" width={900} height={600} loading="lazy" /></section>
       <section className="mew-final mew-container"><img src="/mewventure/pur-pur.webp" alt="PUR PUR is ready for another little adventure" width={1024} height={1024} loading="lazy" /><div><span className="mew-eyebrow">YOUR NEXT HAPPY LITTLE MOMENT</span><h2>One more adventure?<br /><span>Then we can nap.</span></h2><Link href="/play" className="mew-button">Let’s play together <MewIcon name="paw" /></Link></div><span className="mew-final-heart" aria-hidden="true">♡</span></section>
     </main><div className="mew-container"><SiteFooter /></div>
   </div>;
